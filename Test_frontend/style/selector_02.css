@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+반문한 적이 있는 링크: 브라운저의 히스트리에 남게된다.
+
+파란색: 히스토리에 없을 경우
+보라색: 히스토리에 있을 경우
+빨간색:마우스로 이동하기위해 프레스 상태(active 상태)
+호버 : 마우스를를 움직여 타깃위에 올렸을 때
+포커스 : 터갯이 포커스를 받았을 떄////
+*/
+a {
+    /*밑줄을 없앰*/
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+a:focus {
+    background-color: rosybrown;
+    color: white;
+}
+
+p {
+    color: cornflowerblue;
+}
+
+p:hover {
+    background-color: deeppink;
+    cursor: pointer;
+}

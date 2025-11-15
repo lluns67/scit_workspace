@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ㄱ=ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수(2)</title>
+    <style>
+        div#target {
+            border: 1px dashed darkblue;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2>자바스크립트 함수(2)</h2>
+    <pre>
+        1) JS를 이용하여 태그에 접근하기
+            document.getElementById("아이디");
+            document.getElementsByClassName("클래스명"); ==> 태그반환
+            document.getElementsByTagName("태그명");    ==> 배열반환
+
+            document.querySelector("CSS 선택자");
+            document.querySelectorAll("CSS 선택자");
+
+        2) 
+    </pre>
+
+    <h2>자바스크립트 함수(2)</h2>
+    <div>
+        <a href="#" data-img="onepiece06_chopper.png">첫 번째 그림!</a>&nbsp;
+        <a href="#" data-img="onepiece08_franky.png">두 번째 그림</a>&nbsp;
+        <a href="#" data-img="onepiece09_brook.png">세 번째 그림</a>&nbsp;
+    </div>
+    <hr>
+    <div id="target">
+        <img src="./images/onepiece09_brook.png" alt="첫 번째 그림">
+        <p>첫번째 그림</p>
+    </div>
+
+
+    <script>
+        let tag = document.querySelectorAll("div>a"); // 3개의 요소를 반환
+        tag.forEach((item) => { item.addEventListener('click', draw) });
+
+        function draw() {
+
+            let clickImg = './images/' + this.getAttribute("data-img");
+            let clickTxt = this.innerHTML;
+            let targetImg = document.querySelector("div#target>img");
+            let targetTxt = document.querySelector("div#target>p");
+
+            targetImg.setAttribute("src", clickImg);
+            targetTxt.innerHTML = clickTxt;
+
+        }
+    </script>
+</body>
+
+</html>

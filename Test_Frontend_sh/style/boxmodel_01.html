@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <style>
+        div.box1 {
+            /* 고정크기 */
+            width: 400px;
+            height: 100px;
+            background-color: #ff6a00;
+
+        }
+
+        div.box2 {
+            /* 가변크기 */
+            width: 50%;
+            height: 100px;
+            background-color: #0094ff;
+        }
+
+        nav ul li {
+            display: inline-block;
+            /*  이거 inline에서는 안됨. inline-block은 가능*/
+            width: 200px;
+            height: 80px;
+        }
+
+        nav ul li:hover {
+            background-color: black;
+        }
+
+        /* 글자 뿐만 아니라 상자 전체를 클릭했을 때도 동작하려면 a 태그의 크기를 키워야됨 하지만 
+인라인 요소이기 때문에 그게 불가능하기에 요소를 인라인 블록으로 바꿔줌*/
+        nav ul li a {
+            display: inline-block;
+            width: 200px;
+            height: 80px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /* .box의 요소 조정 */
+        div.box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        div.two {
+            /* hidden은 빈칸이 생김 */
+            /* visibility: hidden; */
+            /* none은 애초에 없던것처럼 빈자리도 매꿔짐*/
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/home.png" alt="홈으로"></a></h1>
+    <h2>박스 모델</h2>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div class="box one">1</div>
+    <div class="box two">2</div>
+    <div class="box three">3</div>
+</body>
+
+</html>

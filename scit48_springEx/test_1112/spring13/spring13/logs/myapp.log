@@ -1,0 +1,62 @@
+2025-11-14T18:45:52.666+09:00  INFO 5048 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Starting Spring13Application using Java 21.0.6 with PID 5048 (C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13)
+2025-11-14T18:45:52.670+09:00  INFO 5048 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T18:45:52.752+09:00  INFO 5048 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-14T18:45:52.757+09:00  INFO 5048 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-14T18:45:53.706+09:00  INFO 5048 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-14T18:45:53.715+09:00  INFO 5048 --- [spring13] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T18:45:53.715+09:00  INFO 5048 --- [spring13] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T18:45:53.760+09:00  INFO 5048 --- [spring13] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T18:45:53.760+09:00  INFO 5048 --- [spring13] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2025-11-14T18:45:54.143+09:00  INFO 5048 --- [spring13] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-14T18:45:54.191+09:00  INFO 5048 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-14T18:45:54.208+09:00  INFO 5048 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Started Spring13Application in 1.96 seconds (process running for 2.339)
+2025-11-14T18:45:57.370+09:00  INFO 5048 --- [spring13] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T18:45:57.370+09:00  INFO 5048 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T18:45:57.370+09:00  INFO 5048 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-14T18:46:15.117+09:00  INFO 1924 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Starting Spring13Application using Java 21.0.6 with PID 1924 (C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13)
+2025-11-14T18:46:15.126+09:00  INFO 1924 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T18:46:15.172+09:00  INFO 1924 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-14T18:46:15.172+09:00  INFO 1924 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-14T18:46:16.024+09:00  INFO 1924 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-14T18:46:16.047+09:00  INFO 1924 --- [spring13] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T18:46:16.047+09:00  INFO 1924 --- [spring13] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T18:46:16.072+09:00  INFO 1924 --- [spring13] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T18:46:16.072+09:00  INFO 1924 --- [spring13] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 900 ms
+2025-11-14T18:46:16.448+09:00  INFO 1924 --- [spring13] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-14T18:46:16.494+09:00  INFO 1924 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-14T18:46:16.494+09:00  INFO 1924 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Started Spring13Application in 1.78 seconds (process running for 2.132)
+2025-11-14T18:46:18.935+09:00  INFO 1924 --- [spring13] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T18:46:18.935+09:00  INFO 1924 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T18:46:18.935+09:00  INFO 1924 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-14T18:46:56.035+09:00  INFO 15552 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Starting Spring13Application using Java 21.0.6 with PID 15552 (C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13)
+2025-11-14T18:46:56.035+09:00  INFO 15552 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T18:46:56.097+09:00  INFO 15552 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-14T18:46:56.097+09:00  INFO 15552 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-14T18:46:56.924+09:00  INFO 15552 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-14T18:46:56.937+09:00  INFO 15552 --- [spring13] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T18:46:56.940+09:00  INFO 15552 --- [spring13] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T18:46:56.979+09:00  INFO 15552 --- [spring13] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T18:46:56.979+09:00  INFO 15552 --- [spring13] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 882 ms
+2025-11-14T18:46:57.357+09:00  INFO 15552 --- [spring13] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-14T18:46:57.403+09:00  INFO 15552 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-14T18:46:57.403+09:00  INFO 15552 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Started Spring13Application in 1.831 seconds (process running for 2.259)
+2025-11-14T18:47:01.368+09:00  INFO 15552 --- [spring13] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T18:47:01.368+09:00  INFO 15552 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T18:47:01.369+09:00  INFO 15552 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T18:48:29.778+09:00  INFO 444 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Starting Spring13Application using Java 21.0.6 with PID 444 (C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\test_1112\spring13\spring13)
+2025-11-14T18:48:29.779+09:00 DEBUG 444 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T18:48:29.782+09:00  INFO 444 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T18:48:29.856+09:00  INFO 444 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-14T18:48:29.856+09:00  INFO 444 --- [spring13] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-14T18:48:30.739+09:00  INFO 444 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-14T18:48:30.744+09:00  INFO 444 --- [spring13] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T18:48:30.744+09:00  INFO 444 --- [spring13] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T18:48:30.784+09:00  INFO 444 --- [spring13] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T18:48:30.784+09:00  INFO 444 --- [spring13] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 928 ms
+2025-11-14T18:48:31.191+09:00  INFO 444 --- [spring13] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-14T18:48:31.233+09:00  INFO 444 --- [spring13] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-14T18:48:31.240+09:00  INFO 444 --- [spring13] [restartedMain] n.nocori.spring13.Spring13Application    : Started Spring13Application in 1.933 seconds (process running for 2.334)
+2025-11-14T18:48:33.437+09:00  INFO 444 --- [spring13] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T18:48:33.437+09:00  INFO 444 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T18:48:33.438+09:00  INFO 444 --- [spring13] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-14T18:48:36.063+09:00 DEBUG 444 --- [spring13] [http-nio-9992-exec-3] n.n.spring13.controller.ParaController   : id = dragon, pass = 1234, name= 드래곤, phone= 010-4884-2424, com= kt

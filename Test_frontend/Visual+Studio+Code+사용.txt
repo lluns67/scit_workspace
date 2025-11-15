@@ -1,0 +1,56 @@
+=========================================================
+Visual Studio Code 설치
+=========================================================
+
+1) 에디터 설치 (Visual Studio Code)
+   - https://code.visualstudio.com/download 접속
+   - Windows/User Installer/64bit 선택
+   - VSCodeUserSetup-x64-1.61.2.exe 파일 실행하여 설치 (모두 기본값 선택)
+   - 기본 위치 예: C:\Users\USER\AppData\Local\Programs\Microsoft VS Code
+
+2) Extension 추가
+   - 도구 모음에서 "Extensions" 아이콘 선택
+     (또는 [File]-Preferences-Extensions 메뉴)
+   - "live server" 검색하여 "Install" -> "Trust Publisher & Install"
+
+3) 화면 테마 변경
+[File]-[Preferences]-[Settings]-Workbench-Appearance-Color Theme
+
+4) 글꼴 크기
+[File]-[Preferences]-[Settings]-[Text Editor]-Font-“Font Size” 수정
+
+
+=========================================================
+실습
+=========================================================
+
+1. 실습용 폴더 생성
+2. VSC 실행
+3. [File] - Open Folder 메뉴로 실습용 폴더 선택
+4. "Explorer"창에서 New Folder 아이콘으로 서브 폴더생성
+5. New File 아이콘으로 HTML파일 생성
+6. HTML 태그 입력 (기본 구조 자동완성은 ! 입력 후 Enter)
+7. HTML 파일 편집화면에서 마우스 오른쪽 버튼 클릭 -> Open with Live Server
+   또는 화면 오른쪽 아래의 "Go Live" 클릭
+
+=========================================================
+참고 사이트
+=========================================================
+- HTML, CSS, JavaScript의 레퍼런스 및 코딩 연습
+  https://www.w3schools.com/
+- 아이콘 이미지 다운로드
+  https://www.iconfinder.com/
+- HTML 공식
+  https://html.spec.whatwg.org/
+  https://developer.mozilla.org/ko/docs/Web/HTML (한글 번역)
+
+
+
+* 기타 Extension
+	html snippets
+	IntelliSense for CSS class names in HTML
+	auto rename tag
+	auto close tag
+	bracket pair colorizer
+	live server 또는 open in browser
+

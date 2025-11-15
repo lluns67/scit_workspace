@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe 태그의 사용</title>
+    <style>
+        iframe {
+            border: 1px dashed;
+            color: blue;
+            margin: 0px auto 0px auto;
+        }
+
+        div#win {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2>iframe 태그의 사용</h2>
+    <h1>
+        <li><a href="./imagesContent.html" target="mywin">iframe 태그의 사용</a></li>
+        <li><a href="./tableContent.html" target="mywin">테이블 관련태그</a></li>
+        <li><a href="./form.html" target="mywin">폼 관련 태그</a></li>
+        <li><a href="./paragraph.html/" target="mywin">텍스트관련</a></li>
+        <li><a href="./tableContent3.html" target="mywin">시간표</a></li>
+
+    </h1>
+    <div id="win"><iframe src="./imagesContent.html" name="mywin" frameborder="0" height="400px" width="80%"></iframe>
+    </div>
+</body>
+
+</html>

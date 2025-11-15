@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수(3)</title>
+    <script defer src="./js/functionTest03.js">
+
+    </script>
+    <!-- <script defer src="./js/functionTest03.js"></script> -->
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2>form 태그에 접근하기</h2>
+
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+        <label for="userid">아이디:</label>
+        <input type="text" id="userid" name="userid" placeholder="아이디를  입려하세요" maxlength="10" required>
+
+        <!--비밀번호-->
+        <label for="userpwd">비밀번호</label>
+        <input type="password" id="userpwd" name="userpwd" placeholder="아이디를  입려하세요" required>
+
+        <!--라디오 상자-->
+        <label for="">
+            <input type="radio" name="gender" value="남자" checked>남자
+            <input type="radio" name="gender" value="여자">여자
+        </label>
+
+        <label for="">취미
+            <input type="checkbox" name="hobby" value="등산">등산s
+            <input type="checkbox" name="hobby" value="음악감상">음악감상
+            <input type="checkbox" name="hobby" value="독서">독서
+            <input type="checkbox" name="hobby" value="음주/가무">음주/가무
+            <input type="checkbox" name="hobby" value="거짓말">거짓말하기
+        </label><br>
+        <label for="color">퍼스널 컬러:</label>
+        <input type="color" name="personalcolor" id="color"><br>
+
+
+
+        <label for="now">현제</label>
+        <input type="datetime-local" name="now" id="now"><br>
+
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="range">진척도: </label>
+        <input type="range" name="range" id="range" min="0" max="100" step="30"><br>
+        <br><br>
+
+
+
+        <input type="hidden" name="reqpage" value="1"> <!-- 사용자의 입력이 없이 서버로 전송될 값-->
+
+    </form>
+    <h2>폼테그 연습(2)-select, textarea(여러줄 글상자)</h2>
+    <form action="inform">
+        <label for="address">지역: </label>
+        <select name="address" id="address">
+            <option value="강남구">강남구</option>
+            <option value="강남구">강서구</option>
+            <option value="강남구">강동구</option>
+            <option value="강남구">강북구</option>
+            <option value="강남구">서초구</option>
+        </select><br>
+
+
+        <label for="data">자세한 평가: </label>
+        <textarea name="data" id="data" cols="100" rows="10"></textarea><br><br>
+
+        <!--모양은 버튼, 기능이 존재-->
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+
+        <!--모양은 버튼, 껍데기만 존재(js랑 연동)-->
+        <input type="button" value="버튼" id="submitBtn">
+        <button>이거슨 버튼</button>
+
+        <div id="target"></div>
+
+</body>
+
+</html>

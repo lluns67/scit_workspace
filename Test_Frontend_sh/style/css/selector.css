@@ -1,0 +1,56 @@
+/* 태그선택자 : 1(특잇값) */
+/* 유니버설 속성은 사용을 권장하지 않음.*/
+@charset "utf-8";
+
+* {
+    /* universal (전체 문서에 적용)*/
+    font-size: 20px;
+}
+
+body {
+    background-image: url(../images/illit.jpg);
+    background-color: rgba(225, 225, 225, 0.5);
+    background-repeat: no-repeat;
+    /* 전체 화면을 기준으로 가운데 */
+    background-position: 50% 50%;
+    /* 보이는 화면을 기준으로 가운데   scroll, fixed 등이 있음.*/
+    background-attachment: fixed;
+}
+
+p {
+    color: #336699;
+    /*  색상명: red  /  #16진수(#ff0000)  /  rgb(10진수) rgb(214,84,84)  /  rgba(222, 150, 99, 0.4) */
+}
+
+
+/* 태그선택자 : 2(특잇값) */
+p>span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+}
+
+pre {
+    font-family: "맑은 고딕", 'Times New Roman', Times, serif;
+}
+
+/* 특잇값: 1 + 1 + 100 = 102 */
+ul>li#listitem {
+    text-decoration: underline;
+}
+
+/* 특잇값: 1 + 1 + 10 = 12*/
+ul>li.item {
+    background-color: chartreuse;
+}
+
+ul>li.box {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+/* :(콜론)은 가상 선택자임 */
+input[type="password"]:hover {
+    background-color: bisque;
+}

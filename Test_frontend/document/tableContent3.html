@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 요소</title>
+    <style>
+        table {
+            border: 2px solid #333;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        table caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(255, 133, 133);
+        }
+
+        table th,
+        table td {
+            border: 1px solid;
+            padding: 10px;
+
+        }
+
+        table thead {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2>테이블을 구성하는 요소</h2>
+    <ul>
+        <li>table: 테이블을 만드는 Root 요소(행, 열, 셀)</li>
+        <li>thead, tbody, tfoot: 테이블의 큰 카테고리 만드는 요소. <br>
+            생략하면 tbody는 브라우정의 렌더링 엔진이 자동 생성</li>
+        <li>tr: 행 표현</li>
+        <li>th: 제목열(가운데정렬, 굵게), td: 일반열표현</li>
+    </ul>
+    <hr>
+
+
+    <table border="1">
+        <caption>시간표</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>월요일</th>
+                <th>화요일</th>
+                <th>수요일</th>
+                <th>목요일</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>1 교시</th>
+            <td colspan="2">국어</td>
+            <td rowspan="4">컴퓨터 실습</td>
+            <td>자율학습</td>
+        </tr>
+        <tr>
+            <th>2 교시</th>
+            <td rowspan="2">수학</td>
+            <td rowspan="3">영어 speaking</td>
+            <td rowspan="3">기초 과학</td>
+        </tr>
+        <tr>
+            <th>3 교시</th>
+
+        </tr>
+
+    </table>
+</body>
+
+</html>

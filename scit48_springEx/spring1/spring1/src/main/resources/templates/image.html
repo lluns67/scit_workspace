@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ititle</title>
+</head>
+<body>
+
+<!--
+    *web에서의ㅣ 경로
+    protocol     host        post       path   queary string
+    http://     www.domain.com  :8888   /login   ?key=value
+    Origin: protocol + host + port까지 모두 합친 URL
+    Protocol: http, https (브라우저와 서버가 통신하기 위한 규칙)
+    Host: 접속할 서버의 주소
+    Port : 자원에 접근할 수 있는 포트 번호
+    Path: 사이트 내부 경로
+    Query String: URL에 추가 정보를 전달할 떄 사용.
+
+    절대 경로(Absolute Path)
+    /       루트 경로
+
+    상대 경로(Relative Path)
+    ./      현재 디렉토리
+    ../     상위 디렉토리
+-->
+    <p><img src="image/car_haisya_kusa_hero.png"> </p>
+<p><img src="image/onepiece08_franky.png"> </p>
+<p><img src="/image/kitten-1285341_1280.jpg"></p>
+<p><img src="image/thumb-1920-969444.png"></p>
+
+<p>상대 경로: <img src="../image/onepiece08_franky.png"></p>
+<p>절대 경로: <img src="/image/car_haisya_kusa_hero.png"></p>
+
+
+<p><a href="./">홈ㅇ으로(상대결로)</a></p>
+<p><a href="/">홈으로(절도경로)</a></p>
+
+<pre>
+
+</pre>
+<ol>
+
+</ol>
+</body>

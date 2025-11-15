@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 자료형</title>
+    <script>
+        // ==> 주석
+        /* 여러줄 주석 */
+        /** 여러 줄 주석*/
+
+        //(1) 수차자료형
+        console.log("<< 수치 자료형 >>");
+        const num = 12; //변수를 선얺하고 초기화
+        console.log(num);
+        console.log(typeof num);
+        console.log('num 변수의 값은: ' + num); // + : 문자열 결합 연산자
+        console.log(num / 5); // 연산 할 때 소숫점 연산을 한다
+
+        console.log("=====자바스크립트는 진법 표현 가능=====");
+        console.log('2진수 ==> ' + 0b1011);
+        console.log('8진수 ==> ' + 0o1234);
+        console.log('16진수 ==> ' + 0xff);
+
+        console.log("=====자바스크립트는 지수 표현 가능=====");
+        console.log('10^3 ==> ' + 1E3);
+        console.log('0.1^-3 ==>' + 1E-4);
+
+        // (2) 수치자료형 (bigini)
+        console.log("<< BIGINT 자료형>>")
+        const big1 = 1000n;
+        const big2 = BigInt("1234")
+        console.log(big1);
+        console.log(big2);
+        console.log(typeof big2);
+
+        console.log("<< 문자열 자료형>>");
+        /*
+        문자열 리터럴을 마느는 방식 3가지
+        1) 작은 따음펴
+        2) 큰 따음표
+        3) 백키 (`) : 템플릿 리커럴 (여려줄 가능)
+        */
+
+        const str1 = '안녕하세요?';
+        console.log(typeof str1);
+        console.log("우리동네 유명한 마트이름은 '아저씨 마트'이다!");
+        console.log("엄마가 오늘아침에 '옛다 용돈이")
+        console.log("송아지 송아지 \
+        얼룩 망아지 \
+        엄마닭도 얼룩닭");
+
+        const age = 25;
+        console.log(`지금나이 ${age}살, 10년 후에는 ${age + 10}살이 된다.`);
+
+
+        console.log("<< 진위형 자료향 >>")
+        /*
+         1) falsy : false, 0, -0, 0n, "", null, undefined, NaN
+         2) truthy : 0을 제외한 모든숫자, {}, [], true, 'data'
+        */
+        const bool = false;
+        console.log(bool);
+        console.log(typeof bool);
+
+        if (0) {
+            console.log("0참입니다");
+        } else {
+            console.log("0거짓입니다");
+        }
+        if ([]) {
+            console.log("[]참입니다");
+        } else {
+            console.log("거짓입니다");
+        }
+        console.log("<< undefined 자료형 >>");
+        /*
+          변수를 선언하고 초기화 하지  않으면 undefined 값이 할당된다.
+        */
+        let name;       // TDZ(Temporal Dead Zone)라느 영역에 배치됨
+        let addr = '서울시';    //stack
+        console.log(typeof name);
+
+        console.log("<< Symbol 형 >>");
+        console.log("나중에 내공이 쌓이면 다시 보세요!");
+        /*
+        symbol 형은 데이터의 유일성을 보장하기 위한 자료형이다.
+        객체의 key값으로 주로 사용된다.
+        */
+        console.log("<< function >>");
+        /* 함수정의
+          함수를 값으로 처리하는 함수: 일급함수(First Class Function)
+        */
+        //네임드 펑션, 함수정의
+        function add(a, b) {
+            return a + b;
+        }
+        const plus = add;
+        console.log(typeof add);
+
+        console.log('함숭의 호출결과: ' + plus(12, 24));
+        console.log('함숭의 호출결과: ' + add(12, 24));
+
+        //이름없는 함수(Anonymous Function) , 표현된 함수
+        //Hosting(호이스팅)이 되지 않음
+        const minus = function (a, b) {
+            return a - b;
+        }
+        console.log('표현 함수 호출 결과: ' + minus(1, 2));
+
+        // 함수를 값으로 전달가능
+        function myFunc(f, k) {
+            if (typeof f === 'function') {
+                return f(1000, k);
+            } else {
+                return '전달된 값이 함수가 아닙니다.';
+            }
+        }
+        //
+        console.log(myFunc(add, 10));
+
+        function multiply(a, b) {
+            document.getElementById('result').innerText = a * b;
+        }
+
+        console.log("<< null 형 >>");
+        /*
+        null 형은 값이 없다는 것을 명시적으로 표현할 때 사용
+        */
+        let nullData = null;
+        console.log(typeof nullData);
+
+        console.log("<< 베열>>")
+        const ary1 = [1, 2, 3, 4, 5];
+        const bts = ["정국", "뷔", "지민", "제이홉", ["다이너마이트", "DNA"]];
+
+        console.log("숫자 3을 출력하려면? " + ary1[2]);
+        console.log("ary1의 요소개수: " + ary1.length);
+        console.log("bts 요소 개수 : " + bts.length);
+        console.log("다이너마이트를 출력하려면" + bts[4][0])
+
+        console.log("<< 객 체 >>");
+        const obj = { '이름': '홍길동', '나이': 25, '주소': '서울시' };
+        console.log('너의 이름은:' + obj['이름']);
+        console.log('너의 나이는:' + obj.나이);
+    </script>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <p style="color: red;">👍결과는 개발자 모드의 콘솔창에서 확인</p>
+    <hr>
+
+    <ul>
+        <li><a href="javascript:multiply(10,20);">add 함수 호출하기</a></li>
+        <li><input type="button" value="multiply함수 호출" onclick="multiply(22,33)"></li>
+        <li></li>
+    </ul>
+    <p id="result"></p>
+</body>
+
+</html>

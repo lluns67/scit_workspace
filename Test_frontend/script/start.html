@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트작성위치</title>
+    <script>
+        const elem = document.getElementById("title"); // 이 위치에서는 title 요소를 찾지 못함
+        alert(elem);
+    </script>
+</head>
+
+<body> <!-- Tree 작성 시작 -->
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2 id="title">자바스크립트의 사용</h2>
+    <p id="text">자바스크릡트는 동작을 입힌다</p>
+    <ol>
+        <li>Core 문법 : 프로그래밍 언어가 갖춰야 하는 기본문법</li>
+        <li>BOM(Browser Object Model) : JS로 브러우저자체에 접근(Histroy, window)</li>
+        <li>DOM(Document Object Model) : JS로 Documnet에 접극해서 처리</li>
+    </ol>
+    <script>
+
+        const elem2 = document.getElementById("title");
+        const pelem = document.getElementById("text");
+        alert(elem2);
+        alert(pelem)
+    </script>
+</body>
+
+</html>

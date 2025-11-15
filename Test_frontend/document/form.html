@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2> 폼테그 연습(input)</h2>
+    <form action="join" method="post" enctype="application/x-www-form-urlencoded">
+        <label for="userid">아이디:</label>
+        <input type="text" id="userid" name="userid" placeholder="아이디를  입려하세요" maxlength="10" required>
+
+        <!--비밀번호-->
+        <label for="userpwd">비밀번호</label>
+        <input type="password" id="userpwd" name="userpwd">
+
+        <!--라디오 상자-->
+        <label for="">
+            <input type="radio" name="gender" value="남자" checked>남자
+            <input type="radio" name="gender" value="여자">여자
+        </label>
+
+        <label for="">취미
+            <input type="checkbox" name="hobby" value="등산">등산s
+            <input type="checkbox" name="hobby" value="음악감상">음악감상
+            <input type="checkbox" name="hobby" value="독서">독서
+            <input type="checkbox" name="hobby" value="음주/가무">음주/가무
+            <input type="checkbox" name="hobby" value="거짓말">거짓말하기
+        </label><br>
+        <label for="color"></label>퍼스널 컬러:
+        <input type="color" name="personalcolor" id="color"><br>
+
+        <label for="today">오늘</label>
+        <input type="date" name="today" id="today"><br>
+
+        <label for="now">현제</label>
+        <input type="datetime-local" name="now" id="now"><br>
+
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="range">진척도: </label>
+        <input type="range" name="range" id="range" min="0" max="100" step="30"><br>
+        <br><br>
+        <label for="attach">첨부파일</label>
+        <input type="file" name="attach" id="attach"><br>
+
+
+        <input type="hidden" name="reqpage" value="1"> <!-- 사용자의 입력이 없이 서버로 전송될 값-->
+        <input type="submit" name="submit" id="회원가입">
+        <input type="reset" name="reset" id="초기화">
+    </form>
+    <h2>폼테그 연습(2)-select, textarea(여러줄 글상자)</h2>
+    <form action="inform">
+        <label for="address">지역: </label>
+        <select name="address" id="address">
+            <option value="강남구">강남구</option>
+            <option value="강남구">강서구</option>
+            <option value="강남구">강동구</option>
+            <option value="강남구">강북구</option>
+            <option value="강남구">서초구</option>
+        </select><br>
+
+        <label for="school">출신학교</label>
+        <select name="school" id="school">
+            <optgroup label="초등하교">
+                <option value="서울초등학교">서울초등학교</option>
+                <option value="동작초등학교" selected>동작초등학교</option>
+                <option value="사당초등학교">사당초등학교</option>
+                <option value="강남초등학교">강남초등학교</option>
+                <option value="강북초등학교">강북초등학교</option>
+            </optgroup>
+        </select><br>
+
+        <label for="data">자세한 평가: </label>
+        <textarea name="data" id="data" cols="100" rows="10"></textarea><br><br>
+
+        <!--모양은 버튼, 기능이 존재-->
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+
+        <!--모양은 버튼, 껍데기만 존재(js랑 연동)-->
+        <input type="button" value="버튼">
+        <button>이거슨 버튼</button>
+
+
+
+</body>
+
+</html>
+
+<!--폼태그란 ?
+사용자들로부터  정보를 입력받아 처리하기 위한 화면을 만ㄴ드는 태그들ㄹ
+홈태그의 root 태그는
+<form action="" method="" enctype="">
+
+    1) action : 사용자가 입력한 데이터를 최종적으로 전송했을 떄 처리할 서버 URL
+    2) method: 전송 방식
+        -GET: 생략가능(default), 상용자의 입력데이터가 쿼리스트링으로 전송
+                주솦표시줄에 노툴된다.
+                요청정보가 head(주소, 쿼리스트링) 부붐만 있다.
+        -POST: method값을 반드시 기재. 사용자의 입력데이터가 body으로 전송
+                request body부분에 쿼리스트림이 드러간다.
+                전송할 데이터가 크거나 직접노출이안되어야 하는 정보는 post를 사용
+        -PUT
+        -DELETE
+        -PATCH
+        
+    3) entype: 어떤 종류의 데이터가 전송되는지 전달할 때 사용
+                일반적인text만 전송할떄에는 생략 가능
+                첨부파일이 있을 떄에는 enctype="multipart/form-data"
+                생략할 경우 envtype="appication/x-www-form-url-encoded"
+
+                well, known port: 각 프로토콜마다 포트번호가 전해져 있음
+                http,  https, ftps, smtp, pop, dns,
+
+        도메인: 회사이름을 url화 시킨, 아파트이름
+        아이피(ip): 숫자로 된주소 256바이트 숫자로 된주소.
+        192.100.56.2 ==>
+        -->

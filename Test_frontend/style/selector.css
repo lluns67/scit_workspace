@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+p {
+    color: red;
+}
+
+body {
+    background-image: url("./images/bag.jpeg");
+}
+
+ul>li#listtime {
+    text-decoration: underline;
+}
+
+ul>li.box {
+    font-weight: bolder;
+}
+
+ul>li.item {
+    color: blueviolet;
+}
+
+ul>li.box {
+    font-weight: bolder;
+    font-size: 1.1em;
+
+}
+
+input[type="text"]:hover {
+    background-color: blueviolet;
+}
+
+p span {
+    color: white;
+    background-color: black;
+}
+
+pre {
+    font-family: "맑은 고딕", 'Times New Roman', Times, serif;
+}
+
+/* 특잇값: 1 + 1 + 100 = 102 */
+ul>li#listitem {
+    text-decoration: underline;
+}
+
+/* 특잇값: 1 + 1 + 10 = 12*/
+ul>li.item {
+    background-color: chartreuse;
+}
+
+ul>li.box {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+/* :(콜론)은 가상 선택자임 */
+input[type="password"]:hover {
+    background-color: bisque;
+}

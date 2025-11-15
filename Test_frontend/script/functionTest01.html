@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수</title>
+    <script>
+        // 문제-1 전달인자 1개를 받아서 그 전달인자를 3제곱해서 반환하는 함수를 작성하시오
+
+        let hana = function (a) {
+            return a ** 3;
+        }
+
+        let test = (a) => a ** 3;
+        console.log(test(5));
+
+    </script>
+</head>
+
+<body>
+    <h1><a href="../index.html"><img src="./images/8675026_ic_fluent_home_add_regular_icon.png" alt="홈으로"></a></h1>
+    <h2>자바스크립트 함수</h2>
+
+    <pre>
+        ※ 함수의 특징
+        ~ 함수는 데이터이며, 함수의 이름이 함수 자체이다.
+
+        * 함수의 종류
+        ~ 선언된 함수는 Hoisting 이 된다.
+        1) 선언 함수
+            function 함수명(매개변수){
+                기능 나열;
+                return 처리된 데이터;
+            }
+        
+        2) 표현 함수 ==> 식으로 동작하는 함수이므로 Hoisting되지 않음
+            const func = function(매개변수){
+                기능 나열
+                return 처리된 데이터;
+            }
+        3) 화살표 함수(arrow function)
+            - 다른 언어에서 람다함수라고도 한다.
+            - 특정 함수를 람다함수로 변경하려
+                function 함수명(매개변수){
+                기능 나열;
+                return 처리된 데이터;
+                }
+            (1) function 키워드를 지운다.
+            (2) 함수명을 지운다.
+            (3) 매개변수는 그대로 표현
+                (매개변수)
+            (4) )와 { 사이에 화살표 => 를 넣는다.
+                (매개변수) =>
+            (5) {} 내붕에 한줄밖에 없으면 {}도 없다.
+            (6) return 도 삭제
+                function 함수명(매개변수){
+                기능 나열;
+                return 처리된 데이터;
+                }
+                let test =(a, b) => a + b;
+        * 함수의 용어
+        1) 일급 함수 : 값으로 처리되는 함수 전달인자로 던지거나 함수를 반환할 수 있다.
+        setTimeout(, 밀리초);
+        setInterval(, 밀리초); // 밀리초 ==> 경과시간
+
+        2) 콜백함수(callback): 함수에 전달되어 사용되는 함수
+        setInterval(콜백함수, 밀리초);
+
+        3) 고차함수: 함수를 전달인자로 받거나 함수를 반환하는 함수.
+            setInterval() 자체가 ㅜ뭐닝ㅁㄴ
+    </pre>
+    <hr>
+    <div>
+        <input type="button" value="시작" id="start">
+        <input type="button" value="끝" id="stop">
+        <input type="button" value="지워" id="clear">
+    </div><br>
+    <h2 id="result"></h2>
+
+    <script>
+        let start = document.getElementById("start");
+        let stop = document.getElementById("stop");
+        let clear = document.getElementById("clear");
+
+        //h2
+        let result = document.getElementById("result");
+        let hello = ""
+        let startBtn = '';
+        let intervallist = [];
+        start.addEventListener('click', () => {
+            const startBtn = setInterval(() => {
+                hello += '😗🍠';
+                result.innerHTML = hello;
+            }, 1000);
+            intervallist.push(startBtn);
+        });
+        stop.addEventListener('click', () => {
+            // intervallist.forEach(id => clearInterval(id));
+            intervallist(id => intervallist.pop);
+            intervallist = [];
+        });
+        clear.addEventListener('click', () => {
+            hello = '';
+            result.innerHTML = '';
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
