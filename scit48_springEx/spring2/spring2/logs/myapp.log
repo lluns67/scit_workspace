@@ -1,526 +1,805 @@
-2025-11-14T14:12:31.584+09:00 ERROR 15840 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:14:53.272+09:00 ERROR 14128 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:15:06.094+09:00 ERROR 9088 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:15:22.555+09:00 ERROR 18128 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:15:32.561+09:00 ERROR 12176 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:16:24.899+09:00 ERROR 17700 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:16:36.100+09:00 ERROR 3716 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:17:15.158+09:00 ERROR 8100 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:32:20.175+09:00 ERROR 5820 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:57:36.356+09:00 ERROR 16576 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T14:58:45.323+09:00 ERROR 18848 --- [spring2] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'logging.level.net.datasa.spring2' to org.springframework.boot.logging.LogLevel:
-
-    Property: logging.level.net.datasa.spring2
-    Value: "dubug"
-    Origin: class path resource [application.properties] - 21:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.dubug)
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    DEBUG
-    ERROR
-    FATAL
-    INFO
-    OFF
-    TRACE
-    WARN
-
-2025-11-14T15:00:39.834+09:00  INFO 5828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 5828 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T15:00:39.837+09:00 DEBUG 5828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T15:00:39.837+09:00  INFO 5828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T15:00:39.892+09:00  INFO 5828 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T15:00:39.892+09:00  INFO 5828 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T15:00:40.784+09:00  INFO 5828 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T15:00:40.799+09:00  INFO 5828 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T15:00:40.799+09:00  INFO 5828 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T15:00:40.831+09:00  INFO 5828 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T15:00:40.831+09:00  INFO 5828 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 939 ms
-2025-11-14T15:00:41.237+09:00  INFO 5828 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T15:00:41.269+09:00  INFO 5828 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T15:00:41.286+09:00  INFO 5828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.912 seconds (process running for 2.228)
-2025-11-14T15:00:46.207+09:00  INFO 5828 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T15:00:46.207+09:00  INFO 5828 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T15:00:46.207+09:00  INFO 5828 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-11-14T15:00:47.682+09:00 ERROR 5828 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.LombokController  : error 출력
-2025-11-14T15:00:47.683+09:00  WARN 5828 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.LombokController  : warn 출력
-2025-11-14T15:00:47.683+09:00  INFO 5828 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.LombokController  : info 출력
-2025-11-14T15:00:47.683+09:00 DEBUG 5828 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.LombokController  : debug 출력
-2025-11-14T15:00:47.683+09:00 DEBUG 5828 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.LombokController  : 값 확인 로그: 문자열
-2025-11-14T15:01:09.821+09:00  INFO 12356 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 12356 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T15:01:09.821+09:00 DEBUG 12356 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T15:01:09.821+09:00  INFO 12356 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T15:01:09.905+09:00  INFO 12356 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T15:01:09.905+09:00  INFO 12356 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T15:01:10.906+09:00  INFO 12356 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T15:01:10.920+09:00  INFO 12356 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T15:01:10.920+09:00  INFO 12356 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T15:01:10.960+09:00  INFO 12356 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T15:01:10.962+09:00  INFO 12356 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
-2025-11-14T15:01:11.410+09:00  INFO 12356 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T15:01:11.450+09:00  INFO 12356 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T15:01:11.450+09:00  INFO 12356 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.082 seconds (process running for 2.469)
-2025-11-14T15:01:14.095+09:00  INFO 12356 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T15:01:14.096+09:00  INFO 12356 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T15:01:14.097+09:00  INFO 12356 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T15:25:55.889+09:00  INFO 20068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 20068 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T15:25:55.905+09:00 DEBUG 20068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T15:25:55.907+09:00  INFO 20068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T15:25:55.991+09:00  INFO 20068 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T15:25:55.993+09:00  INFO 20068 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T15:25:57.107+09:00  INFO 20068 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T15:25:57.122+09:00  INFO 20068 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T15:25:57.122+09:00  INFO 20068 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T15:25:57.173+09:00  INFO 20068 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T15:25:57.173+09:00  INFO 20068 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1180 ms
-2025-11-14T15:25:57.694+09:00  INFO 20068 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T15:25:57.757+09:00  INFO 20068 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T15:25:57.757+09:00  INFO 20068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.428 seconds (process running for 2.816)
-2025-11-14T15:26:01.044+09:00  INFO 20068 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T15:26:01.045+09:00  INFO 20068 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T15:26:01.046+09:00  INFO 20068 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T15:34:54.945+09:00  INFO 19568 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 19568 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T15:34:54.955+09:00 DEBUG 19568 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T15:34:54.955+09:00  INFO 19568 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T15:34:55.004+09:00  INFO 19568 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T15:34:55.004+09:00  INFO 19568 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T15:34:55.911+09:00  INFO 19568 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T15:34:55.927+09:00  INFO 19568 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T15:34:55.927+09:00  INFO 19568 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T15:34:55.962+09:00  INFO 19568 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T15:34:55.962+09:00  INFO 19568 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
-2025-11-14T15:34:56.394+09:00  INFO 19568 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T15:34:56.439+09:00  INFO 19568 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T15:34:56.444+09:00  INFO 19568 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.892 seconds (process running for 2.281)
-2025-11-14T15:35:01.215+09:00  INFO 19568 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T15:35:01.215+09:00  INFO 19568 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T15:35:01.217+09:00  INFO 19568 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-11-14T15:35:27.593+09:00 DEBUG 19568 --- [spring2] [http-nio-9992-exec-2] n.d.spring2.controller.ParamController   : 전달된 값: ID:dragon, PW:1234, 이름:드래곤, 전화:010-4884-2424, 통신:kt
-2025-11-14T15:36:03.952+09:00 DEBUG 19568 --- [spring2] [http-nio-9992-exec-7] n.d.spring2.controller.ParamController   : 전달된 값: ID:dragon, PW:1234, 이름:드래곤, 전화:010-4884-2424, 통신:lg
-2025-11-14T16:17:48.072+09:00  INFO 2900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 2900 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:17:48.073+09:00 DEBUG 2900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:17:48.074+09:00  INFO 2900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:17:48.143+09:00  INFO 2900 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:17:48.143+09:00  INFO 2900 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:17:49.137+09:00  INFO 2900 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:17:49.144+09:00  INFO 2900 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:17:49.144+09:00  INFO 2900 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:17:49.176+09:00  INFO 2900 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:17:49.176+09:00  INFO 2900 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
-2025-11-14T16:17:49.649+09:00  INFO 2900 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:17:49.697+09:00  INFO 2900 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:17:49.704+09:00  INFO 2900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.173 seconds (process running for 2.507)
-2025-11-14T16:17:53.658+09:00  INFO 2900 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:17:53.658+09:00  INFO 2900 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:17:53.659+09:00  INFO 2900 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T16:18:04.442+09:00 DEBUG 2900 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.ParamController   : 전달된 값: ID:dragon, PW:1234, 이름:드래곤, 전화:010-4884-2424, 통신:lg
-2025-11-14T16:18:28.486+09:00 DEBUG 2900 --- [spring2] [http-nio-9992-exec-6] n.d.spring2.controller.ParamController   : 전달된 값: ID:dragon, PW:1234, 이름:드래곤, 전화:010-4884-2424, 통신:kt
-2025-11-14T16:40:18.094+09:00  INFO 14604 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 14604 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:40:18.098+09:00 DEBUG 14604 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:40:18.099+09:00  INFO 14604 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:40:18.164+09:00  INFO 14604 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:40:18.164+09:00  INFO 14604 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:40:19.097+09:00  INFO 14604 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:40:19.108+09:00  INFO 14604 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:40:19.108+09:00  INFO 14604 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:40:19.141+09:00  INFO 14604 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:40:19.142+09:00  INFO 14604 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 977 ms
-2025-11-14T16:40:19.568+09:00  INFO 14604 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:40:19.618+09:00  INFO 14604 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:40:19.627+09:00  INFO 14604 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.953 seconds (process running for 2.277)
-2025-11-14T16:40:19.756+09:00  INFO 14604 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:40:19.756+09:00  INFO 14604 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:40:19.757+09:00  INFO 14604 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T16:40:29.853+09:00 DEBUG 14604 --- [spring2] [http-nio-9992-exec-6] n.d.spring2.controller.ParamController   : 전달된 객체: Person(id=dragon, name=드래곤, password=1234, phone=010-4884-2424, com=kt)
-2025-11-14T16:42:22.209+09:00 DEBUG 14604 --- [spring2] [http-nio-9992-exec-9] n.d.spring2.controller.ParamController   : 전달된 객체: Person(id=dragon, name=드래곤, password=1234, phone=010-4884-2424, com=kt)
-2025-11-14T16:49:04.124+09:00  INFO 18756 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 18756 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:49:04.140+09:00 DEBUG 18756 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:49:04.147+09:00  INFO 18756 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:49:04.217+09:00  INFO 18756 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:49:04.218+09:00  INFO 18756 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:49:05.137+09:00  INFO 18756 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:49:05.159+09:00  INFO 18756 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:49:05.159+09:00  INFO 18756 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:49:05.194+09:00  INFO 18756 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:49:05.194+09:00  INFO 18756 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
-2025-11-14T16:49:05.610+09:00  INFO 18756 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:49:05.642+09:00  INFO 18756 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:49:05.642+09:00  INFO 18756 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.998 seconds (process running for 2.4)
-2025-11-14T16:49:06.365+09:00  INFO 18756 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:49:06.365+09:00  INFO 18756 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:49:06.365+09:00  INFO 18756 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-11-14T16:49:08.962+09:00 DEBUG 18756 --- [spring2] [http-nio-9992-exec-2] n.d.spring2.controller.ParamController   : name: abc, age: 11
-2025-11-14T16:49:43.480+09:00  INFO 10664 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 10664 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:49:43.480+09:00 DEBUG 10664 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:49:43.480+09:00  INFO 10664 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:49:43.543+09:00  INFO 10664 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:49:43.543+09:00  INFO 10664 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:49:44.397+09:00  INFO 10664 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:49:44.410+09:00  INFO 10664 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:49:44.410+09:00  INFO 10664 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:49:44.439+09:00  INFO 10664 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:49:44.439+09:00  INFO 10664 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
-2025-11-14T16:49:44.842+09:00  INFO 10664 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:49:44.879+09:00  INFO 10664 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:49:44.890+09:00  INFO 10664 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.819 seconds (process running for 2.131)
-2025-11-14T16:49:48.894+09:00  INFO 10664 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:49:48.894+09:00  INFO 10664 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:49:48.895+09:00  INFO 10664 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T16:49:48.931+09:00 DEBUG 10664 --- [spring2] [http-nio-9992-exec-1] n.d.spring2.controller.ParamController   : name: abc, age: 11
-2025-11-14T16:50:07.609+09:00  INFO 5364 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 5364 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:50:07.611+09:00 DEBUG 5364 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:50:07.611+09:00  INFO 5364 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:50:07.670+09:00  INFO 5364 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:50:07.670+09:00  INFO 5364 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:50:08.634+09:00  INFO 5364 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:50:08.646+09:00  INFO 5364 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:50:08.646+09:00  INFO 5364 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:50:08.675+09:00  INFO 5364 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:50:08.675+09:00  INFO 5364 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
-2025-11-14T16:50:09.096+09:00  INFO 5364 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:50:09.140+09:00  INFO 5364 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:50:09.150+09:00  INFO 5364 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.924 seconds (process running for 2.299)
-2025-11-14T16:50:10.324+09:00  INFO 5364 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:50:10.324+09:00  INFO 5364 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:50:10.325+09:00  INFO 5364 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T16:50:10.368+09:00  WARN 5364 --- [spring2] [http-nio-9992-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'age': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "-32--31"]
-2025-11-14T16:50:31.821+09:00  INFO 7628 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 7628 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:50:31.830+09:00 DEBUG 7628 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:50:31.830+09:00  INFO 7628 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:50:31.878+09:00  INFO 7628 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:50:31.878+09:00  INFO 7628 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:50:32.850+09:00  INFO 7628 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:50:32.865+09:00  INFO 7628 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:50:32.865+09:00  INFO 7628 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:50:32.897+09:00  INFO 7628 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:50:32.897+09:00  INFO 7628 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1019 ms
-2025-11-14T16:50:33.372+09:00  INFO 7628 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:50:33.421+09:00  INFO 7628 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:50:33.430+09:00  INFO 7628 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.998 seconds (process running for 2.345)
-2025-11-14T16:50:39.676+09:00  INFO 7628 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:50:39.678+09:00  INFO 7628 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:50:39.679+09:00  INFO 7628 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-14T16:50:39.774+09:00  WARN 7628 --- [spring2] [http-nio-9992-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'age': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "-32--31"]
-2025-11-14T16:50:42.496+09:00  WARN 7628 --- [spring2] [http-nio-9992-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'age': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "-32--31"]
-2025-11-14T16:50:45.122+09:00 DEBUG 7628 --- [spring2] [http-nio-9992-exec-6] n.d.spring2.controller.ParamController   : name: abc, age: 111
-2025-11-14T16:51:59.873+09:00  INFO 19076 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 19076 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T16:51:59.890+09:00 DEBUG 19076 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T16:51:59.890+09:00  INFO 19076 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T16:51:59.950+09:00  INFO 19076 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T16:51:59.950+09:00  INFO 19076 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T16:52:00.889+09:00  INFO 19076 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T16:52:00.905+09:00  INFO 19076 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T16:52:00.905+09:00  INFO 19076 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T16:52:00.937+09:00  INFO 19076 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T16:52:00.937+09:00  INFO 19076 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 987 ms
-2025-11-14T16:52:01.366+09:00  INFO 19076 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T16:52:01.408+09:00  INFO 19076 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T16:52:01.415+09:00  INFO 19076 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.952 seconds (process running for 2.247)
-2025-11-14T16:52:04.340+09:00  INFO 19076 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T16:52:04.341+09:00  INFO 19076 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T16:52:04.341+09:00  INFO 19076 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-11-14T16:52:05.431+09:00 DEBUG 19076 --- [spring2] [http-nio-9992-exec-2] n.d.spring2.controller.ParamController   : name: 기본값, age: 0
-2025-11-14T16:52:52.207+09:00 DEBUG 19076 --- [spring2] [http-nio-9992-exec-4] n.d.spring2.controller.ParamController   : name: abc, age: 111
-2025-11-14T16:53:05.175+09:00 DEBUG 19076 --- [spring2] [http-nio-9992-exec-8] n.d.spring2.controller.ParamController   : name: abc, age: 111
-2025-11-14T17:09:33.462+09:00 DEBUG 19076 --- [spring2] [http-nio-9992-exec-4] n.d.spring2.controller.ParamController   : name: 기본값, age: 0
-2025-11-14T17:26:49.027+09:00  INFO 9480 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 9480 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T17:26:49.040+09:00 DEBUG 9480 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T17:26:49.040+09:00  INFO 9480 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T17:26:49.112+09:00  INFO 9480 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T17:26:49.112+09:00  INFO 9480 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T17:26:50.278+09:00  INFO 9480 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T17:26:50.297+09:00  INFO 9480 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T17:26:50.298+09:00  INFO 9480 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T17:26:50.347+09:00  INFO 9480 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T17:26:50.348+09:00  INFO 9480 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
-2025-11-14T17:26:50.856+09:00  INFO 9480 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T17:26:50.905+09:00  INFO 9480 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T17:26:50.935+09:00  INFO 9480 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.46 seconds (process running for 2.879)
-2025-11-14T17:26:51.084+09:00  INFO 9480 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T17:26:51.084+09:00  INFO 9480 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T17:26:51.087+09:00  INFO 9480 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-11-14T17:28:03.095+09:00  INFO 16252 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 16252 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
-2025-11-14T17:28:03.095+09:00 DEBUG 16252 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-14T17:28:03.095+09:00  INFO 16252 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
-2025-11-14T17:28:03.159+09:00  INFO 16252 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-14T17:28:03.159+09:00  INFO 16252 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-14T17:28:04.166+09:00  INFO 16252 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-11-14T17:28:04.168+09:00  INFO 16252 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-14T17:28:04.179+09:00  INFO 16252 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-14T17:28:04.205+09:00  INFO 16252 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-14T17:28:04.205+09:00  INFO 16252 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
-2025-11-14T17:28:04.618+09:00  INFO 16252 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-14T17:28:04.654+09:00  INFO 16252 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
-2025-11-14T17:28:04.667+09:00  INFO 16252 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.0 seconds (process running for 2.356)
-2025-11-14T17:28:06.729+09:00  INFO 16252 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-14T17:28:06.729+09:00  INFO 16252 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-14T17:28:06.730+09:00  INFO 16252 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T14:38:45.229+09:00  INFO 8320 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 8320 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T14:38:45.245+09:00 DEBUG 8320 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T14:38:45.245+09:00  INFO 8320 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T14:38:45.323+09:00  INFO 8320 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T14:38:45.323+09:00  INFO 8320 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T14:38:46.227+09:00  INFO 8320 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T14:38:46.243+09:00  INFO 8320 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T14:38:46.243+09:00  INFO 8320 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T14:38:46.275+09:00  INFO 8320 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T14:38:46.275+09:00  INFO 8320 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 952 ms
+2025-11-17T14:38:46.694+09:00  INFO 8320 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T14:38:46.737+09:00  INFO 8320 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T14:38:46.753+09:00  INFO 8320 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.952 seconds (process running for 2.323)
+2025-11-17T14:38:54.801+09:00  INFO 8320 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T14:38:54.802+09:00  INFO 8320 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T14:38:54.804+09:00  INFO 8320 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T14:39:13.800+09:00 DEBUG 8320 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T14:42:14.756+09:00 DEBUG 8320 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T14:42:25.848+09:00 DEBUG 8320 --- [spring2] [http-nio-9992-exec-2] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T14:50:20.232+09:00  INFO 20964 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 20964 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T14:50:20.232+09:00 DEBUG 20964 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T14:50:20.232+09:00  INFO 20964 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T14:50:20.305+09:00  INFO 20964 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T14:50:20.305+09:00  INFO 20964 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T14:50:21.166+09:00  INFO 20964 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T14:50:21.182+09:00  INFO 20964 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T14:50:21.182+09:00  INFO 20964 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T14:50:21.214+09:00  INFO 20964 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T14:50:21.214+09:00  INFO 20964 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+2025-11-17T14:50:21.612+09:00  INFO 20964 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T14:50:21.659+09:00  INFO 20964 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T14:50:21.659+09:00  INFO 20964 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.922 seconds (process running for 2.328)
+2025-11-17T14:50:27.648+09:00  INFO 20964 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T14:50:27.648+09:00  INFO 20964 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T14:50:27.649+09:00  INFO 20964 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T14:50:52.994+09:00 DEBUG 20964 --- [spring2] [http-nio-9992-exec-9] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T14:51:13.040+09:00 DEBUG 20964 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T14:53:23.222+09:00  INFO 2000 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 2000 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T14:53:23.222+09:00 DEBUG 2000 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T14:53:23.222+09:00  INFO 2000 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T14:53:23.301+09:00  INFO 2000 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T14:53:23.301+09:00  INFO 2000 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T14:53:24.281+09:00  INFO 2000 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T14:53:24.304+09:00  INFO 2000 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T14:53:24.304+09:00  INFO 2000 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T14:53:24.331+09:00  INFO 2000 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T14:53:24.331+09:00  INFO 2000 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1030 ms
+2025-11-17T14:53:24.798+09:00  INFO 2000 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T14:53:24.833+09:00  INFO 2000 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T14:53:24.847+09:00  INFO 2000 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.089 seconds (process running for 2.409)
+2025-11-17T14:53:28.635+09:00  INFO 2000 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T14:53:28.636+09:00  INFO 2000 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T14:53:28.636+09:00  INFO 2000 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T14:56:45.274+09:00 DEBUG 2000 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:09:56.630+09:00  INFO 17040 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 17040 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:09:56.632+09:00 DEBUG 17040 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:09:56.632+09:00  INFO 17040 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:09:56.709+09:00  INFO 17040 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:09:56.709+09:00  INFO 17040 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:09:57.618+09:00  INFO 17040 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:09:57.623+09:00  INFO 17040 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:09:57.623+09:00  INFO 17040 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:09:57.656+09:00  INFO 17040 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:09:57.656+09:00  INFO 17040 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 947 ms
+2025-11-17T15:09:58.080+09:00  INFO 17040 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:09:58.113+09:00  INFO 17040 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:09:58.127+09:00  INFO 17040 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.965 seconds (process running for 2.284)
+2025-11-17T15:10:02.384+09:00  INFO 17040 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:10:02.384+09:00  INFO 17040 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:10:02.385+09:00  INFO 17040 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T15:11:57.856+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T15:12:17.800+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-10] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T15:12:25.834+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T15:17:27.409+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:17:31.378+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:17:34.826+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:17:42.114+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-2] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T15:17:51.140+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 세션 값: 홍길동
+2025-11-17T15:20:23.442+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:20:52.964+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:24:47.158+09:00 DEBUG 17040 --- [spring2] [http-nio-9992-exec-10] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:31:52.328+09:00  INFO 17124 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 17124 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:31:52.332+09:00 DEBUG 17124 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:31:52.332+09:00  INFO 17124 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:31:52.400+09:00  INFO 17124 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:31:52.400+09:00  INFO 17124 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:31:53.398+09:00  INFO 17124 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:31:53.414+09:00  INFO 17124 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:31:53.414+09:00  INFO 17124 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:31:53.446+09:00  INFO 17124 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:31:53.446+09:00  INFO 17124 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+2025-11-17T15:31:53.873+09:00  INFO 17124 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:31:53.934+09:00  INFO 17124 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:31:53.934+09:00  INFO 17124 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.026 seconds (process running for 2.359)
+2025-11-17T15:31:54.923+09:00  INFO 17124 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:31:54.924+09:00  INFO 17124 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:31:54.924+09:00  INFO 17124 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T15:32:10.297+09:00 DEBUG 17124 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:dragon, pw:1234
+2025-11-17T15:32:10.297+09:00 DEBUG 17124 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 로그인 실패...
+2025-11-17T15:32:35.049+09:00 DEBUG 17124 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:32:35.051+09:00 DEBUG 17124 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:33:06.054+09:00  INFO 12452 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 12452 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:33:06.054+09:00 DEBUG 12452 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:33:06.054+09:00  INFO 12452 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:33:06.107+09:00  INFO 12452 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:33:06.107+09:00  INFO 12452 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:33:07.043+09:00  INFO 12452 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:33:07.059+09:00  INFO 12452 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:33:07.059+09:00  INFO 12452 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:33:07.091+09:00  INFO 12452 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:33:07.091+09:00  INFO 12452 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2025-11-17T15:33:07.523+09:00  INFO 12452 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:33:07.563+09:00  INFO 12452 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:33:07.582+09:00  INFO 12452 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.958 seconds (process running for 2.247)
+2025-11-17T15:33:14.617+09:00  INFO 12452 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:33:14.618+09:00  INFO 12452 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:33:14.621+09:00  INFO 12452 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T15:33:17.942+09:00 DEBUG 12452 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:33:17.942+09:00 DEBUG 12452 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:33:23.749+09:00 DEBUG 12452 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : 세션 값: null
+2025-11-17T15:35:51.437+09:00  INFO 14172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 14172 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:35:51.441+09:00 DEBUG 14172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:35:51.441+09:00  INFO 14172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:35:51.509+09:00  INFO 14172 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:35:51.509+09:00  INFO 14172 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:35:52.445+09:00  INFO 14172 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:35:52.461+09:00  INFO 14172 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:35:52.461+09:00  INFO 14172 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:35:52.498+09:00  INFO 14172 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:35:52.498+09:00  INFO 14172 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 980 ms
+2025-11-17T15:35:52.893+09:00  INFO 14172 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:35:52.940+09:00  INFO 14172 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:35:52.952+09:00  INFO 14172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.941 seconds (process running for 2.302)
+2025-11-17T15:35:56.771+09:00  INFO 14172 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:35:56.771+09:00  INFO 14172 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:35:56.773+09:00  INFO 14172 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-17T15:35:58.226+09:00 DEBUG 14172 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:35:58.228+09:00 DEBUG 14172 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:36:12.159+09:00 DEBUG 14172 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:36:12.161+09:00 DEBUG 14172 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:41:31.543+09:00  INFO 4080 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 4080 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:41:31.543+09:00 DEBUG 4080 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:41:31.543+09:00  INFO 4080 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:41:31.630+09:00  INFO 4080 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:41:31.630+09:00  INFO 4080 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:41:32.745+09:00  INFO 4080 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:41:32.772+09:00  INFO 4080 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:41:32.772+09:00  INFO 4080 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:41:32.811+09:00  INFO 4080 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:41:32.811+09:00  INFO 4080 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1179 ms
+2025-11-17T15:41:33.292+09:00  INFO 4080 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:41:33.347+09:00  INFO 4080 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:41:33.362+09:00  INFO 4080 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.351 seconds (process running for 3.038)
+2025-11-17T15:41:52.533+09:00  INFO 4080 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:41:52.533+09:00  INFO 4080 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:41:52.533+09:00  INFO 4080 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T15:42:00.952+09:00 DEBUG 4080 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:42:00.954+09:00 DEBUG 4080 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:59:22.592+09:00  INFO 10380 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 10380 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T15:59:22.596+09:00 DEBUG 10380 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T15:59:22.598+09:00  INFO 10380 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T15:59:22.680+09:00  INFO 10380 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T15:59:22.681+09:00  INFO 10380 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T15:59:23.732+09:00  INFO 10380 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T15:59:23.748+09:00  INFO 10380 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T15:59:23.748+09:00  INFO 10380 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T15:59:23.780+09:00  INFO 10380 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T15:59:23.780+09:00  INFO 10380 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2025-11-17T15:59:24.227+09:00  INFO 10380 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T15:59:24.259+09:00  INFO 10380 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T15:59:24.275+09:00  INFO 10380 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.185 seconds (process running for 2.479)
+2025-11-17T15:59:24.595+09:00  INFO 10380 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T15:59:24.595+09:00  INFO 10380 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T15:59:24.595+09:00  INFO 10380 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T15:59:25.836+09:00 DEBUG 10380 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T15:59:25.837+09:00 DEBUG 10380 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T15:59:27.422+09:00 ERROR 10380 --- [spring2] [http-nio-9992-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T15:59:42.995+09:00 ERROR 10380 --- [spring2] [http-nio-9992-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:04:38.630+09:00  INFO 5932 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 5932 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:04:38.630+09:00 DEBUG 5932 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:04:38.630+09:00  INFO 5932 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:04:38.690+09:00  INFO 5932 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:04:38.690+09:00  INFO 5932 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:04:39.718+09:00  INFO 5932 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:04:39.728+09:00  INFO 5932 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:04:39.728+09:00  INFO 5932 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:04:39.761+09:00  INFO 5932 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:04:39.761+09:00  INFO 5932 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1071 ms
+2025-11-17T16:04:40.180+09:00  INFO 5932 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:04:40.229+09:00  INFO 5932 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:04:40.248+09:00  INFO 5932 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.018 seconds (process running for 2.305)
+2025-11-17T16:04:40.554+09:00  INFO 5932 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:04:40.554+09:00  INFO 5932 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:04:40.555+09:00  INFO 5932 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T16:04:45.480+09:00 DEBUG 5932 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:04:45.480+09:00 DEBUG 5932 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:04:48.225+09:00 ERROR 5932 --- [spring2] [http-nio-9992-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:05:36.146+09:00  INFO 4216 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 4216 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:05:36.158+09:00 DEBUG 4216 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:05:36.161+09:00  INFO 4216 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:05:36.227+09:00  INFO 4216 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:05:36.227+09:00  INFO 4216 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:05:37.176+09:00  INFO 4216 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:05:37.191+09:00  INFO 4216 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:05:37.191+09:00  INFO 4216 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:05:37.223+09:00  INFO 4216 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:05:37.223+09:00  INFO 4216 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 996 ms
+2025-11-17T16:05:37.666+09:00  INFO 4216 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:05:37.718+09:00  INFO 4216 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:05:37.724+09:00  INFO 4216 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.994 seconds (process running for 2.284)
+2025-11-17T16:05:37.972+09:00  INFO 4216 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:05:37.972+09:00  INFO 4216 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:05:37.973+09:00  INFO 4216 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T16:05:40.460+09:00 ERROR 4216 --- [spring2] [http-nio-9992-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:05:44.826+09:00 DEBUG 4216 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:05:44.832+09:00 DEBUG 4216 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:05:45.845+09:00 ERROR 4216 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:07:06.022+09:00  INFO 17424 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 17424 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:07:06.022+09:00 DEBUG 17424 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:07:06.022+09:00  INFO 17424 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:07:06.091+09:00  INFO 17424 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:07:06.091+09:00  INFO 17424 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:07:06.992+09:00  INFO 17424 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:07:07.004+09:00  INFO 17424 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:07:07.004+09:00  INFO 17424 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:07:07.036+09:00  INFO 17424 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:07:07.036+09:00  INFO 17424 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 945 ms
+2025-11-17T16:07:07.448+09:00  INFO 17424 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:07:07.482+09:00  INFO 17424 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:07:07.497+09:00  INFO 17424 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.903 seconds (process running for 2.194)
+2025-11-17T16:07:11.851+09:00  INFO 17424 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:07:11.852+09:00  INFO 17424 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:07:11.852+09:00  INFO 17424 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:07:11.889+09:00 ERROR 17424 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:07:16.600+09:00 DEBUG 17424 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:07:16.605+09:00 DEBUG 17424 --- [spring2] [http-nio-9992-exec-7] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:07:17.676+09:00 ERROR 17424 --- [spring2] [http-nio-9992-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at net.datasa.spring2.controller.SessionController.loginTest(SessionController.java:81) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-17T16:13:36.145+09:00  INFO 10060 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 10060 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:13:36.153+09:00 DEBUG 10060 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:13:36.154+09:00  INFO 10060 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:13:36.235+09:00  INFO 10060 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:13:36.235+09:00  INFO 10060 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:13:37.118+09:00  INFO 10060 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:13:37.118+09:00  INFO 10060 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:13:37.118+09:00  INFO 10060 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:13:37.165+09:00  INFO 10060 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:13:37.166+09:00  INFO 10060 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-11-17T16:13:37.561+09:00  INFO 10060 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:13:37.592+09:00  INFO 10060 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:13:37.610+09:00  INFO 10060 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.073 seconds (process running for 2.516)
+2025-11-17T16:13:38.095+09:00  INFO 10060 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:13:38.096+09:00  INFO 10060 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:13:38.096+09:00  INFO 10060 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:13:42.628+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:13:42.632+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:13:47.763+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:13:47.764+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:13:50.317+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-10] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:13:50.317+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-10] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:13:55.554+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:13:55.554+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-6] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:14:29.951+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-2] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:14:29.952+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-2] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:14:32.550+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:14:32.551+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-8] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:14:35.535+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:14:35.535+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:14:38.072+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:14:38.073+09:00 DEBUG 10060 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:15:41.642+09:00  INFO 15832 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 15832 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:15:41.657+09:00 DEBUG 15832 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:15:41.657+09:00  INFO 15832 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:15:41.722+09:00  INFO 15832 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:15:41.722+09:00  INFO 15832 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:15:42.642+09:00  INFO 15832 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:15:42.660+09:00  INFO 15832 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:15:42.660+09:00  INFO 15832 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:15:42.689+09:00  INFO 15832 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:15:42.689+09:00  INFO 15832 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2025-11-17T16:15:43.087+09:00  INFO 15832 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:15:43.134+09:00  INFO 15832 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:15:43.134+09:00  INFO 15832 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.905 seconds (process running for 2.229)
+2025-11-17T16:15:48.342+09:00  INFO 15832 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:15:48.343+09:00  INFO 15832 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:15:48.344+09:00  INFO 15832 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T16:15:48.396+09:00 DEBUG 15832 --- [spring2] [http-nio-9992-exec-2] n.d.s.controller.SessionController       : 로그인페이지 이동
+2025-11-17T16:15:55.336+09:00 DEBUG 15832 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:15:55.340+09:00 DEBUG 15832 --- [spring2] [http-nio-9992-exec-4] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:16:02.471+09:00 DEBUG 15832 --- [spring2] [http-nio-9992-exec-10] n.d.s.controller.SessionController       : 로그인페이지 이동
+2025-11-17T16:16:33.894+09:00  INFO 11068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 11068 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:16:33.894+09:00 DEBUG 11068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:16:33.894+09:00  INFO 11068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:16:33.949+09:00  INFO 11068 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:16:33.949+09:00  INFO 11068 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:16:34.898+09:00  INFO 11068 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:16:34.898+09:00  INFO 11068 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:16:34.898+09:00  INFO 11068 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:16:34.930+09:00  INFO 11068 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:16:34.946+09:00  INFO 11068 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 981 ms
+2025-11-17T16:16:35.349+09:00  INFO 11068 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:16:35.389+09:00  INFO 11068 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:16:35.389+09:00  INFO 11068 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.942 seconds (process running for 2.276)
+2025-11-17T16:16:37.658+09:00  INFO 11068 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:16:37.658+09:00  INFO 11068 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:16:37.659+09:00  INFO 11068 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-17T16:16:37.700+09:00 DEBUG 11068 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:16:37.701+09:00 DEBUG 11068 --- [spring2] [http-nio-9992-exec-1] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:18:42.552+09:00  INFO 12940 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 12940 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:18:42.552+09:00 DEBUG 12940 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:18:42.552+09:00  INFO 12940 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:18:42.628+09:00  INFO 12940 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:18:42.628+09:00  INFO 12940 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:18:43.545+09:00  INFO 12940 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:18:43.556+09:00  INFO 12940 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:18:43.556+09:00  INFO 12940 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:18:43.592+09:00  INFO 12940 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:18:43.592+09:00  INFO 12940 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 964 ms
+2025-11-17T16:18:44.014+09:00  INFO 12940 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:18:44.061+09:00  INFO 12940 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:18:44.061+09:00  INFO 12940 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.948 seconds (process running for 2.299)
+2025-11-17T16:18:52.782+09:00  INFO 12940 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:18:52.782+09:00  INFO 12940 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:18:52.782+09:00  INFO 12940 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:18:52.830+09:00 DEBUG 12940 --- [spring2] [http-nio-9992-exec-3] n.d.s.controller.SessionController       : 로그인페이지 이동
+2025-11-17T16:18:54.187+09:00 DEBUG 12940 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : 사용자가 입력한 값= id:abc, pw:123
+2025-11-17T16:18:54.187+09:00 DEBUG 12940 --- [spring2] [http-nio-9992-exec-5] n.d.s.controller.SessionController       : abc님 로그인
+2025-11-17T16:33:06.898+09:00  INFO 10488 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 10488 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:33:06.902+09:00 DEBUG 10488 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:33:06.903+09:00  INFO 10488 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:33:07.010+09:00  INFO 10488 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:33:07.010+09:00  INFO 10488 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:33:08.229+09:00  INFO 10488 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:33:08.247+09:00  INFO 10488 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:33:08.255+09:00  INFO 10488 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:33:08.287+09:00  INFO 10488 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:33:08.287+09:00  INFO 10488 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2025-11-17T16:33:08.812+09:00  INFO 10488 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:33:08.869+09:00  INFO 10488 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:33:08.881+09:00  INFO 10488 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.616 seconds (process running for 3.054)
+2025-11-17T16:33:10.468+09:00  INFO 10488 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:33:10.468+09:00  INFO 10488 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:33:10.468+09:00  INFO 10488 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:39:55.305+09:00  INFO 18108 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 18108 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:39:55.321+09:00 DEBUG 18108 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:39:55.321+09:00  INFO 18108 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:39:55.380+09:00  INFO 18108 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:39:55.380+09:00  INFO 18108 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:39:56.260+09:00  INFO 18108 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:39:56.276+09:00  INFO 18108 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:39:56.276+09:00  INFO 18108 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:39:56.310+09:00  INFO 18108 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:39:56.310+09:00  INFO 18108 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-11-17T16:39:56.722+09:00  INFO 18108 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:39:56.751+09:00  INFO 18108 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:39:56.766+09:00  INFO 18108 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.899 seconds (process running for 2.218)
+2025-11-17T16:39:58.637+09:00  INFO 18108 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:39:58.637+09:00  INFO 18108 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:39:58.638+09:00  INFO 18108 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:42:56.921+09:00  INFO 7744 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 7744 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T16:42:56.924+09:00 DEBUG 7744 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T16:42:56.925+09:00  INFO 7744 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T16:42:56.978+09:00  INFO 7744 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T16:42:56.978+09:00  INFO 7744 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T16:42:57.900+09:00  INFO 7744 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T16:42:57.932+09:00  INFO 7744 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T16:42:57.932+09:00  INFO 7744 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T16:42:57.965+09:00  INFO 7744 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T16:42:57.966+09:00  INFO 7744 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 987 ms
+2025-11-17T16:42:58.378+09:00  INFO 7744 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T16:42:58.423+09:00  INFO 7744 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T16:42:58.427+09:00  INFO 7744 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.959 seconds (process running for 2.34)
+2025-11-17T16:43:02.806+09:00  INFO 7744 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T16:43:02.807+09:00  INFO 7744 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T16:43:02.807+09:00  INFO 7744 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T16:43:03.883+09:00 DEBUG 7744 --- [spring2] [http-nio-9992-exec-3] n.d.spring2.controller.CookieController  : 쿠키 str: 없음, num: 0
+2025-11-17T16:43:13.821+09:00 DEBUG 7744 --- [spring2] [http-nio-9992-exec-10] n.d.spring2.controller.CookieController  : 쿠키 str: abcde, num: 1233
+2025-11-17T17:30:44.027+09:00  INFO 11900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 11900 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T17:30:44.031+09:00 DEBUG 11900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T17:30:44.033+09:00  INFO 11900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T17:30:44.116+09:00  INFO 11900 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T17:30:44.116+09:00  INFO 11900 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T17:30:45.205+09:00  INFO 11900 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T17:30:45.223+09:00  INFO 11900 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T17:30:45.223+09:00  INFO 11900 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T17:30:45.269+09:00  INFO 11900 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T17:30:45.269+09:00  INFO 11900 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1153 ms
+2025-11-17T17:30:45.791+09:00  INFO 11900 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T17:30:45.838+09:00  INFO 11900 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T17:30:45.848+09:00  INFO 11900 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.39 seconds (process running for 2.764)
+2025-11-17T17:30:59.146+09:00  INFO 11900 --- [spring2] [http-nio-9992-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T17:30:59.148+09:00  INFO 11900 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T17:30:59.148+09:00  INFO 11900 --- [spring2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T17:47:13.283+09:00  INFO 7980 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 7980 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T17:47:13.283+09:00 DEBUG 7980 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T17:47:13.283+09:00  INFO 7980 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T17:47:13.347+09:00  INFO 7980 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T17:47:13.347+09:00  INFO 7980 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T17:47:14.245+09:00  INFO 7980 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T17:47:14.261+09:00  INFO 7980 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T17:47:14.261+09:00  INFO 7980 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T17:47:14.277+09:00  INFO 7980 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T17:47:14.292+09:00  INFO 7980 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-11-17T17:47:14.689+09:00  INFO 7980 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T17:47:14.722+09:00  INFO 7980 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T17:47:14.740+09:00  INFO 7980 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 1.881 seconds (process running for 2.195)
+2025-11-17T17:47:29.180+09:00  INFO 7980 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T17:47:29.180+09:00  INFO 7980 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T17:47:29.180+09:00  INFO 7980 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T17:50:42.607+09:00  INFO 12172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 12172 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T17:50:42.608+09:00 DEBUG 12172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T17:50:42.612+09:00  INFO 12172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T17:50:42.708+09:00  INFO 12172 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T17:50:42.708+09:00  INFO 12172 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T17:50:43.809+09:00  INFO 12172 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T17:50:43.836+09:00  INFO 12172 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T17:50:43.836+09:00  INFO 12172 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T17:50:43.889+09:00  INFO 12172 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T17:50:43.889+09:00  INFO 12172 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2025-11-17T17:50:44.396+09:00  INFO 12172 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T17:50:44.445+09:00  INFO 12172 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T17:50:44.445+09:00  INFO 12172 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.417 seconds (process running for 2.84)
+2025-11-17T17:50:52.896+09:00  INFO 12172 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T17:50:52.896+09:00  INFO 12172 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T17:50:52.896+09:00  INFO 12172 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T17:54:16.440+09:00  INFO 8828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Starting Spring2Application using Java 21.0.6 with PID 8828 (C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2\build\classes\java\main started by user in C:\downloadfiles\workspace48\scit48_springEx\spring2\spring2)
+2025-11-17T17:54:16.444+09:00 DEBUG 8828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-17T17:54:16.444+09:00  INFO 8828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T17:54:16.547+09:00  INFO 8828 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-17T17:54:16.547+09:00  INFO 8828 --- [spring2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-17T17:54:17.575+09:00  INFO 8828 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-11-17T17:54:17.591+09:00  INFO 8828 --- [spring2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-17T17:54:17.591+09:00  INFO 8828 --- [spring2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17T17:54:17.623+09:00  INFO 8828 --- [spring2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-17T17:54:17.623+09:00  INFO 8828 --- [spring2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1075 ms
+2025-11-17T17:54:18.079+09:00  INFO 8828 --- [spring2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-17T17:54:18.115+09:00  INFO 8828 --- [spring2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/'
+2025-11-17T17:54:18.125+09:00  INFO 8828 --- [spring2] [restartedMain] net.datasa.spring2.Spring2Application    : Started Spring2Application in 2.161 seconds (process running for 2.62)
+2025-11-17T17:54:18.644+09:00  INFO 8828 --- [spring2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17T17:54:18.644+09:00  INFO 8828 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T17:54:18.645+09:00  INFO 8828 --- [spring2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-17T17:54:24.425+09:00 DEBUG 8828 --- [spring2] [http-nio-9992-exec-1] n.d.spring2.controller.CookieController  : 쿠키 str: abcde, num: 1233
