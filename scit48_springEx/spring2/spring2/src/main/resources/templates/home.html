@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -104,7 +104,10 @@
         <li>예제
             <ul>
                 <li><a href="ex/calc1">계산기</a></li>
-                <li><a href="ex/info">주민번호</a></li>
+                <li><a href="ex/info">개인정보입력</a></li>
+                <li><a th:href="@{ex/count}">방문횟수 카운트</a></li>
+                <li><a th:href="@{ex/darkmode}">다크</a></li>
+                <li><a th:href="@{ex/temp}">문의하기</a></li>
             </ul>
         </li>
     </ol>

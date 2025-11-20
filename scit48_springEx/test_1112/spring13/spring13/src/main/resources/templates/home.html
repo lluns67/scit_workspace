@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -58,8 +58,26 @@
             <ul>
                 <li><a href="ex/calc1">계산기</a></li>
                 <li><a href="ex/info">주민번호</a></li>
+                <li><a th:href="@{ex/darkmode}">다크</a></li>
+                <li><a th:href="@{ex/temp}">문의하기</a></li>
             </ul>
         </li>
     </ul>
 </body>
 </html>
+window.onload = function(){
+// 저장된 값 불러오기
+document.querySelector("#name").value
+= sessionStorage.getItem("name");
+document.querySelector("#message").value
+= sessionStorage.getItem("message");
+
+// 입력할 떄마다 저장
+document.querySelector("#name").addEventListener("input",function(){
+let value = document.querySelector('#name').value;
+sessionStorage.setItem("name", value);
+});
+document.querySelector("#message").addEventListener("input", (e) => {
+sessionStorage.setItem("message", e.target.value);
+});
+}
