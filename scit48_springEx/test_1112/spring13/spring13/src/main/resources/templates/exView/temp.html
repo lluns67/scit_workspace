@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function(){
+            // 저장된 값 불어오기
+            document.querySelector("#name").value
+            = sessionStorage.getItem("name");
+            document.querySelector("#message").value
+            = sessionStorage.getItem("message");
+
+            document.querySelector("#name").addEventListener("input", (e) => {
+            sessionStorage.setItem("name", e.target.value);
+            });
+            document.querySelector("#message").addEventListener("input", function(){
+            let value = document.querySelector('#message').value;
+            sessionStorage.setItem("message", value);
+            });
+
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+        이름<input type="name" id="name" name="name">
+        메일<input type="message" id="message" name="message">
+
+</body>
+</html>

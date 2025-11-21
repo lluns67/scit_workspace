@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>[[${str}]]</p>
+<p>[[${num}]]</p>
+<p>[[${person}]]</p>
+
+<p th:text ="${tag}"></p>
+<p th:utext ="${tag}"></p>
+
+<ul th:object = "${person}">
+    <li th:text="*{id}">아이디
+    <li th:text="*{password}">비밀번호</li>
+</ul>
+<p th:text="${person.phone}"></p>
+
+<p th:text="|a b c    d|"></p>
+<pre th:text="|a b c    d|"></pre>
+<p th:text="${values[0]}"></p>
+
+
+<p th:text="${#strings.isEmpty(str)}"></p>
+<p th:text="${#strings.substring(str, 1, 2)}"></p>
+<p th:text="${values}"></p>
+<p th:text="${#strings.listSplit(values, ',')}"></p>
+<p th:text="${#strings.listSplit(values, ',')[0]}"></p>
+
+</body>
+</html>

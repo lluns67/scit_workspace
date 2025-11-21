@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    타임리프를 사용하기 위한 네임스페이스
+    - 네임스페이스는 이름 충돌을 방지하고 XML 문서 내에서 요소와 속성을
+    고요하게 식별할 수 잇도록 도와주는 xml 표준 속성,
+    - 이를 통해 문서 냉에서 th 접두사가 붙은 요소나 속성이
+    Thymeleaf의 템플릿 기능과 관련이 있음을 명확히 정의.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Thymeleaf 문법</h2>
+
+    <h3>* 값 출력</h3>
+    <p>[[${str}]]</p>
+    <p>[[${num}]]</p>
+    <p>[[${person}]]</p>
+    <p>[[${person.id}]]</p>
+    <p>[[${person.name}]]</p>
+    <p>[[${tag}]]</p>
+    <p>[[${url}]]</p>
+
+    <!--몬자로 화면에 그대로 출력  -->
+    <p th:text="${tag}"></p>
+    <!-- utext 해야 태그 됨 -->
+    <p th:utext="${tag}"></p>
+
+    <h3>* 연산자</h3>
+    <p>[[${num gt 0}]]</p>
+    <p th:text="${num}">1000</p>
+    <p th:text="${num + 1}">1000</p>
+    <p th:text="${num > 100}"></p>
+    <p th:text="${num gt 100}"></p>
+    <p th:text="${num ge 1 and num le 100}"></p>
+    <p th:text="${num % 300 == 0}"></p>
+
+    <h3>* 경로 생성과 하이퍼링크</h3>
+    <p><a href="https://naver.com"
+            th:href="'https://nate.com'">네이트로 가기</a></p>
+    <p><a href="${url}" th:href="${url}">구글로가기</a></p>
+    <p>절대경로 생성: [[@{/param/view1}]]</p>
+    <p><a th:href="@{/param/view1}">페이지 이동</a></p>
+    <p><img th:src="@{/imagefile/image1.png}"></p>
+    <p><img src="" th:src="@{/imagefile/image1.png}"></p>
+
+    <h3>* 객체 출력</h3>
+    <ul th:object="${person}">
+        <li th:text="*{id}">아이디</li>
+        <li th:text="*{name}">이름</li>
+        <li th:text="*{password}">비밀번호</li>
+    </ul>
+    <p th:text="${person.phone}">핸드폰</p>
+    <p th:text="${person.com}">통신사</p>
+
+    <h3>* 포메팅</h3>
+    <p th:text="${inum}"></p>
+    <p th:text="${dnum}"></p>
+    <p th:text="${dnum2}"></p>
+    <p th:text="${date}"></p>
+
+    <p th:text="${#numbers.formatInteger(inum, 10)}"></p>
+    <p th:text="${#numbers.formatInteger(inum, 3, 'COMMA')}"></p>
+    <p th:text="${#numbers.formatDecimal(dnum, 3, 'COMMA', 2, 'POINT')}"></p>
+    <p th:text="${#numbers.formatPercent(dnum, 0, 2)}"></p>
+    <p th:text="${#numbers.formatPercent(100000.555, 10, 1)}"></p>
+
+    <p th:text="${#dates.format(date, 'yyyy/MM/dd HH:mm')}"></p>
+    <p th:text="${#temporals.format(localDate, 'yyyy년 M월 d일')}"></p>
+    <p th:text="${#temporals.format(localDateTime, 'yyyy-MM-dd HH:MM:SS')}"></p>
+
+    <h3>* 문자열</h3>
+    <p th:text="${str}">문자열 출력</p>
+    <p th:text="${str + 'abcd'}"></p>
+    <p th:text="|${str} a b  c   d|"></p>
+    <pre th:text="|${str} a b  c    d|"></pre> <!--pre태그만 공백 다 인식 -->
+    <p th:text="str + 'abcd'"></p>
+
+    <p th:text="${str.equals('문자열')}"></p>
+    <p th:text="${not str.equals('문자열')}"></p>
+    <p th:text="${str == '문자열'}"></p>
+    <p th:text="${str == 'ABCD'}"></p>
+
+    <p th:text="${#strings.isEmpty(str)}"></p>
+    <p th:text="${#strings.substring(str, 1, 2)}"></p>
+    <p th:text="${values}"></p>
+    <p th:text="${#strings.listSplit(values, ',')}"></p>
+    <p th:text="${#strings.listSplit(values, ',')[0]}"></p>
+</body>
+</html>

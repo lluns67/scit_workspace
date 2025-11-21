@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function submitcheck(){
+            let a = document.getElementById("num1");
+            let b = document.getElementById("num2");
+            if(a.value == "" || isNaN(a.value)) {
+            alert("숫자만 입력 해주세요");
+            event.preventDefault()
+        };
+            if(b.value == "" || isNaN(b.value)) {
+            alert("숫자만 입력 해주세요");
+            event.preventDefault()
+        };
+    };
+
+    </script>
+</head>
+<body>
+    <div>
+        <form th:action ="@{/ex/calc1}" method="post">
+        <input type="text" id="num1" name="num1">
+        <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="num2" name="num2">
+        <input type="submit" value="계산" onclick="submitcheck()" >
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Thymeleaf 사용 2</h2>
+
+    <h3>list, map</h3>
+    <p th:text="${#lists.size(list)}"></p>
+    <p th:text="${#lists.contains(list, 'CSS')}"></p>
+    <p th:text="${#maps.size(map)}"></p>
+    <p th:text="${#maps.containsKey(map,'name')}"></p>
+
+    <h3>제어문</h3>
+    <div th:if="${str == '문자열'}">true인 경우 보이는 태그</div>
+    <div th:unless="${str == '문자열'}">false인 경우 보이는 태그</div>
+
+    <div th:switch="${num}">
+        <p th:case="1">하나</p>
+        <p th:case="2">둘</p>
+        <p th:case="3">셋</p>
+        <p th:case="*">그 밖의 숫자</p>
+    </div>
+
+    <h3>반복문</h3>
+    <table>
+        <tr th:each="item : ${list}">
+            <td style="border:1px solid black">
+                <span th:text="${item}"></span>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr th:each="item, i : ${list}"> <!--두번째 변수를 지어주면 ??? 알 수 있다 -->
+            <td style="border:1px solid black">
+                <span th:text="${item}"></span>
+                <span th:text="${i}"></span>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr th:each="item,i : ${list}">
+            <td style="border:1px solid black">
+                <span th:text="${item}"></span>
+                <span th:text="${i}"></span>
+            </td>
+        </tr>
+    </table>
+    <p>일반 문장으로 반봅</p>
+    <p th:each="s : ${list}" th:text="${s}"></p>
+
+    <p>태그 없이 반복</p>
+    <th:block th:each="s : ${list}" th:text="${s}"></th:block>
+
+    <p>맵의 모든 값을 출력</p>
+    <table>
+        <tr th:each="item : ${map}">
+            <td>
+                <span th:text="${item.key}"></span>
+            </td>
+            <td>
+                <span th:text="${item.value}"></span>
+            </td>
+        </tr>
+    </table>
+    <p>맵의 특정 값을 읽을 대</p>
+    <p th:text="${map.product}"></p>
+    <p th:text="${map.price}"></p>
+
+    <!--
+        index 현재 반복 인덱스(0부터 시작)
+        count 현재 반복 인덱스(1부터 시작)
+        size 총 요소 개수
+        current 현재 요소
+        even 현재 반복이 짝수인지 여부(boolean)
+        odd 현재 반복ㅇ이 홀수인지 여부
+        first 혀재 반복이 첫번째인지 여부
+        last 현재 반복이 마지막인지 여부
+    -->
+    <th:block th:each="n,  status: ${#numbers.sequence(1,5,11)}">
+        <p>숫자</p>
+        <span th:text="${status.index}"></span>
+        <span th:text="${status.count}"></span>
+        <span th:text="${status.size}"></span>
+        <span th:text="${status.even}"></span>
+        <span th:text="${status.odd}"></span>
+        <span th:text="${status.first}"></span>
+        <span th:text="${status.last}"></span>
+        <span th:text="${n}"></span>
+
+    </th:block>
+   </body>
+
+</html>
