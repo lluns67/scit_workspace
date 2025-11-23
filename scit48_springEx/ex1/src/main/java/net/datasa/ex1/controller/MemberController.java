@@ -1,10 +1,20 @@
 package net.datasa.ex1.controller;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
+import net.datasa.ex1.domain.Member;
 import net.datasa.ex1.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Slf4j
 @Controller
@@ -20,7 +30,19 @@ public class MemberController {
 	 *  - 회원가입 페이지 이동.
 	 *  - 회원가입 페이지로부터 입력받은 데이터 저장
 	 */
-	
+	@GetMapping("join")
+    public String join(){
+
+        return "/member/join";
+    }
+    @PostMapping("join")
+    public String join(Member member){
+        log.debug("입력값 {}",member);
+        if(ms.save(member)){
+            return "redirect:/";
+        }
+        return "/member/join";
+    }
 	
 	/**
 	 * 2. 로그인, 로그아웃 처리
@@ -33,13 +55,47 @@ public class MemberController {
 	 *    	  로그인 페이지로 이동
 	 *  - 로그아웃 처리(세션에 ID 삭제 후 메인페이지 이동)
 	 */
-	
-	
+    @GetMapping("login")
+	public String login(){
+
+
+        return "/member/loginForm";
+    }
+    @PostMapping("login")
+    public String login(String id, String pw, @RequestParam(required = false) String remember,
+                         HttpSession httpSession
+    , HttpServletResponse httpServletResponse){
+        log.debug("입력값 {}, {}, {}",id,pw, remember);
+        Cookie cookie = new Cookie("remeber", id);
+        cookie.setMaxAge(60*60*24);
+        cookie.setPath("/");
+        httpServletResponse.addCookie(cookie);
+        if(ms.loginCheck(id, pw)){
+
+            httpSession.setAttribute("loginId",id);
+
+            return "redirect:/";
+        }
+        return "/member/loginForm";
+    }
+    @GetMapping("logout")
+    public String logout(HttpSession httpSession){
+        httpSession.setAttribute("loginId",null);
+        return "redirect:/";
+    }
+
 	/**
 	 * 3. 회원목록 처리
 	 *  - 회원목록 가져오기
 	 *  - 회원목록 페이지로 이동(HTML 출력을 위해 Model 저장)
 	 */
-	
-	
+	@GetMapping("list")
+    public String list(Model model){
+
+         model.addAttribute("members",ms.selectAll() );
+
+        return "/member/list";
+    }
+
+
 }

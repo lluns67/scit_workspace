@@ -5,6 +5,15 @@
     <title>로그인</title>
     <link rel="stylesheet" th:href="@{/css/loginForm.css}">
     <link rel="stylesheet" th:href="@{/css/header.css}">
+    <script>
+        window.onload = function(){
+            if(document.cookie("remember"){
+                document.querySelector("#remeber").checked=true;
+
+                document.querySelector("#id").value = document.cookie("remember").value;
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -14,12 +23,12 @@
     <div class="container">
         <h1>로그인</h1>
 
-        <form th:action="" method="">
+        <form th:action="@{/member/login}" method="post">
             <label for="id">ID</label>
-            <input type="text" id="id" required>
+            <input type="text" id="id" name="id" required>
             <label for="pw">PW</label>
-            <input type="password" id="pw" required>
-            <label><input type="checkbox">ID기억하기</label>
+            <input type="password" id="pw" name="pw" required>
+            <label><input type="checkbox" name="remember" >ID기억하기</label>
             <input type="submit" value="로그인">
         </form>
     </div>

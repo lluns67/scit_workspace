@@ -16,20 +16,25 @@
         <h1>회원가입</h1>
 
         <!-- 전송할 FormData의 요청경로 및 method방식 지정 -->
-        <form th:action="" method="">
+        <form th:action="@{/member/join}" th:method="post">
             <label for="id">아이디</label>
-            <input type="text" id="id">
+            <input type="text" id="id" name="id">
+
             <label for="pw1">비밀번호</label>
-            <input type="password" id="pw1">
+            <input type="password" id="pw1" name="pw">
+
             <label for="pw2">비밀번호 확인</label>
-            <input type="password" id="pw2">
+            <input type="password" id="pw2" name="passwordConfirm">
+
             <label for="name">이름</label>
-            <input type="text" id="name">
+            <input type="text" id="name" name="name">
+
             <label for="phone">핸드폰</label>
-            <input type="tel" id="phone">
+            <input type="tel" id="phone" name="phone">
 
             <input type="submit" value="가입">
         </form>
+
     </div>
 
 </body>

@@ -14,10 +14,10 @@
     <h1>회원목록</h1>
 
     <!-- 서버로부터 가져온 회원목록이 비어있는 경우 출력할 태그 -->
-    <p class="no-member" th:if="">회원이 없습니다.</p>
+    <p class="no-member" th:if="${#lists.isEmpty(members)}">회원이 없습니다.</p>
 
     <!-- 서버로부터 가져온 회원목록이 있는 경우 출력할 태그 -->
-    <table th:if="">
+    <table th:if="${!#lists.isEmpty(members)}">
         <tr>
             <th>아이디</th>
             <th>비밀번호</th>
@@ -25,11 +25,11 @@
             <th>전화번호</th>
         </tr>
         <!-- 서버로부터 가져온 회원목록으로부터 회원정보를 반복출력 -->
-        <tr th:each="">
-            <td th:text="">id</td>
-            <td th:text="">pw</td>
-            <td th:text="">name</td>
-            <td th:text="">phone</td>
+        <tr th:each="member : ${members}">
+            <td th:text="${member.id}">id</td>
+            <td th:text="${member.pw}">pw</td>
+            <td th:text="${member.name}">name</td>
+            <td th:text="${member.phone}">phone</td>
         </tr>
     </table>
 

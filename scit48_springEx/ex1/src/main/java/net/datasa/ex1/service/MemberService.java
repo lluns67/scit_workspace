@@ -18,7 +18,12 @@ public class MemberService {
 	public boolean save(Member member) {
 		
 		// 회원목록에 저장되지 않는 ID만 회원가입처리
-		
+        for (int i = 0; i < memberList.size(); i++) {
+            if(memberList.get(i).getId().equals(member.getId())){
+                return false;
+            }
+        }
+        memberList.add(member);
 		return true;
 	}
 	
@@ -26,7 +31,13 @@ public class MemberService {
 	public boolean loginCheck(String id, String pw) {
 		
 		// 회원목록에 저장된 ID, PW의 일치여부 체크
-		
+        for (int i = 0; i < memberList.size(); i++) {
+            if(memberList.get(i).getId().equals(id)){
+                if(memberList.get(i).getPw().equals(pw)){
+                    return true;
+                }
+            }
+        }
 		return false;
 	}
 	
