@@ -1,6 +1,7 @@
 package net.datasa.spring3.service;
 
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -8,6 +9,9 @@ import net.datasa.spring3.domain.dto.PersonDTO;
 import net.datasa.spring3.domain.entity.PersonEntity;
 import net.datasa.spring3.repository.PersonRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -61,7 +65,8 @@ public class PersonService {
 			
 		 */
 		PersonEntity entity = pr.findById(id)
-				.orElse(null);
+				.orElseThrow(() ->
+						new EntityNotFoundException("회원이 존재하지 않습니다."));
 		
 		if (entity == null){
 			return null;
@@ -72,5 +77,40 @@ public class PersonService {
 		dto.setAge(entity.getAge());
 		
 		return dto;
+	}
+	/*
+		id에 일치하는 사람 1명 삭제
+		@param id
+	 */
+	public void delete(String id) {
+//		pr.deleteById(id);
+		
+		PersonEntity entity = pr.findById(id)
+			
+				.orElseThrow(
+				()  ->	new EntityNotFoundException("외원이 존재하지 않습니다")
+				);
+		
+		pr.delete(entity);
+	}
+	
+	/*
+		 모든 사용자 정보 조회
+		 @return 사용자 정보가 담긴 객체들의 리스트
+	 */
+	
+	public List<PersonDTO> selectAll() {
+		List<PersonEntity> entityList = pr.findAll();
+		List<PersonDTO> dtoList = new ArrayList<>();
+		log.debug(entityList.toString());
+		for(PersonEntity entity : entityList){
+			PersonDTO dto = new PersonDTO();
+			dto.setId(entity.getId());
+			dto.setName(entity.getName());
+			dto.setAge(entity.getAge());
+			dtoList.add(dto);
+		}
+		
+		return dtoList;
 	}
 }

@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
-
 @Slf4j
 @Controller
 @RequestMapping("member")
@@ -66,10 +64,18 @@ public class MemberController {
                          HttpSession httpSession
     , HttpServletResponse httpServletResponse){
         log.debug("입력값 {}, {}, {}",id,pw, remember);
-        Cookie cookie = new Cookie("remeber", id);
+		if(remember != null){
+        Cookie cookie = new Cookie("remember", id);
         cookie.setMaxAge(60*60*24);
         cookie.setPath("/");
-        httpServletResponse.addCookie(cookie);
+        httpServletResponse.addCookie(cookie);}
+		else {
+		Cookie cookie = new Cookie("remember", null);
+		cookie.setMaxAge(0); // 쿠키 삭제
+		cookie.setPath("/");
+		httpServletResponse.addCookie(cookie);
+	}
+
         if(ms.loginCheck(id, pw)){
 
             httpSession.setAttribute("loginId",id);

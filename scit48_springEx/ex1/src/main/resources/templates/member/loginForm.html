@@ -6,13 +6,21 @@
     <link rel="stylesheet" th:href="@{/css/loginForm.css}">
     <link rel="stylesheet" th:href="@{/css/header.css}">
     <script>
-        window.onload = function(){
-            if(document.cookie("remember"){
-                document.querySelector("#remeber").checked=true;
+        function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
 
-                document.querySelector("#id").value = document.cookie("remember").value;
-            }
+    window.onload = function(){
+          const rememberedId = getCookie("remember");
+          console.log("document.cookie()");
+        if (rememberedId) {
+            document.querySelector("input[name='remember']").checked = true;
+            document.querySelector("#id").value = rememberedId;
         }
+    }
+
     </script>
 </head>
 <body>
