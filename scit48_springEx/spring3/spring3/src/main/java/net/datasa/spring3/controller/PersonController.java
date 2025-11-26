@@ -171,14 +171,44 @@ public class PersonController {
 		try {
 			
 			ps.delete(id);
+			log.debug("[삭제성공]");
 		} catch (Exception e) {
 			result = false;
-			log.debug("삭제 실패", e.getMessage());
+			log.debug("[삭제 실패]", e.getMessage());
 		} finally {
 			model.addAttribute("id", id);
 			model.addAttribute("result", result);
 		}
 		
-		return "delete";
+		return "redirect:selectAll2";
 	}
+	@GetMapping("update")
+	public String update(@RequestParam("id") String id, Model model){
+		log.debug("수정할 아이디 {}", id);
+		
+		PersonDTO dto = null;
+		try {
+			dto = ps.select(id);
+			log.debug("[조회 성공] {}", dto);
+			model.addAttribute("person", dto);
+		} catch (Exception e){
+			model.addAttribute("id", id);
+			log.debug("[조회 실패] {}", e.getMessage());
+		}
+		
+		return "updateForm";
+	}
+	@PostMapping("update")
+	public String update(PersonDTO dto){
+		log.debug("수정할 데이터: {}", dto);
+		
+		try {
+			ps.update(dto);
+			log.debug("수정성공");
+		} catch (Exception e){
+			log.debug("수정 실패 {}", e.getMessage());
+		}
+		return "redirect:view?id=" + dto.getId();
+	}
+	
 }

@@ -16,6 +16,28 @@
             padding: 5px;
         }
     </style>
+    <script>
+        window.onload = function(){
+            let buttons = document.querySelectorAll('.delButton');
+            for (let i = 0; i < buttons.length; i++){
+                buttons[i].addEventListener("click", function(){
+                    if( !confirm("삭제 하시겠습니까?")) return;
+
+
+                    let id = this.dataset.id;
+                    location.href = `deleteUser?id=${id}`;
+});
+}
+            document.querySelectorAll('.updateButton').forEach (btn => {
+
+                btn.addEventListener("click", function(){
+                    let id  = this.dataset.id;
+                    location.href = `update?id=${id}`;
+
+            });
+     });
+        }
+    </script>
 </head>
 <body>
 
@@ -47,8 +69,10 @@
             <td><a th:href="@{/info/{id}(id=${person.id})}"
                    th:text="${person.id}"></a></td>
             <td><a th:href="@{deleteUser(id=${person.id})}">삭제</a></td>
-            <td></td>
-            <td></td>
+            <td><button type="button" class="delButton"
+                        th:data-id="${person.id}">삭제</button></td>
+            <td><button type="button" class="updateButton"
+                        th:data-id="${person.id}">수정</button></td>
         </tr>
     </table>
 </body>

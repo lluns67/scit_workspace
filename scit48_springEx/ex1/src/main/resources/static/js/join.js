@@ -49,8 +49,37 @@ window.onload = function() {
             event.preventDefault();
             return;
         }
-
-        // 모든 조건 통과 시 폼 제출 허용
+//        모든 조건 통과 시 폼 제출 허용
     });
 };
+
+//        window.onload = function(){
+//            document.querySelector("form").onsubmit =  function(e){
+//            const id = document.querySelector("#id").value.trim();
+//            const pw1 = document.querySelector("#pw1").value.trim();
+//            const pw2 = document.querySelector("#pw2").value.trim();
+//            const name = document.querySelector("#name").value.trim();
+//            const phone = document.querySelector("phone").value.trim();
+//
+//
+//            const idRegex =
+//                   /^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{3,14}$/;
+////            if(!idRegex.test(id)){}
+//
+//            if(id.length <3 || id.length > 14){
+//                alert("아이디는 3-14자 영문, 숫자, 틋문자를 포함할 수 있습니다.");
+//                e.preventDefault();
+//                return;
+//            }
+//            if( !pw1 || !pw2 || pw1 !== pw2){
+//                alert("비밀번호가 비어 있거나 일치하지 않습니다.")
+//                e.preventDefault();
+//                return;
+//            }
+//            if (name === '')
+//
+//            }
+//            }
+//        }
+}
 

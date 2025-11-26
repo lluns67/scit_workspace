@@ -113,4 +113,18 @@ public class PersonService {
 		
 		return dtoList;
 	}
+	/*
+		사용자 정보 수정
+	 */
+	public void update(PersonDTO dto) {
+		PersonEntity entity = pr.findById(dto.getId())
+				.orElseThrow(
+						()-> new EntityNotFoundException("회원이 존재하지 않습니다."));
+		log.debug("수정 전: {}",entity);
+		entity.setName(dto.getName());
+		entity.setAge(dto.getAge());
+		
+		log.debug("수정 후: {}", entity);
+		pr.save(entity);
+	}
 }
