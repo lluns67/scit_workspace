@@ -9,10 +9,7 @@ import net.datasa.ex1.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @Controller
@@ -54,26 +51,29 @@ public class MemberController {
 	 *  - 로그아웃 처리(세션에 ID 삭제 후 메인페이지 이동)
 	 */
     @GetMapping("login")
-	public String login(){
-
+	public String login(@CookieValue(value = "remember", required = false) String rememberId
+						,Model model){
+		model.addAttribute("remember", rememberId );
 
         return "/member/loginForm";
     }
     @PostMapping("login")
-    public String login(String id, String pw, @RequestParam(required = false) String remember,
-                         HttpSession httpSession
+    public String login(String id, String pw, @RequestParam(value = "remember", required = false) String remember
+                         ,HttpSession httpSession, Model model
     , HttpServletResponse httpServletResponse){
         log.debug("입력값 {}, {}, {}",id,pw, remember);
 		if(remember != null){
         Cookie cookie = new Cookie("remember", id);
         cookie.setMaxAge(60*60*24);
         cookie.setPath("/");
-        httpServletResponse.addCookie(cookie);}
-		else {
+        httpServletResponse.addCookie(cookie);
+		model.addAttribute("remember", id);
+		} else {
 		Cookie cookie = new Cookie("remember", null);
 		cookie.setMaxAge(0); // 쿠키 삭제
 		cookie.setPath("/");
 		httpServletResponse.addCookie(cookie);
+			model.addAttribute("remember", remember !=null ? id : null);
 	}
 
         if(ms.loginCheck(id, pw)){

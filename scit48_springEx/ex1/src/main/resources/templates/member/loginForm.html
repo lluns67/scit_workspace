@@ -6,22 +6,7 @@
     <link rel="stylesheet" th:href="@{/css/loginForm.css}">
     <link rel="stylesheet" th:href="@{/css/header.css}">
     <script>
-        window.onload = function() {
-          function getCookie(name) {
-            return document.cookie
-              .split('; ')
-              .find(row => row.startsWith(name + '='))
-              ?.split('=')[1];
-          }
 
-          const savedId = getCookie('remember');
-          if (savedId) {
-            document.querySelector('#id').value = decodeURIComponent(savedId);
-            document.querySelector("input[type=checkbox]").checked=true;
-          }
-
-
-        }
     </script>
 
 </head>
@@ -35,10 +20,10 @@
 
         <form th:action="@{/member/login}" method="post">
             <label for="id">ID</label>
-            <input type="text" id="id" name="id" required>
+            <input type="text" id="id" name="id" th:value="${remember}" required>
             <label for="pw">PW</label>
             <input type="password" id="pw" name="pw" required>
-            <label><input type="checkbox" name="remember" >ID기억하기</label>
+            <label><input type="checkbox" name="remember" th:checked="${remember != null}" >ID기억하기</label>
             <input type="submit" value="로그인">
         </form>
     </div>
