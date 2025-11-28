@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>번호</td>
+            <td>아이디</td>
+            <td>이름</td>
+            <td>나이</td>
+        </tr>
+        <tr th:if="${personList == null or personList.isEmpty()} ">
+            <td colspan="4">없습니다.</td>
+        </tr>
+        <tr th:each="person, status: ${personList}">
+            <td th:text="${status.count}"></td>
+            <td th:text="${person.id}"></td>
+            <td th:text="${person.name}"></td>
+            <td th:text="${person.age}"></td>
+        </tr>
+    </table>
+</body>
+</html>

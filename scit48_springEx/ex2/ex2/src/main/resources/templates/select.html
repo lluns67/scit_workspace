@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>학생정보</h2>
+    <table>
+        <tr>
+            <th>학번</th>
+            <td>[[${dto.sid}]]</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>[[${dto.name}]]</td>
+        </tr>
+        <tr>
+            <th>전공</th>
+            <td>[[${dto.major}]]</td>
+        </tr>
+        <tr>
+            <th>이해도</th>
+            <td>
+                JAVA:[[${dto.java}]]<br>
+                DB:[[${dto.db}]]<br>
+                WEB:[[${dto.web}]]
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

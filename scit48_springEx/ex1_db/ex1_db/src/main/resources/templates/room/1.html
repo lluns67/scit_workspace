@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script>
+        window.onload = function(){
+
+            let button = document.querySelector("#button");
+            let text = document.querySelector("#text");
+
+            button.addEventListener('click', function(){
+                if(text.value === "열려라참깨"){
+                    alert("통과");
+
+                    localStorage.setItem("room1", 1);
+                    location.href ="2";
+                }
+            })
+
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="text">
+        <input type="button" id="button" value="입력">
+    </form>
+</body>
+</html>

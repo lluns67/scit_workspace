@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>학생등록</h2>
+
+    <form action="join" method="post">
+        <table>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>전공</th>
+                <td><input type="text" name="major"></td>
+            </tr>
+            <tr>
+                <th>자바</th>
+                <td>
+                    <select name="java">
+                        <option value="상">상</option>
+                        <option value="중">중</option>
+                        <option value="하">하</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>데이타베이스</th>
+                <td>
+                    <select name="db">
+                        <option value="상">상</option>
+                        <option value="중">중</option>
+                        <option value="하">하</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>웹</th>
+                <td>
+                    <select name="web">
+                        <option value="상">상</option>
+                        <option value="중">중</option>
+                        <option value="하">하</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="등록"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

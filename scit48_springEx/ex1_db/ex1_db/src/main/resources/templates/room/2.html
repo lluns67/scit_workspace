@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>키보드 입력</h1>
+<p id="output"></p>
+
+<script>
+    let command = "";
+    let answer = "ArrowUpArrowDownArrowUpArrowDownArrowUpArrowUpArrowUpArrowUpArrowDown";
+    document.addEventListener("keydown", function(event) {
+    command += event.key;
+
+       if(command.includes(answer)){
+       alert("오메데토");
+       localStorage.setItem("room2", 2);
+        location.href ="3";
+       }
+
+    });
+</script>
+</body>
+</html>
