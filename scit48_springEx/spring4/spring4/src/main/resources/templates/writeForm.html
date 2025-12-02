@@ -3,28 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>writeForm.html</title>
+    <script>
+        window.onload = function(){
+            let h1 = document.querySelector('h1');
+            h1.addEventListener('click', function() {
+                location.href="/";
+            });
+            const msg  = document.querySelector('#message');
+            const cnt  = document.querySelector('#cnt');
+            msg.addEventListener('input', function(){
+                cnt.textContent = `(${msg.value.length} / 200)`;
+            });
+
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                let name  = document.querySelector('#name');
+                let password  = document.querySelector('#password');
+
+                if (name.value.length < 3){
+                    alert('이름은 3자 이상 입력해주세요.');
+                    name.focus();
+                    name.select();
+                    event.preventDefault();
+                    return;
+                }
+                if (password.value.length < 5){
+                    alert('비밀번호는 5자 이상 입력해주세요.');
+                    password.focus();
+                    password.select();
+                    event.preventDefault();
+                    return;
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <h1>[ 글쓰기 ]</h1>
     <form id="form" th:action="@{write}" method="post">
         이름<input type="text" name="name" id="name"><br>
         비밀번호<input type="password" name="password" id="password"><br>
-        내용<textarea name="message" id="message"></textarea><br>
+        내용<span id="cnt">(0 / 200 )</span>
+        <textarea name="message" id="message" maxlength="200"></textarea><br>
         <input type="submit" value="저장">
     </form>
-    <script>
-        let name = document.querySelector("#name");
-        let password = document.querySelector("#password");
-        document.querySelector("form").addEventListener('submit', (event)=> {
-            if(name.value.length < 3){
-                alert("3글자 이상 입력 !");
-                event.preventDefault();
-            }
-            if(password.value.length < 5){
-                alert("비밀번호 5자 이상");
-                event.preventDefault();
-            }
-        })
-    </script>
+<!--    <script>-->
+<!--        let name = document.querySelector("#name");-->
+<!--        let password = document.querySelector("#password");-->
+<!--        document.querySelector("form").addEventListener('submit', (event)=> {-->
+<!--            if(name.value.length < 3){-->
+<!--                alert("3글자 이상 입력 !");-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--            if(password.value.length < 5){-->
+<!--                alert("비밀번호 5자 이상");-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
 </body>
 </html>
