@@ -1,44 +1,433 @@
 <!DOCTYPE html>
-<html xmlns:th="thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>방명록</h1>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <a th:href="@{/write}">글쓰기</a>
-    <table th:each="gb : ${guestbooklist}">
-        <tr>
-            <th>번호:</th>
-            <td th:text="${gb.num}"></td>
-        </tr>
-        <tr>
-            <th>작성자 :</th>
-            <td th:text="${gb.name}"></td>
-        </tr>
-        <tr>
-            <th>작성일 : </th>
-            <td th:text="${#temporals.format(gb.inputdate, 'yy.MM.dd HH:mm:ss')}"></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <textarea rows="4" cols="30" th:text="${gb.message}" readonly></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <form th:action="@{delete}" method="post">
-                    <input type="hidden" name="num" th:value="${gb.num}">
-                    <label> 비밀번호</label>
-                    <input type="text" name="password" placeholder="비밀번호를 입력핫세요.." required>
-                    <input type="submit" value="삭제">
-                </form>
-                <hr>
-            </td>
-        </tr>
-    </table>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <style>
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: rgba(30, 41, 59, 0.6);
+        --card-border: rgba(255, 255, 255, 0.1);
+        --text-main: #f1f5f9;
+        --text-sub: #94a3b8;
+        --accent: #38bdf8;
+        --danger: #ef4444;
+        --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
 
-</body>
+      body {
+        background-color: var(--bg-color);
+        background-image: radial-gradient(
+            at 0% 0%,
+            rgba(56, 189, 248, 0.15) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 100% 100%,
+            rgba(139, 92, 246, 0.15) 0px,
+            transparent 50%
+          );
+        background-attachment: fixed;
+        font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+          Roboto, sans-serif;
+        margin: 0;
+        padding: 40px 20px;
+        color: var(--text-main);
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+
+      /* 레이아웃 컨테이너 */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* 헤더 스타일 */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 0 10px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        letter-spacing: -1px;
+      }
+
+      .btn-write {
+        background: var(--accent);
+        color: #0f172a;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+      }
+
+      .btn-write:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+        background: #7dd3fc;
+      }
+
+      /* 그리드 레이아웃 */
+      .guestbook-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+      }
+
+      /* 카드 스타일 */
+      .card {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 24px;
+        padding: 24px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: var(--glass-shadow);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* 카드 헤더 (작성자, 날짜) */
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      .author-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .author-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-main);
+      }
+
+      .post-date {
+        font-size: 0.8rem;
+        color: var(--text-sub);
+        margin-top: 4px;
+      }
+
+      .post-num {
+        font-size: 0.75rem;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 4px 8px;
+        border-radius: 8px;
+        color: var(--text-sub);
+      }
+
+      /* 본문 영역 */
+      .card-body {
+        margin-bottom: 20px;
+        flex-grow: 1;
+      }
+
+      .message-area {
+        width: 100%;
+        background: transparent;
+        border: none;
+        color: #cbd5e1;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        resize: none;
+        outline: none;
+        font-family: inherit;
+        padding: 0;
+        height: auto;
+        min-height: 80px;
+      }
+
+      /* 하단 액션바 */
+      .card-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border-top: 1px solid var(--card-border);
+        padding-top: 16px;
+      }
+
+      .action-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* 버튼 공통 */
+      button,
+      input[type="submit"] {
+        cursor: pointer;
+        border: none;
+        font-family: inherit;
+        transition: all 0.2s;
+      }
+
+      /* 추천 버튼 */
+      .btn-recommend {
+        background: rgba(56, 189, 248, 0.1);
+        color: var(--accent);
+        padding: 8px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .btn-recommend:hover {
+        background: rgba(56, 189, 248, 0.2);
+        transform: scale(1.05);
+      }
+
+      /* 수정 버튼 */
+      .btn-update {
+        background: transparent;
+        color: var(--text-sub);
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+      .btn-update:hover {
+        color: var(--text-main);
+        text-decoration: underline;
+      }
+
+      /* 삭제 폼 스타일 */
+      .delete-form {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .input-password {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--card-border);
+        color: var(--text-main);
+        padding: 6px 0;
+        font-size: 0.85rem;
+        width: 100%;
+        transition: border-color 0.3s;
+      }
+
+      .input-password:focus {
+        outline: none;
+        border-bottom-color: var(--danger);
+      }
+
+      .input-password::placeholder {
+        color: rgba(148, 163, 184, 0.5);
+      }
+
+      .btn-delete {
+        background: rgba(239, 68, 68, 0.1);
+        color: var(--danger);
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+
+      .btn-delete:hover {
+        background: var(--danger);
+        color: white;
+      }
+
+      /* 스크롤바 커스텀 */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-color);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Guestbook</h1>
+        <a th:href="@{/write}" class="btn-write">
+          <i class="fa-solid fa-pen"></i> 작성하기
+        </a>
+      </header>
+
+      <div class="guestbook-grid">
+        <div class="card" th:each="gb : ${guestbooklist}">
+          <div class="card-header">
+            <div class="author-info">
+              <span class="author-name" th:text="${gb.name}">작성자</span>
+              <span
+                class="post-date"
+                th:text="${#temporals.format(gb.inputdate, 'yyyy.MM.dd HH:mm')}"
+                >2024.01.01</span
+              >
+            </div>
+            <span class="post-num">#<span th:text="${gb.num}">1</span></span>
+          </div>
+
+          <div class="card-body">
+            <textarea
+              class="message-area"
+              rows="3"
+              th:text="${gb.message}"
+              readonly
+            ></textarea>
+          </div>
+
+          <div class="card-footer">
+            <div class="action-row">
+              <form th:action="@{recommend}" method="post">
+                <input type="hidden" name="num" th:value="${gb.num}" />
+                <button type="submit" class="btn-recommend">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <span th:text="${gb.recommendCnt}">0</span>
+                </button>
+              </form>
+
+              <form th:action="@{update}" method="get">
+                <input type="hidden" name="num" th:value="${gb.num}" />
+                <button type="submit" class="btn-update">수정</button>
+              </form>
+            </div>
+
+            <form th:action="@{delete}" method="post" class="delete-form">
+              <input type="hidden" name="num" th:value="${gb.num}" />
+              <input
+                type="password"
+                name="password"
+                class="input-password"
+                placeholder="삭제 비밀번호 입력"
+                required
+                autocomplete="off"
+              />
+              <input type="submit" value="삭제" class="btn-delete" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script th:inline="javascript">
+      window.onload = function(){
+          // 메시지 토스트 (기존 로직 유지)
+          const msg = [[${msg}]];
+          if(msg){
+              Swal.fire({
+                  toast: true,
+                  position: 'top-end', // 위치 조정
+                  icon: 'info',
+                  title: msg,
+                  showConfirmButton: false,
+                  timer: 2000,
+                  timerProgressBar: true,
+                  background: '#1e293b', // SweetAlert 다크 모드
+                  color: '#f1f5f9'
+              });
+          }
+
+          // 삭제 확인 모달
+          document.querySelectorAll('form[action$="delete"]').forEach(form => {
+              form.addEventListener('submit', function(e){
+                  e.preventDefault();
+                  Swal.fire({
+                      title: '삭제하시겠습니까?',
+                      text: '이 작업은 되돌릴 수 없습니다.',
+                      icon: 'warning',
+                      showCancelButton: true,
+                      confirmButtonColor: '#ef4444',
+                      cancelButtonColor: '#334155',
+                      confirmButtonText: '삭제',
+                      cancelButtonText: '취소',
+                      background: '#1e293b',
+                      color: '#f1f5f9'
+                  }).then((result) => {
+                      if (result.isConfirmed) {
+                          form.submit();
+                      }
+                  });
+              });
+          });
+
+          // 추천 및 수정 (기존 로직 유지, 스타일만 일부 적용)
+          document.querySelectorAll('form[action$="recommend"]').forEach(form => {
+              form.addEventListener('submit', function(e){
+                  e.preventDefault();
+                  // 좋아요 애니메이션 효과 추가 가능
+                  Swal.fire({
+                      toast: true,
+                      position: 'top-end',
+                      icon: 'success',
+                      title: '추천했습니다!',
+                      showConfirmButton: false,
+                      timer: 1000,
+                      background: '#1e293b',
+                      color: '#f1f5f9'
+                  });
+                  setTimeout(() => form.submit(), 800);
+              });
+          });
+
+          document.querySelectorAll('form[action$="update"] button').forEach(btn => {
+              btn.addEventListener('click', function(e){
+                  e.preventDefault();
+                  // 바로 이동 (불필요한 알림 제거하여 속도감 향상, 원하면 복구 가능)
+                  btn.form.submit();
+              });
+          });
+
+          // 3D Tilt Effect (더 부드럽게 개선)
+          document.querySelectorAll(".card").forEach(card => {
+              card.addEventListener("mousemove", e => {
+                  const r = card.getBoundingClientRect();
+                  // 회전 각도를 줄여서 더 고급스럽게 표현 (10 -> 5)
+                  const x = ((e.clientX - r.left) / r.width - 0.5) * 5;
+                  const y = ((e.clientY - r.top) / r.height - 0.5) * -5;
+                  card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) translateY(-5px)`;
+              });
+              card.addEventListener("mouseleave", () => {
+                  card.style.transform = "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
+              });
+          });
+      };
+    </script>
+  </body>
 </html>

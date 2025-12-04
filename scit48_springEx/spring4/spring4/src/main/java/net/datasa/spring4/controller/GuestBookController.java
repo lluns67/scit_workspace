@@ -1,5 +1,8 @@
 package net.datasa.spring4.controller;
 
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring4.domain.dto.GuestBookDTO;
@@ -7,8 +10,10 @@ import net.datasa.spring4.service.GuestBookService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -50,12 +55,67 @@ public class GuestBookController {
 		log.debug(" >> 글 목록: {}",dtoList);
 		return "list";
 	}
+	
+	/*
+		RedirectAttributes : redirect 후에도 임시로 저장될 데이터객체
+	 */
 	@PostMapping("delete")
-	public String delete(Integer num, String password){
-		log.debug("글번호, 비번 {} {}",num,password);
-		gs.delete(num, password);
-		
+	public String delete(Integer num, String password, RedirectAttributes rs){
+		log.debug("delete - num : {}, pw : {}",num,password);
+		try {
+			gs.delete(num, password);
+		} catch (Exception e){
+			log.debug("글 삭제 실패.. {}", e.getMessage());
+			rs.addFlashAttribute("msg", e.getMessage());
+		}
 		return "redirect:list";
 	}
-	
+	@GetMapping("update")
+	public String update(@RequestParam("num") Integer num, @RequestParam("password") String password
+						, RedirectAttributes rs,Model model){
+		log.debug("수정하기 글번호 {}, 비번 {}",num,password);
+		try {
+			gs.passwordCheck(num, password);
+			GuestBookDTO dto = gs.selectGuestbook(num);
+			
+			model.addAttribute("guestbook", dto);
+			log.debug("글 수정 폼으로 이동");
+		} catch (Exception e){
+			log.debug("글 수정 실패.. {}", e.getMessage());
+			rs.addFlashAttribute("msg", e.getMessage());
+			return "redirect:list";
+		}
+		return "updateForm";
+	}
+	@PostMapping("update")
+	public  String update(GuestBookDTO dto){
+		
+		log.debug("수정할 정보: {}", dto);
+		try {
+			gs.update(dto);
+			log.debug("글 수정 성공");
+		} catch (Exception e) {
+			log.debug("글 수정 실패.. {}", e.getMessage());
+		}
+		return "redirect:list";
+	}
+	@PostMapping("recommend")
+	public String recommend(
+			@RequestParam("num") Integer num,
+			HttpServletRequest request,
+			RedirectAttributes ra
+
+			
+	){
+		String clientIp = request.getRemoteAddr();
+		
+		try{
+			gs.recommend(num, clientIp);
+			ra.addFlashAttribute("msg", "추천되었습니다.");
+			
+		} catch (Exception e) {
+			ra.addFlashAttribute("msg", e.getMessage());
+		}
+		return "redirect:/list";
+	}
 }

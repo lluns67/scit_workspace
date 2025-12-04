@@ -6,6 +6,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring4.domain.dto.GuestBookDTO;
 import net.datasa.spring4.domain.entity.GuestBookEntity;
+import net.datasa.spring4.domain.entity.GuestBookRecommendEntity;
+import net.datasa.spring4.domain.entity.GuestBookRecommendKey;
+import net.datasa.spring4.repository.GuestBookRecommendRepository;
 import net.datasa.spring4.repository.GuestBookRepository;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -19,6 +22,7 @@ import java.util.*;
 public class GuestBookService {
 	
 	private final GuestBookRepository gr;
+	private final GuestBookRecommendRepository grr;
 	
 	public void test() {
 		
@@ -45,6 +49,7 @@ public class GuestBookService {
 				.name(dto.getName())
 				.password(dto.getPassword())
 				.message(dto.getMessage())
+				.recommendCnt(0)
 				.build();
 		
 		gr.save(entity);
@@ -86,6 +91,7 @@ public class GuestBookService {
 					.name(entity.getName())
 					.message(entity.getMessage())
 					.inputdate(entity.getInputdate())
+					.recommendCnt(entity.getRecommendCnt())
 					.build();
 			dtoList.add(dto);
 		}
@@ -97,10 +103,77 @@ public class GuestBookService {
 	public void delete(Integer num, String pw) {
 		
 		GuestBookEntity entity = gr.findById(num).orElseThrow(()->new EntityNotFoundException("없음"));
-		if(entity.getPassword().equals(pw)){
+		if(!entity.getPassword().equals(pw)){
+			throw new RuntimeException("비밀번호가 틀립니다.");
+		}
 			gr.deleteById(num);
+	}
+	
+//	public GuestBookDTO update(Integer num, String password) {
+//		GuestBookEntity entity = gr.findById(num).orElseThrow(()-> new EntityNotFoundException("없음"));
+//		if(!entity.getPassword().equals(password)){
+//			throw new RuntimeException("비밀번호가 틀립니다.");
+//		} else {
+//			GuestBookDTO dto = GuestBookDTO.builder()
+//					.num(entity.getNum())
+//					.name(entity.getName())
+//					.message(entity.getMessage())
+//					.inputdate(entity.getInputdate())
+//					.build();
+//			return dto;
+//		}
+		
+		
+//	}
+	
+	public void passwordCheck(Integer num, String password) {
+		GuestBookEntity entity = gr.findById(num)
+				.orElseThrow( ()-> new EntityNotFoundException(num + "번 글이 없습니다."));
+		if (!entity.getPassword().equals(password)){
+			throw new RuntimeException("비밀번호가 틀립니다.");
 		}
 	}
+	/*
+		게시글 정보 조회
+	 */
+	public GuestBookDTO selectGuestbook(Integer num) {
+		GuestBookEntity entity = gr.findById(num)
+				.orElseThrow( ()-> new EntityNotFoundException(num + "번 글이 없습니다."));
+		GuestBookDTO dto = GuestBookDTO.builder()
+				.num(entity.getNum())
+				.name(entity.getName())
+				.password(entity.getPassword())
+				.message(entity.getMessage())
+				.inputdate(entity.getInputdate()).build();
+		return dto;
+	}
+	
+	public void update(GuestBookDTO dto) {
+		GuestBookEntity entity = gr.findById(dto.getNum())
+				.orElseThrow(()->
+						new EntityNotFoundException(dto.getNum() + "번 글이 없습니다."));
+		
+		entity.setPassword(dto.getPassword());
+		entity.setMessage(dto.getMessage());
+	}
+	
+	public void recommend(Integer num, String ip) {
+		GuestBookRecommendKey key = new GuestBookRecommendKey(num, ip);
+		
+		boolean exists = grr.existsById(key);
+		if(exists){
+			throw new RuntimeException("이미 추천한 글입니다.");
+		}
+		GuestBookRecommendEntity recommend =
+				GuestBookRecommendEntity.builder()
+						.id(key).build();
+		grr.save(recommend);
+	GuestBookEntity guest = gr.findById(num).orElseThrow(
+			()->new RuntimeException("글을 찯을 수 없습니다."));
+		guest.increaserRecommend();
+	}
+	
+
 }
 
 record Person(String name, int age){}

@@ -47,4 +47,12 @@ public class GuestBookEntity {
 	@CreatedDate
 	@Column(name="inputdate",  updatable = false)
 	private LocalDateTime inputdate;
+	
+	//추천수 컬럼 추가
+	@Column (name="recommend_cnt", nullable = false)
+	private Integer recommendCnt = 0;
+	
+	public void increaserRecommend(){
+		this.recommendCnt++;
+	}
 }

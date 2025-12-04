@@ -18,4 +18,6 @@ public class GuestBookDTO {
 	String password;			//비밀번호
 	String message;				//게시글내용
 	LocalDateTime inputdate;	//작성시간
+	
+	Integer recommendCnt;		//추천수
 }

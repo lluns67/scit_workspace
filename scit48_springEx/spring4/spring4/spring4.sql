@@ -11,3 +11,13 @@ create table guestbook(
     inputdate   timestamp                   default current_timestamp
     
 );
+
+ALTER TABLE guestbook ADD recommend_cnt INT NOT NULL DEFAULT 0;
+
+CREATE TABLE guestbook_recommend (
+    guestbook_num   integer     NOT NULL REFERENCES guestbook(num),
+    ip              varchar(50) NOT NULL,
+    create_at       DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY key (guestbook_num, ip),
+    FOREIGN key (guestbook_num) references guestbook(num) on delete cascade
+);
