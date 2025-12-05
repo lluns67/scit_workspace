@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+</head>
+<body>
+        <h2>치킨 주문 시스템</h2>
+<div>
+    <button id="modal">modal 테스트</button>
+    <button id="order">주문하기</button>
+    <button id="list">주문현황</button>
+</div>
+    <script>
+        let modal = document.querySelector("#modal");
+        modal.addEventListener('click', ()=>{
+            window.location.href = "modaltest";
+        });
+        let order = document.querySelector("#order");
+        order.addEventListener('click', ()=>{
+            window.location.href = "order";
+        });
+        let list = document.querySelector("#list");
+        list.addEventListener('list', ()=>{
+            window.location.href = "list";
+        });
+    </script>
+</body>
+</html>

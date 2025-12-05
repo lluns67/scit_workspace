@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>방명록</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script th:inline="javascript">
+        window.onload = function(){
+            // 메시지 토스트
+            const msg = [[${msg}]];
+            if(msg){
+                Swal.fire({
+                    toast: true,
+                    position: 'top',
+                    icon: 'info',
+                    title: msg,
+                    showConfirmButton: false,
+                    timer: 1500,
+                    timerProgressBar: true
+                });
+            }
+
+            // 삭제 버튼 확인 모달
+            document.querySelectorAll('form[action$="delete"]').forEach(form => {
+                form.addEventListener('submit', function(e){
+                    e.preventDefault();
+                    Swal.fire({
+                        title: '정말 삭제하시겠습니까?',
+                        text: '삭제하면 되돌릴 수 없습니다!',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#d33',
+                        cancelButtonColor: '#3085d6',
+                        confirmButtonText: '네, 삭제합니다',
+                        cancelButtonText: '취소'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            form.submit();
+                        }
+                    });
+                });
+            });
+
+            // 추천 버튼 클릭 시 토스트
+            document.querySelectorAll('form[action$="recommend"]').forEach(form => {
+                form.addEventListener('submit', function(e){
+                    e.preventDefault();
+                    Swal.fire({
+                        toast: true,
+                        position: 'top-end',
+                        icon: 'success',
+                        title: '추천 완료!',
+                        showConfirmButton: false,
+                        timer: 1200
+                    });
+                    setTimeout(() => form.submit(), 800);
+                });
+            });
+
+            // 수정 버튼 클릭 시 안내
+            document.querySelectorAll('form[action$="update"] button').forEach(btn => {
+                btn.addEventListener('click', function(e){
+                    e.preventDefault();
+                    Swal.fire({
+                        title: '수정 페이지로 이동합니다',
+                        icon: 'info',
+                        timer: 1000,
+                        showConfirmButton: false
+                    }).then(() => {
+                        btn.form.submit();
+                    });
+                });
+            });
+
+            // 카드 hover 애니메이션
+            document.querySelectorAll(".card").forEach(card => {
+                card.addEventListener("mousemove", e => {
+                    const r = card.getBoundingClientRect();
+                    const x = ((e.clientX - r.left) / r.width - 0.5) * 10;
+                    const y = ((e.clientY - r.top) / r.height - 0.5) * -10;
+                    card.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+                });
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "";
+                });
+            });
+        };
+    </script>
+    <style>
+        body {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  font-family: "Pretendard", "Inter", sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #00f2fe, #6a11cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.guestbook {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.35);
+}
+
+.card button, .card input[type="submit"] {
+  background: linear-gradient(135deg, #00f2fe, #6a11cb);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card button:hover, .card input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.card textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+    </style>
+</head>
+<body>
+<h1>방명록</h1>
+<a th:href="@{/write}">글쓰기</a>
+
+<div class="guestbook" th:each="gb : ${guestbooklist}">
+    <div class="card">
+        <!-- 추천 버튼 -->
+        <form th:action="@{recommend}" method="post">
+            <input type="hidden" name="num" th:value="${gb.num}">
+            <button type="submit">
+                👍👍 <span th:text="${gb.recommendCnt}">0</span>
+            </button>
+        </form>
+
+        <p><strong>번호:</strong> <span th:text="${gb.num}"></span></p>
+        <p><strong>작성자:</strong> <span th:text="${gb.name}"></span></p>
+        <p><strong>작성일:</strong> <span th:text="${#temporals.format(gb.inputdate, 'yy.MM.dd HH:mm:ss')}"></span></p>
+
+        <textarea rows="4" cols="30" th:text="${gb.message}" readonly></textarea>
+
+        <!-- 삭제 폼 -->
+        <form th:action="@{delete}" method="post">
+            <input type="hidden" name="num" th:value="${gb.num}">
+            <label>비밀번호</label>
+            <input type="text" name="password" placeholder="비밀번호를 입력하세요.." required>
+            <input type="submit" value="삭제">
+        </form>
+
+        <!-- 수정 폼 -->
+        <form th:action="@{update}" method="get">
+            <input type="hidden" name="num" th:value="${gb.num}">
+            <button type="submit">수정</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

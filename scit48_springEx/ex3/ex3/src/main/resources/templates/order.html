@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>치킨주문</title>
+</head>
+<body>
+<div>
+    <h2>치킨주문하기</h2>
+    <form>
+        치킨종류:
+        <select name="chickentype" id="chickentype">
+            <optgroup label="chicken">
+                <option value="fried">후라이드 치킨(15000원)</option>
+                <option value="yangnyeom">양념 치킨 (17000원)</option>
+                <option value="onion">양파 치킨 (18000원)</option>
+                <option value="onionsource">어니언 치킨(19000원)</option>
+            </optgroup>
+        </select><br>
+        수량:
+        <input type="number" name="quantity"><br>
+        추가 메뉴:<br>
+        <input type="checkbox" id="potato" value="potato" class="extra_options">
+        <label for="potato">감자 튀김 (1500원)</label><br>
+        <input type="checkbox" id="mechuri" value="mechuri" class="extra_options">
+        <label for="mechuri">메추리알 (1500원)</label><br>
+        <input type="checkbox" id="sundae" value="sundae" class="extra_options">
+        <label for="sundae">순대 튀김 (1500원)</label><br>
+        배달 방식:<br>
+        <input type="radio" id="exp" value="exp" name="delivery_type">
+        <label for="exp">특급 배송 (+1500원)</label><br>
+        <input type="radio" id="nomal" value="nomal" name="delivery_type">
+        <label for="nomal">일반 배송 (+1000원)</label><br>
+        <button formaction="order" formmethod="post" id="button">주문하기</button>
+        <input type="hidden" name="chicken_price" value="0" id="chickenPrice">
+        <input type="hidden" name="delivery_price" value="0" id="deliveryPrice">
+        <input type="hidden" name="extra_total_price" value="0" id="extraTotalPrice">
+    </form>
+</div>
+<script>
+    // 치킨 가격 설정
+    let chi = document.querySelector("#chickentype");
+    chi.addEventListener("change", ()=> {
+        switch(chi.value){
+            case "fried": document.querySelector("#chicken_price").value = 15000; break;
+            case "yangnyeom": document.querySelector("#chicken_price").value = 17000; break;
+            case "onion": document.querySelector("#chicken_price").value = 18000; break;
+            case "onionsource": document.querySelector("#chicken_price").value = 19000; break;
+        }
+    });
+
+    // 추가 메뉴 가격 계산
+    let extras = document.querySelectorAll(".extra_options");
+    extras.forEach(option => {
+        option.addEventListener("change", ()=> {
+            let total = 0;
+            extras.forEach(opt => {
+                if(opt.checked){
+                    total += 1500; // 모든 추가 메뉴는 1500원
+                }
+            });
+            document.querySelector("#extra_total_price").value = total;
+        });
+    });
+
+    // 배송비 설정
+    let exp = document.querySelector("#exp");
+    exp.addEventListener("change", ()=> {
+        document.querySelector("#delivery_price").value = 1500;
+    });
+    let nomal = document.querySelector("#nomal");
+    nomal.addEventListener("change", ()=> {
+        document.querySelector("#delivery_price").value = 1000;
+    });
+</script>
+</body>
+</html>
