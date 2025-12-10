@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>joinForm.html</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <script>
+        window.onload = function(){
+            const joinForm = document.querySelector("#joinForm");
+            const openButton = document.querySelector("#openButton");
+            const memberId = document.querySelector("#memberId");
+
+            joinForm.addEventListener("submit", validation);
+
+            openButton.addEventListener("click", idWindowOpen);
+            memberId.addEventListener("click", idWindowOpen);
+            }
+
+
+            // 중복 확인 창 열기
+            function  idWindowOpen() {
+                const width = 600;
+                const height = 400;
+
+                //window.screenX : 현재 브라우저 창의 화면상 시작 X좌표
+                //window.outerWidth : 브라우저 전체 가로 길이
+                const left = window.screenX + (window.outerWidth / 2) - (width /2);
+                const top = window.screenY + (window.outHeight /2) - (height /2);
+
+
+                let w = window.open('idCheck', 'idWind', `width=${width}, height=$[height}, left = ${left}, top = ${top}`);
+
+                //팝업창에 데이터 전달
+                setTimeout(() => {
+                        w.document.querySelector("#test").textContent = "팝업창에 값 전달";
+                    },2000);
+            }
+
+
+
+        function validation(e) {
+            let id = document.querySelector("#memberId");
+            let pw = document.querySelector("#memberPassword");
+            let pw2 = document.querySelector("#memberPassword2");
+            let name = document.querySelector("#memberName");
+            let msgBox = document.querySelector("#msgBox");
+
+            msgBox.textContent = ""; // 이전 메시지 초기화
+
+            if(id.value.length < 3 || id.value.length > 10) {
+                msgBox.textContent = "아이디는 3~10자 사이로 입력해주세요.";
+                e.preventDefault();
+                return;
+            }
+            if (pw.value.length < 3 || pw.value.length > 10) {
+                msgBox.textContent = "비밀번호는 3~10자 사이로 입력해주세요.";
+                e.preventDefault();
+                return false;
+            }
+            if (pw.value !== pw2.value) {
+                msgBox.textContent = "비밀번호가 일치하지 않습니다.";
+                e.preventDefault();
+                return false;
+            }
+            if (name.value.trim() === ""){
+                msgBox.textContent = "이름을 입력해주세요.";
+                e.preventDefault();
+                return false;
+            }
+            msgBox.textContext = ""; // 초기화
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>[ 회원 가입 ]</h1>
+    </header>
+
+    <section>
+        <div id="msgBox" style="color: red;"></div>
+        <form id="joinForm" th:action="@{/member/join}" method="post">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td>
+                        <input type="text" name="memberId" id="memberId" maxlength="10" placeholder="ID중복확인 이용">
+                        <input type="button" id="openButton" value="ID중복확인">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" name="memberPassword" id="memberPassword" placeholder="비멀번호 입력">
+                        <br>
+                        <input type="password" id="memberPassword2" placeholder="비밀번호 다시 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>
+                    <input type="text" name="memberName" id = "memberName" placeholder= "이름 검색">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" name="email" id="email" placeholder="이메일 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td>
+                        <input type="text" name="phone" placeholder="전화번호 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td>
+                        <input type="text" name="address" placeholder="주소 입력" style="width: 300px;">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">가입</button>
+            <button type="reset">다시 쓰기</button>
+        </form>
+    </section>
+    <script>
+<!--        let submit = document.querySelector("button[type='submit']");-->
+<!--        submit.addEventListener('click', function(event) {-->
+<!--            let id =  document.getElementsByName('memberId')[0];-->
+<!--            if( id.value.length < 3 || id.value.length > 10){-->
+<!--                alert("3~10자 입력해주세요호호호");-->
+<!--                id.focus();-->
+<!--                id.select();-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--            let pw = document.querySelector("#memberPassword");-->
+<!--            let pw2 = document.querySelector("#memberPassword2");-->
+
+<!--            if( pw.value.length < 3 || pw.value.length > 10){-->
+<!--            alert("3~10자 입력해주세요호호호");-->
+<!--            pw.focus();-->
+<!--            pw.select();-->
+<!--            event.preventDefault();-->
+<!--            }-->
+<!--            if( pw.value != pw2.value){-->
+<!--                alert("비밀번호가 일치하지 않습니다. 🤣");-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--            let name = document.querySelector("#memberName");-->
+
+<!--            if( name.value.length < 1 ){-->
+<!--                alert("이름은 한글자 이상 입력하세요.👍");-->
+<!--                name.focus();-->
+<!--                name.select();-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--        })-->
+
+
+    </script>
+</body>
+</html>

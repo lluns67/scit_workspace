@@ -22,6 +22,7 @@ public class WebSecurityConfig {
             , "/css/**"             //CSS파일들
             , "/js/**"              //JavaSCript 파일들
             , "/member/join"        //회원가입
+			, "/member/joinForm"
             , "/member/idCheck"     //ID중복확인
             , "/member/info"        //개인정보 수정
             , "/member/test"        //임시

@@ -1,3 +1,4 @@
+자주 사용하는 앱에서 바로 AI를 사용해 보세요 … Gemini를 사용하여 초안을 생성하고 콘텐츠를 다듬고, Google의 차세대 AI가 지원되는 Gemini Pro를 이용하세요.
 @charset "UTF-8";
 
 header {
@@ -43,14 +44,14 @@ tr.hover {
 th {
 	width:100px;
 	height: 30px;
-	background-color: #cccccc;
+	background-color: beige;
 	font-weight: bold;
 	text-align: left;
 	padding-left: 10px;
 }
 td {
 	padding: 3px;
-	background-color: #eeeeee;
+	background-color: rgb(251, 251, 251);
 	text-align: left;
 }
 
@@ -86,6 +87,7 @@ pre {
 	width: 600px;
 	height: 50px;
 	text-align: center;
+	margin: 0 auto;
 }
 
 /* 리플 목록 출력 표 */
@@ -103,11 +105,11 @@ td.replyid {
 	font-weight: bold;
 }
 td.replytext {
-	width: 470px;
+	width: 500px;
 	border-style: none;
 }
 td.replydate {
-	width: 100px;
+	width: 70px;
 	border-style: none;
 	font-size: 10pt;
 	text-align: center;

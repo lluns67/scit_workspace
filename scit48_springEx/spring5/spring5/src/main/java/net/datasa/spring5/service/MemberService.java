@@ -4,6 +4,7 @@ package net.datasa.spring5.service;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import net.datasa.spring5.domain.dto.MemberDTO;
 import net.datasa.spring5.domain.entity.MemberEntity;
 import net.datasa.spring5.repository.MemberRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -37,5 +38,29 @@ public class MemberService {
 				.rolename("ROLE_USER")
 				.build();
 		mr.save(entity);
+	}
+	
+	public void join(MemberDTO dto) {
+		
+		MemberEntity entity = MemberEntity.builder()
+				.memberid(dto.getMemberId())
+				.memberPassword(passwordEncoder.encode(dto.getMemberPassword()))
+				.memberName(dto.getMemberName())
+				.email(dto.getEmail())
+				.phone(dto.getPhone())
+				.address(dto.getAddress())
+				.enabled(dto.getEnabled())
+				.rolename(dto.getRolename())
+				.build();
+		mr.save(entity);
+	}
+	
+	/**
+	 * 가입시 아이디 중복 확인
+	 * @param searchId
+	 * @return 해당 아이디로 가입 가능 여부
+	 */
+	public boolean idCheck(String searchId) {
+		return !mr.existsById(searchId);
 	}
 }
