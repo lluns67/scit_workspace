@@ -2,6 +2,7 @@ package net.datasa.spring5.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -14,6 +15,10 @@ import org.springframework.security.web.SecurityFilterChain;
 // Spring이 이 클래스를 설정 클래스로 인식하여 빈 등록 대상으로 만듬
 @Configuration										// 스프링 설정 클래스임을 명시
 @EnableWebSecurity  								// Spring Security 활성화
+
+@EnableMethodSecurity(prePostEnabled = true)		//"메서드 단위 보안" 기능을활성화 하는 Annotation
+													//	-@PreAuthorize 메시지 실행 "전"에 권한 검사
+													//	-@PostAuthorize 메서드 실행 "후"에 결과를 보고 권한 검사
 public class WebSecurityConfig {
     //로그인 없이 접근 가능 경로
     private static final String[] PUBLIC_URLS = {
@@ -21,6 +26,8 @@ public class WebSecurityConfig {
             , "/images/**"          //이미지 경로
             , "/css/**"             //CSS파일들
             , "/js/**"              //JavaSCript 파일들
+			, "/thymeleaf"
+			
             , "/member/join"        //회원가입
 			, "/member/joinForm"
             , "/member/idCheck"     //ID중복확인
@@ -42,6 +49,7 @@ public class WebSecurityConfig {
             .authorizeHttpRequests(author -> author
 				.requestMatchers(PUBLIC_URLS).permitAll()
 				.requestMatchers("/member/loginForm", "/member/login").permitAll()
+				.requestMatchers("/admin/**").hasRole("ADMIN")
 				.anyRequest().authenticated()           //그 외의 모든 요청은 인증 필요
             )
 			.formLogin(formLogin -> formLogin

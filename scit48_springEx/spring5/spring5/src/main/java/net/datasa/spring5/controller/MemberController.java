@@ -58,4 +58,13 @@ public class MemberController {
 		model.addAttribute("searchId", searchId);
 		return "/memberView/idCheck";
 	}
+	/**
+	 * 	로그인 폼으로 이동
+	 *
+	 * @return loginForm.html
+	 */
+	@GetMapping("loginForm")
+	public String loginForm(){
+		return "memberView/loginForm";
+	}
 }

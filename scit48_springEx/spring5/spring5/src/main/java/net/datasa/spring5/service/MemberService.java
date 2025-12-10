@@ -1,14 +1,20 @@
 package net.datasa.spring5.service;
 
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring5.domain.dto.MemberDTO;
 import net.datasa.spring5.domain.entity.MemberEntity;
 import net.datasa.spring5.repository.MemberRepository;
+import org.springframework.data.domain.Sort;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /*
 	회원정보 서비스
@@ -63,4 +69,43 @@ public class MemberService {
 	public boolean idCheck(String searchId) {
 		return !mr.existsById(searchId);
 	}
+	
+	/**
+	 * 회원목록을 조회
+	 * @return 회원목록
+	 */
+	public List<MemberDTO> selectAll() {
+		
+		Sort sort = Sort.by(
+					Sort.Order.asc("rolename"),
+					Sort.Order.desc("memberName")
+		);
+		List<MemberEntity> entityList = mr.findAll(sort);
+		List<MemberDTO>		dtoList	= new ArrayList<>();
+		
+		for (MemberEntity entity: entityList){
+			MemberDTO dto = MemberDTO.builder()
+					.memberId(entity.getMemberid())
+					.memberName(entity.getMemberName())
+					
+					.email(entity.getEmail())
+					.phone(entity.getPhone())
+					.address(entity.getAddress())
+					.enabled(entity.getEnabled())
+					.rolename(entity.getRolename()).build();
+			dtoList.add(dto);
+		}
+		return  dtoList;
+	}
+	
+	/**
+	 * 권한 변경
+	 * @param memberId
+	 */
+	@PreAuthorize("hasRole('ADMIN')")
+	public void update(String memberId) {
+		MemberEntity entity = mr.findById(memberId).orElseThrow(()-> new EntityNotFoundException("회원이 존재하지 않습니다."));
+	String updateRolename =entity.getRolename().equals("ROLE_USER") ? "ROLE_ADMIN" : "ROLE_USER";
+		entity.setRolename(updateRolename);
+	};
 }

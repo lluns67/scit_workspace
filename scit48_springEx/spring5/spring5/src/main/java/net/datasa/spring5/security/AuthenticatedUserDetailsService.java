@@ -40,7 +40,7 @@ public class AuthenticatedUserDetailsService implements UserDetailsService {
 				.build();
 		log.debug("인증 정보: {}", user);
 		
-		return null;
+		return user;
 	}
 	
 	// 회원 관련 Repository

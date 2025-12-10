@@ -60,11 +60,11 @@ public class AuthenticatedUser implements UserDetails {
 	
 	@Override
 	public String getPassword() {
-		return this.id;
+		return this.password;
 	}
 	
 	@Override
 	public String getUsername() {
-		return "";
+		return this.id;
 	}
 }
