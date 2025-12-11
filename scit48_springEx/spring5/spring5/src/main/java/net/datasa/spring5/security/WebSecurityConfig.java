@@ -27,7 +27,7 @@ public class WebSecurityConfig {
             , "/css/**"             //CSS파일들
             , "/js/**"              //JavaSCript 파일들
 			, "/thymeleaf"
-			
+			, "/member/inactive"
             , "/member/join"        //회원가입
 			, "/member/joinForm"
             , "/member/idCheck"     //ID중복확인
@@ -64,6 +64,7 @@ public class WebSecurityConfig {
 				.logoutUrl("/member/logout")            //로그아웃 처리 경로
 				.logoutSuccessUrl("/")                  //로그아웃 성공 시 이동할 경로
             );
+		
 
 		// 개발용 설정: CORS, CSRF 비활성화 (실제 서비스 시에는 활성화 필요)
         http

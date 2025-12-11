@@ -11,6 +11,13 @@
                 location.href = `update?id=${id}`;
             }
         }
+        function enabledToggle(id, enabled){
+            let result = enabled === "true" ? "비활성화" : "활성화";
+
+            if (confirm(`정말 ${result} 하시겠습니까?`)) {
+                location.href = `updateEnabled?id=${id}&enabled=${enabled}`;
+            }
+        }
     </script>
 </head>
 <body>
@@ -44,6 +51,8 @@
                 <td th:text="${m.enabled}"></td>
                 <td>
                     <input type="button" value="권한변경" th:attr="data-id=${m.memberId}" onclick="updateToggle(this.getAttribute('data-id'));">
+                    <input type="button" th:value="${m.enabled} ?  '비활성화' : '활성화'" th:data-id="${m.memberId}" th:data-enabled="${m.enabled}"
+                           onclick="enabledToggle(this.dataset.id, this.dataset.enabled)">
                 </td>
             </tr>
         </table>

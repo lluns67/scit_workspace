@@ -28,6 +28,9 @@ public class AuthenticatedUserDetailsService implements UserDetailsService {
 				.orElseThrow(()->{
 					return new UsernameNotFoundException(id + " : 없는 ID입니다.");
 				});
+		if(memberEntity.getEnabled() == false){
+		
+		}
 		log.debug("조회 정보:{}", memberEntity);
 		
 		//인증정보 생성

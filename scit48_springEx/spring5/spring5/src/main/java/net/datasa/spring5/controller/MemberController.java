@@ -65,6 +65,33 @@ public class MemberController {
 	 */
 	@GetMapping("loginForm")
 	public String loginForm(){
+		
 		return "memberView/loginForm";
 	}
+	/**
+	 *  휴먼계정 해제 페이지로 이동
+	 * @Return inactive.html
+	 */
+	@GetMapping("/inactive")
+	public String inactive(){
+		return "memberView/inactive";
+	}
+	
+	@PostMapping("/inactive")
+	public String inactive(
+			@RequestParam("memberId") String memberId,
+			@RequestParam("memberPassword") String memberPassword,
+			Model model){
+		try {
+			ms.inactive(memberId, memberPassword);
+			model.addAttribute("memberId", memberId);
+			model.addAttribute("msg", "휴먼 계정이 해제되었습니다. 다시 로그인해주세요");
+			return "memberView/loginForm";
+		} catch (Exception e){
+			model.addAttribute("msg", e.getMessage());
+			return "memberView/inactive";
+		}
+	}
+	
+	
 }

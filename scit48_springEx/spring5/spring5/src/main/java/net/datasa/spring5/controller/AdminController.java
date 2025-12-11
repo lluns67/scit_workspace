@@ -54,4 +54,15 @@ public class AdminController {
 		}
 		return "redirect:/admin/list";
 	}
+	@GetMapping("updateEnabled")
+	public String enabled(String id, boolean enabled){
+		log.debug("Enabled 받은 값 {}, {}",id, enabled);
+		try {
+			ms.enabled(id, !enabled);
+			log.debug("권한 변경 성공!");
+		} catch (Exception e){
+			log.debug("[예외 발생] {}", e.getMessage());
+		}
+		return "redirect:/admin/list";
+	}
 }

@@ -107,5 +107,28 @@ public class MemberService {
 		MemberEntity entity = mr.findById(memberId).orElseThrow(()-> new EntityNotFoundException("회원이 존재하지 않습니다."));
 	String updateRolename =entity.getRolename().equals("ROLE_USER") ? "ROLE_ADMIN" : "ROLE_USER";
 		entity.setRolename(updateRolename);
-	};
+	}
+	
+	@PreAuthorize("hasRole('ADMIN')")
+	public void enabled(String id, boolean enabled) {
+		MemberEntity entity = mr.findById(id).orElseThrow(()->new EntityNotFoundException("회원이 존재하지 않습니다."));
+		
+		entity.setEnabled(enabled);
+	}
+	
+	/**
+	 * 휴먼 계정 해제 처리
+	 * @param memberId
+	 * @param memberPassword
+	 */
+	public void inactive(String memberId, String memberPassword) {
+		MemberEntity entity = mr.findById(memberId)
+				.orElseThrow(
+						()->new EntityNotFoundException("회원이 존재하지 않습니다.")
+				);
+		if (!passwordEncoder.matches(memberPassword, entity.getMemberPassword())){
+			throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+		}
+		entity.setEnabled(true);
+	}
 }
