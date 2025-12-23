@@ -8,8 +8,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring5.controller.AdminController;
 import net.datasa.spring5.domain.dto.BoardDTO;
+import net.datasa.spring5.domain.dto.ReplyDTO;
 import net.datasa.spring5.domain.entity.BoardEntity;
 import net.datasa.spring5.domain.entity.MemberEntity;
+import net.datasa.spring5.domain.entity.ReplyEntity;
 import net.datasa.spring5.repository.BoardRepository;
 import net.datasa.spring5.repository.MemberRepository;
 import net.datasa.spring5.repository.ReplyRepository;
@@ -205,7 +207,7 @@ public class BoardService {
 	 * @param pageSize		한 페이지당글 수
 	 * @param searchType	검색 대상
 	 * @param searchWord	검색어
-	 * @return	한 페이지 글 목록
+	 * @return	한 페이지 글 목록 !!!!!!
 	 */
 	public Page<BoardDTO> getlist(int page, int pageSize, String searchType, String searchWord) {
 		page --;
@@ -227,5 +229,72 @@ public class BoardService {
 				entityPage.map(BoardDTO::convertToBoardDTO);
 		
 		return boardDTOPage;
+	}
+	
+	
+	/**
+	 * 리플 저장
+	 * @param dto
+	 */
+	public void replyWrite(ReplyDTO dto) {
+		MemberEntity memberEntity = mr.findById(dto.getMemberId())
+				.orElseThrow(()-> new EntityNotFoundException("사용자 아이디가 없습니다."));
+	
+		BoardEntity boardEntity = br.findById(dto.getBoardNum())
+				.orElseThrow(()-> new EntityNotFoundException("게시글이 없습니다."));
+		
+		ReplyEntity entity = ReplyEntity.builder()
+				.board(boardEntity)
+				.member(memberEntity)
+				.contents(dto.getContents())
+				.build();
+		
+		rr.save(entity);
+	}
+	
+	public List<ReplyDTO> getReply(int boardNum) {
+		
+		List<ReplyEntity> replyEntityList = rr.findByBoard_BoardNum(boardNum);
+		List<ReplyDTO> replyDTOS = new ArrayList<>();
+		for (ReplyEntity entity : replyEntityList) {
+			ReplyDTO dto = ReplyDTO.convertToReplyDTO(entity);
+			
+			
+			replyDTOS.add(dto);
+		}
+		
+		return  replyDTOS;
+	}
+	
+	public void replyDelete(Integer replyNum, String username) {
+		ReplyEntity replyEntity = rr.findById(replyNum)
+				.orElseThrow(()-> new EntityNotFoundException("리플이 없습니다."));
+		if (!replyEntity.getMember().getMemberId().equals(username)){
+			throw new RuntimeException("삭제 권한이 없습니다.");
+		}
+		rr.delete(replyEntity);
+	}
+	
+	public void replyUpdate(ReplyDTO replyDTO, String username) {
+		ReplyEntity replyEntity = rr.findById(replyDTO.getReplyNum())
+				.orElseThrow(()-> new EntityNotFoundException("리플이 없습니다?"));
+		if (!replyEntity.getMember().getMemberId().equals(username)){
+			throw new RuntimeException("삭제 권한 없음");
+		}
+		replyEntity.setContents(replyDTO.getContents());
+		rr.save(replyEntity);
+	}
+	
+	public List<ReplyDTO> getReplyList(String replyId) {
+		List<ReplyEntity> replyEntityList = rr.findByMember_MemberId(replyId);
+		List<ReplyDTO> replyDTOS = new ArrayList<>();
+		for (ReplyEntity entity : replyEntityList) {
+			ReplyDTO dto = ReplyDTO.convertToReplyDTO(entity);
+			
+			
+			replyDTOS.add(dto);
+		}
+		
+		return  replyDTOS;
 	}
 }

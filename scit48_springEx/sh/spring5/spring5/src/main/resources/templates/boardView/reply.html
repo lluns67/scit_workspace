@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+<h2 style="text-align: center">[<span th:text="${memberId}"></span> 의 리플 목록]</h2>
+<span>전체</span><span th:text="${#lists.size(reply)} + '개'"></span>
+<a th:href="@{/}" style="float: right;">HOME</a>
+
+<table class="reply">
+    <tr>
+        <th>게시글 번호</th>
+        <th>작성자</th>
+        <th>내용</th>
+        <th>작성일</th>
+    </tr>
+    <tr th:each="reply : ${reply}">
+        <td th:text="${reply.replyNum}"></td>
+        <td th:text="${reply.memberId}"></td>
+        <td th:text="${reply.contents}"></td>
+        <td th:text="${#temporals.format(reply.createDate, 'yy.MM.dd HH.mm')}"></td>
+    </tr>
+</table>
+</body>
+</html>

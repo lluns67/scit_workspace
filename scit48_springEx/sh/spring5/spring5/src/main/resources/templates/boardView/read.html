@@ -57,7 +57,7 @@
                         <th:block th:if="${isImg}">
                             <div style="margin-top: 10px">
                                 <img th:src="@{/board/preview(boardNum=${board.boardNum})}" alt="첨부 이미지 미리보기"
-                                     style="max-width: 420px; width; 100%; border: 1px solid #ddd; border-radius; 8px;">
+                                     style="max-width: 420px; width: 100%; border: 1px solid #ddd; border-radius: 8px;">
                             </div>
                         </th:block>
                         <th:block th:unless="${isImg}">
@@ -82,6 +82,40 @@
             <button id="updateButton" th:data-num="${board.boardNum}">수정</button>
         </th:block>
     </section>
+    <div sec:authorize="isAuthenticated()">
+        <form th:action="@{replyWrite}" method="post" id="replyForm">
+            <input type="hidden" name="boardNum" th:value="${board.boardNum}">
+<!--            <input type="hidden" name="memberId" th:value="${#authentication.name}">-->
+            <input type="text" name="contents" id="replyContents" style="width: 500px;">
+            <input type="submit" value="댓글 달기">
+        </form>
+    </div>
+    <table class="reply">
+        <tr th:each="reply : ${reply}">
+            <td class="replyid">
+                <a href="#" th:text="${reply.memberId}"></a>
+            </td>
+            <td class="replytext" th:text="${reply.contents}"></td>
+            <td class="replydate" th:text="${#temporals.format(reply.createDate, 'yy.MM.dd HH.mm')}"></td>
+            <td class="write">
+                <span th:if="${#authentication.name} == ${reply.memberId}">
+                    <a href="#" class="replyDeleteBtn"
+                       th:attr="data-reply-num=${reply.replyNum}, data-board-num=${reply.boardNum}">
+                        <img th:src="@{/images/icons_delete.png}" alt="삭제">
+                    </a>
+                </span>
+            </td>
+            <td class="replybutton">
+                <span th:if="${#authentication.name} == ${reply.memberId}">
+                    <a href="#" class="replyUpdateBtn"
+                       th:attr="data-reply-num=${reply.replyNum}, data-board-num=${reply.boardNum}">
+                        <img th:src="@{/images/icons_update.png}" alt="수정">
+                    </a>
+                </span>
+            </td>
+        </tr>
+    </table>
+
     <script>
         let like = document.querySelector("#likeButton");
         like.addEventListener("click", ()=>{
@@ -111,6 +145,60 @@
 
         });
     }
+        // 리플 작성(유효성 검사)
+        const replyForm = document.querySelector("#replyForm");
+        const replyContents = document.querySelector("#replyContents");
+
+        if (replyForm && replyContents) {
+            replyForm.addEventListener("submit", (e) => {
+            if (replyContents.value.trim().length < 5) {
+                e.preventDefault();
+                alert("리플 내용을 5자 이상으로 입력하세요.");
+                replyContents.focus();
+                replyContents.select();
+                }
+            });
+        }
+        document.addEventListener("click", (e) => {
+            const delBtn = e.target.closest(".replyDeleteBtn");
+            if (delBtn) {
+                e.preventDefault();
+
+                const replyNum = delBtn.dataset.replyNum;
+                const boardNum = delBtn.dataset.boardNum;
+
+                if(confirm("삭제하시겠습니까?")){
+                    location.href =
+                        `replyDelete?replyNum=${replyNum}&boardNum=${boardNum}`;
+                }
+                return;
+            }
+        });
+        let replyUpdateBtn = document.querySelectorAll(".replyUpdateBtn");
+        replyUpdateBtn.forEach(function(replyUpdate) {
+            replyUpdate.addEventListener('click', (e) => {
+
+               const replyNum = replyUpdate.dataset.replyNum;
+               const boardNum = replyUpdate.dataset.boardNum;
+               const newReply = window.prompt("수정 내용");
+
+               location.href = `replyUpdate?replyNum=${replyNum}
+                        &boardNum=${boardNum}&contents=${encodeURIComponent(newReply)}`;
+
+
+            });
+        });
+        let replyid = document.querySelectorAll(".replyid a");
+        replyid.forEach(function(replyList) {
+            replyList.addEventListener('click', (e) => {
+                e.preventDefault();
+                const replyId = replyList.innerText;
+
+                location.href = `replyList?replyId=${replyId}`
+            });
+        });
+
+
     </script>
 </body>
 </html>

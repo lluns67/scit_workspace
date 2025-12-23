@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring5.domain.dto.BoardDTO;
-import net.datasa.spring5.security.AuthenticatedUser;
+import net.datasa.spring5.domain.dto.ReplyDTO;
 import net.datasa.spring5.service.BoardService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
@@ -14,9 +14,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -111,6 +109,8 @@ public class BoardController {
 
         return "boardView/listAll";
     }
+	
+	
 	@GetMapping("read")
 	public String read(@RequestParam("boardNum") int boardNum, Model model){
 		log.debug("조회할 글번호 {}",boardNum);
@@ -119,22 +119,18 @@ public class BoardController {
 		try {
 			BoardDTO boardDTO = bs.getBoard(boardNum);
 			model.addAttribute("board", boardDTO);
+			List<ReplyDTO> replydto = bs.getReply(boardNum);
+			model.addAttribute("reply", replydto);
+//
 			
 			
-			
-			
-			Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-			AuthenticatedUser user = (AuthenticatedUser) auth.getPrincipal();
-			log.info("현재 로그인 사용자: {}", user.getId());
-			if(user.getId().equals(boardDTO.getMemberId())){
-				model.addAttribute("same", 1);
-			}
+
 			
 			
 			return "boardView/read";
 			
 		}catch (Exception e){
-			return "redirect:/board/listAll";
+			return "redirect:/board/list";
 		}
 		
 
@@ -308,4 +304,59 @@ public class BoardController {
 		return "boardView/list";
 	}
 	
+	/**
+	 *
+	 * @param dto
+	 * @param user
+	 * @return
+	 */
+	@PostMapping("replyWrite")
+	public String replyForm(ReplyDTO dto
+			, @AuthenticationPrincipal UserDetails user){
+		
+		dto.setMemberId(user.getUsername());
+		
+		try {
+			bs.replyWrite(dto);
+		}catch (Exception e){
+			log.debug("[예외 발생] {}", e.getMessage());
+		}
+		
+		return "redirect:/board/read?boardNum=" + dto.getBoardNum();
+	}
+	@GetMapping("replyDelete")
+	public String replyDelete(
+			ReplyDTO replyDTO,
+			@AuthenticationPrincipal UserDetails user
+	){
+		try{
+			bs.replyDelete(replyDTO.getReplyNum(), user.getUsername());
+		} catch (Exception e){
+			log.debug("[예외 발생] {}",  e.getMessage());
+		}
+		return "redirect:/board/read?boardNum=" + replyDTO.getBoardNum();
+	}
+	@GetMapping("replyUpdate")
+	public String replyUpdate(
+			ReplyDTO replyDTO,
+			@AuthenticationPrincipal UserDetails user
+			){
+		try{
+			bs.replyUpdate(replyDTO, user.getUsername());
+		} catch (Exception e){
+			log.debug("[예외 발생] {}", e.getMessage());
+		}
+		
+		return "redirect:/board/read?boardNum=" + replyDTO.getBoardNum();
+	}
+	@GetMapping("replyList")
+	public  String replyList(@RequestParam("replyId") String replyId, Model model){
+		log.debug("리플 목록{}",replyId);
+		List<ReplyDTO> reply = bs.getReplyList(replyId);
+		model.addAttribute("reply", reply);
+		model.addAttribute("memberId", replyId);
+		
+//
+		return "/boardView/reply";
+	}
 }

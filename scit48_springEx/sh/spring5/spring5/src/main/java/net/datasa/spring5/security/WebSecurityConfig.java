@@ -35,6 +35,7 @@ public class WebSecurityConfig {
 						, "/board/download" //파일다운로드
 						, "/board/preview"  //미리보기
 						, "/board/like"
+						, "/board/replyList"
 
         };
 
