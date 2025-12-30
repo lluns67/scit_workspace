@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>시험 응시</title>
+    <style>
+        body { font-family: sans-serif; max-width: 720px; margin: 24px auto; }
+        .field { margin-bottom: 12px; }
+        label { display: block; font-weight: 600; margin-bottom: 6px; }
+        input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 8px; }
+        .question { margin: 12px 0; }
+        .error { color: #b00020; font-size: 0.9rem; }
+        .actions { margin-top: 16px; }
+    </style>
+</head>
+<body>
+<h1>시험 응시하기</h1>
+
+<form id="exam-form" method="post" action="/exam/submit">
+    <div class="field">
+        <label for="name">이름</label>
+        <input id="name" name="name" type="text" required />
+    </div>
+
+    <div class="field">
+        <label for="email">이메일</label>
+        <input id="email" name="email" type="email" required />
+    </div>
+
+    <div class="field">
+        <label for="password">비밀번호</label>
+        <input id="password" name="password" type="password" required />
+    </div>
+
+    <hr />
+
+    <!-- DB가 아닌, HTML 파일 내에 시험 문제 포함 -->
+    <div class="question">
+        <p><strong>1번:</strong> Java에서 문자열(String) 내용 비교로 올바른 것은?</p>
+        <label><input type="radio" name="answer1" value="A" required /> A</label>
+        <label><input type="radio" name="answer1" value="B" /> B</label>
+        <label><input type="radio" name="answer1" value="C" /> C</label>
+        <label><input type="radio" name="answer1" value="D" /> D</label>
+    </div>
+
+    <div class="question">
+        <p><strong>2번:</strong> 다음 중 정답은 무엇인가요?</p>
+        <label><input type="radio" name="answer2" value="A" required /> A</label>
+        <label><input type="radio" name="answer2" value="B" /> B</label>
+        <label><input type="radio" name="answer2" value="C" /> C</label>
+        <label><input type="radio" name="answer2" value="D" /> D</label>
+    </div>
+
+    <div class="question">
+        <p><strong>3번:</strong> 다음 중 정답은 무엇인가요?</p>
+        <label><input type="radio" name="answer3" value="A" required /> A</label>
+        <label><input type="radio" name="answer3" value="B" /> B</label>
+        <label><input type="radio" name="answer3" value="C" /> C</label>
+        <label><input type="radio" name="answer3" value="D" /> D</label>
+    </div>
+
+    <div class="question">
+        <p><strong>4번:</strong> 다음 중 정답은 무엇인가요?</p>
+        <label><input type="radio" name="answer4" value="A" required /> A</label>
+        <label><input type="radio" name="answer4" value="B" /> B</label>
+        <label><input type="radio" name="answer4" value="C" /> C</label>
+        <label><input type="radio" name="answer4" value="D" /> D</label>
+    </div>
+
+    <div class="question">
+        <p><strong>5번:</strong> 다음 중 정답은 무엇인가요?</p>
+        <label><input type="radio" name="answer5" value="A" required /> A</label>
+        <label><input type="radio" name="answer5" value="B" /> B</label>
+        <label><input type="radio" name="answer5" value="C" /> C</label>
+        <label><input type="radio" name="answer5" value="D" /> D</label>
+    </div>
+
+    <div class="error" id="error" aria-live="polite"></div>
+
+    <div class="actions">
+        <button type="submit">제출</button>
+    </div>
+</form>
+
+<script>
+    // 필수 항목 검증: 이름/이메일/비밀번호/모든 문항
+    document.getElementById('exam-form').addEventListener('submit', function (e) {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const answers = ['answer1', 'answer2', 'answer3', 'answer4', 'answer5']
+        .map(n => document.querySelector(`input[name="${n}"]:checked`));
+
+      const errorBox = document.getElementById('error');
+
+      if (!name || !email || !password || answers.some(a => !a)) {
+        e.preventDefault();
+        alert('모든 필수 항목(이름/이메일/비밀번호/5문항)을 입력해야 합니다.');
+        errorBox.textContent = '입력 누락 항목을 확인해 주세요.';
+        return;
+      }
+    });
+</script>
+</body>
+</html>

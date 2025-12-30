@@ -1,0 +1,57 @@
+<!-- results.html (Thymeleaf 가정) -->
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>시험 결과 조회</title>
+    <style>
+        body { font-family: sans-serif; max-width: 860px; margin: 24px auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .actions { display: flex; gap: 8px; margin-top: 12px; }
+        .error { color: #b00020; }
+    </style>
+</head>
+<body>
+<h1>시험 결과 조회</h1>
+
+<div class="actions">
+    <a th:href="@{/results(sort='date')}">날짜 오름차순</a>
+    <a th:href="@{/results(sort='name')}">이름 오름차순</a>
+    <a th:href="@{/results(sort='score')}">성적 내림차순</a>
+</div>
+
+<p th:if="${error}" class="error" th:text="${error}"></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>응시일</th>
+        <th>이름</th>
+        <th>이메일</th>
+        <th>점수</th>
+        <th>답안</th>
+        <th>삭제</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${responses}">
+        <td th:text="${#dates.format(r.submittedAt, 'yyyy-MM-dd HH:mm')}">2025-12-26</td>
+        <td th:text="${r.name}">홍길동</td>
+        <td th:text="${r.email}">hong@example.com</td>
+        <td th:text="${r.score}">100</td>
+        <td>
+            <span th:text="'[' + r.answer1 + ',' + r.answer2 + ',' + r.answer3 + ',' + r.answer4 + ',' + r.answer5 + ']'">[A,C,B,D,B]</span>
+        </td>
+        <td>
+            <form th:action="@{/results/delete}" method="post">
+                <input type="hidden" name="id" th:value="${r.id}" />
+                <input type="password" name="password" placeholder="비밀번호" required />
+                <button type="submit">삭제</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
