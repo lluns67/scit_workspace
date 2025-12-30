@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. 배열 및 함수</title>
+    <script src="./jq_folder/jquery-3.7.1.min.js"></script>
+    <script>
+        function testArray() {
+            console.log("----- 배열 ------");
+
+            let ar = [10, 20];
+            // push() : 배열의 끝에 요소 추가
+            ar.push(30);
+
+            // unshift() : 배열의 앞에 요소 추가
+            ar.unshift(5);
+            console.log(`배열의 첫번째 요소: ${ar[0]}
+                    \n배열크기: ${ar.length}\n배열전체: ${ar}`);
+            let e1 = ar.pop(); // 배열의 마지막 요소 제거
+            console.log(`제거된 요소: ${e1}`);
+            // shift() : 배열의 첫번째 요소 제거
+            ar.shift();
+            console.log(`배열의 첫번째 요소: ${ar[0]}
+                    \n배열크기: ${ar.length}\n배열전체: ${ar}`);
+
+        }
+        function testArray2() {
+            console.log("----- 배열2 ------");
+            let ar = [10, 20, 30];
+            console.log('일반 for문');
+            for (let i = 0; i < ar.length; i++) {
+                console.log(`${i}번째 : ${ar[i]}`);
+            }
+            console.log('for ~ of문');
+            for (let v of ar) {
+                console.log(`요소: ${v}`);
+            }
+            // each() 함수는 배열이나 객체의 각 요소를 반복하는데 사용
+            // $.each(반복할 대상, function(index, value){실행문});
+            // index : 현재 요소의 인덱스 또는 키(객체일 경우),
+            // value : 현재 요소의 값
+            console.log('each 함수 사용');
+            $.each(ar, function (i, num) {
+                console.log(`${i}번째 : ${num}`);
+            });
+            $(ar).each(function (i, n) {
+                console.log(`${i}번째 : ${n}`);
+            });
+        }
+        function testEach() {
+            console.log("----- each() 함수 ------");
+            let score = [20, 50, 20, 90];
+
+            // score 배열의 모든 요소의 합계 구하기 (each함수 사용)
+            let total = 0;
+            $.each(score, function (i, n) {
+                total += n;
+            });
+            console.log(`score 배열의 합계: ${total}`);
+        }
+        function testEach2() {
+            console.log("----- each() 함수2 ------");
+
+            let arObject = [
+                { num: 10, name: 'aaa', title: '제목1' },
+                { num: 20, name: 'bbb', title: '제목2' },
+                { num: 30, name: 'ccc', title: '제목3' }
+            ];
+
+            $(arObject).each(function (i, ob) {
+                console.log(`i: ${i}, 이름: ${ob.name}, 제목: ${ob.title}`);
+            });
+            const obj = {
+                id: 10,
+                name: '홍길동',
+                role: "admin"
+            };
+            $(obj).each(function (key, value) {
+                console.log(key, value);
+            });
+        }
+        function testMap() {
+            console.log("----- map() 함수 ------");
+
+
+            // map() 함수는 배열의 각 요소에 대해 주어진 함수를 호출하고,
+            // 그 결과로 새로운 배열을 생성
+            let objlist = [
+                { area: "서울", name: "무대리" },
+                { area: "부산", name: "홍과장" },
+                { area: "대구", name: "박사장" },
+                { area: "광주", name: "이사원" },
+                { area: "서울", name: "이사원" }
+            ];
+            let arr = $.each(objlist, function (i, v) {
+                if (v.area == "서울") {
+                    return v;
+                }
+            });
+            console.log('each', arr);
+            let arr2 = $.map(objlist, function (v, i) {
+                if (v.area == "서울") {
+                    return v;
+                }
+            });
+            console.log('map', arr2);
+
+            let rows = $.map(objlist, function (v, i) {
+                if (v.area == "서울") {
+                    return `<tr>
+                        <td>${i}</td>
+                        <td>${v.area}</td>
+                        <td>${v.name}</td>
+                        </tr>
+                        `;
+                }
+            }).join('');
+
+            let str = `<table>
+                <tr>
+                    <th>번호</th>
+                    <th>지역</th>
+                    <th>이름</th>
+                </tr>
+                ${rows}
+            </table>`;
+            $('#result').html(str);
+        }
+    </script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px dotted black;
+            border-collapse: collapse;
+        }
+
+        th {
+            width: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>[ 배열과 배열관련 메서드 ]</h1>
+    <button type="button" onclick="testArray()">배열</button>
+    <button type="button" onclick="testArray2()">배열2</button>
+    <button type="button" onclick="testEach()">함수</button>
+    <button type="button" onclick="testEach2()">함수2</button>
+    <button type="button" onclick="testMap()">map() 함수</button>
+    <div id="result"></div>
+</body>
+
+</html>

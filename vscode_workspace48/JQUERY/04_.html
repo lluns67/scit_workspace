@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jq_folder/jquery-3.7.1.min.js"></script>
+    <style>
+        .boxstyle {
+            color: darkgoldenrod;
+            width: 200px;
+            background-color: gainsboro;
+            font-size: 20px;
+            border: 2px solid saddlebrown
+        }
+    </style>
+    <script>
+        $("#bt4").on("click", function () {
+            $("#div1").html("<p style='color:red;'>변경한 내용</p>");
+            $("#div2").text("<p style='color:red;'>변경한 내용</p>");
+        });
+        $('#bt5').on('click', function () {
+            console.log($('#img1').attr('src'));
+            $('#img1').attr('src', './images/onepiece06_chopper.png');
+        });
+        $('bt6').on('click', function () {
+            $('#p1').css('border', '3px solid red')
+                .css('backgroundColor', 'red');
+            $('#img1').css({
+                width: '500px',
+                height: '500px'
+            });
+        });
+        $('#addBtn').on('click', function () {
+            $('p:last').addClass('boxstyle');
+        });
+        $('#removeBtn').on(
+            {
+                'click': function () {
+                    $('p:last').removeClass('boxstyle');
+                },
+                'mouseover': function () {
+                    alert('aa');
+                }
+            }
+        );
+    </script>
+</head>
+
+<body>
+
+    <p><input type="button" id="bt5" value="attr() 함수"></p>
+    <p><input type="button" id="bt6" value="css() 함수"></p>
+    <p><img id="img1" src="./images/onepiece08_franky.png"></p>
+    <hr>
+
+    <p>마지막 p태그</p>
+    <input type="button" value="addClass" id="addBtn">
+    <input type="button" value="removeClass" id="removeBtn">
+
+</body>
+
+</html>
