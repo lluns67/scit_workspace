@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 03 예제</title>
+    <script src="./jq_folder/jquery-3.7.1.min.js"></script>
+    <script>
+        let no = 0;
+        $(function () {
+            // 처음에 테이블을 만들어 둠
+            $('#result').html(`<table border="1" id="personTable">
+                                <tr>
+                                    <th>No</th>
+                                    <th>이름</th>
+                                    <th>지역</th>
+                                    <th>삭제</th>
+                                </tr>
+                               </table>`);
+        });
+
+        function addPerson() {
+            let name = $('#inputName').val();
+            let area = $('#inputArea').val();
+            let deleteBtn = '<button onclick="$(this).closest(\'tr\').remove()">삭제</button>';
+
+            let row = `<tr>
+                          <td>${no++}</td>
+                          <td>${name}</td>
+                          <td>${area}</td>
+                          <td>${deleteBtn}</td>
+                       </tr>`;
+            $('#personTable').append(row);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Ex. 03 예제3</h1>
+    이름 : <input type="text" id="inputName">
+    지역 : <input type="text" id="inputArea">
+    <button onclick="addPerson()">추가</button>
+    <div id="result"></div>
+</body>
+
+</html>

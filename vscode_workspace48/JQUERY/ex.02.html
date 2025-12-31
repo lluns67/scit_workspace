@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ex.02 예제</title>
+    <script src="./jq_folder/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let fileName = [
+                "./images/home.png",
+                "./images/list.png",
+                "./images/exit.png"
+            ];
+            let i = 0;
+            $('#img1').on('click', function () {
+
+                i = (i + 1) % fileName.length;
+                let newSrc = fileName[i];
+                console.log(i, newSrc);
+                $(this).animate({ opacity: 0 }, 500, function () {
+                    $(this).attr('src', newSrc);
+                    $(this).animate({ opacity: 1 }, 500);
+                });
+
+            });
+            let j;
+            $('#img2').on('mouseover', function () {
+                let a = setInterval(() => {
+                    j = (j + 1) % fileName.length;
+                    let newSrc = fileName[j];
+                    console.log(j, newSrc);
+                    $(this).animate({ opacity: 0 }, function () {
+                        $(this).attr('src', newSrc);
+                        $(this).animate({ opacity: 1 }, 1000);
+                    });
+
+                }, 1000);
+                $('#img2').on('mouseout', function () {
+
+                    clearInterval(a);
+                });
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>J-Query 예제2</h1>
+    <h3>클릭시 이미지 넘김</h3>
+    <p><img src="./images/home.png" id="img1"></p>
+
+    <h3>마우스를 올리면 이미지가 자동으로 슬라이드</h3>
+    <p><img src="./images/home.png" id="img2"></p>
+</body>
+
+</html>
