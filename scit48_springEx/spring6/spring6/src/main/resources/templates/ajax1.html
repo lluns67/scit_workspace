@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax.html</title>
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script>
+        $(function() {
+            $('#btn1').click(test1);
+            $('#btn2').click(test2);
+            $('#btn3').click(test3);
+            $('#btn4').click(test4);
+        });
+    /*
+        $ Ajax 문법
+        $.ajax({
+            url: 'http://localhost:9996/경로', //요청 URL
+            type: 'POST',  // 전송 방식(GET, POST, PUT, DELETE 등)
+            data: {key: value},                 //전송할 데이터
+                  or JSON.stringify({id: 1}),
+            contentType: 'application/json',    //서버로 전송할 데이터 형식
+                기본값: application/x-www-form-urlencoded
+            dataType: 'json',                   //서버로부터 받는 응답 데이터 형식
+            headers: {'헤더명': '값'},           //추가 헤더
+            success: function(data) {           //요청이 성공적으로 응답되었을 때
+                console.log(data);              //서버에서 응답한 본문 데이터
+            },
+            error: function(e) {
+                console.log(e);
+            },
+            complete: function() {          //요청이 완료되었을 때
+                console.log("요청 성공 실패 여부와 상관없이 출력");
+            }
+        });
+    */
+
+        function test1(){
+            alert('test1() 함수 실행');
+            $.ajax({
+                url: 'ajaxText1',       //서버의 요청 경로
+                type: 'get',
+                success: function() {
+                    alert('실행 결과');
+                },
+                error: function(e) {
+                    alert('실행 결과');
+                    alert(e.statusText);
+                }
+            });
+        }
+        function test2(){
+            $.ajax({
+                url: 'ajaxText2',
+                type: 'post',
+                data: {str: '클라이언트에서 보냄'}, //서버에 전송할 데이터
+                contentType: "application/x-www-form-urlencoded",
+                /*
+                    MIME Type
+                    application/x-ww...
+                    aplication/json
+                    multipart/form-data
+                    text/plain              //일반 문자열
+                */
+                success: function(){
+                    alert('실행 성공');
+                },
+                error: function(e) {
+                    alert('실행 실패');
+                    alert(e.status);
+                    alert(e.responseText);
+                    alert(e.statusText);
+                }
+            });
+        }
+        function test3(){
+            $.ajax({
+                url: 'ajaxTest3',
+                type: 'get',
+                dataType: 'text',
+                success: function(msg){
+                    alert(msg);
+                },
+                error: function(){
+                    alert('실행 실패');
+                }
+            });
+        }
+        function test4(){
+            let data = {
+                num1: $('#num1').val(),
+                num2: $('#num2').val()
+            };
+            $.ajax({
+                url: 'ajaxTest4',
+                type: 'post',
+                data: data,
+                dataType: 'text',
+                success: function(sum){
+                    $('#num3').val(sum);
+                },
+                error: function(e){
+                    alert('계산 실패')
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+
+    <h1>[ Ajax Test ]</h1>
+
+    <section>
+        <button id="btn1">서버로 Ajax 요청 보내기</button>
+        <button id="btn2">서버로 문자열 보내기</button>
+        <button id="btn3">서버에서 문자열 받기</button>
+    </section>
+
+    <br>
+
+    <section>
+        <p><button id="btn4">값 전ㄴ달하여 계산하기1</button></p>
+        <p>
+            <input type="text" id="num1"> +
+            <input type="text" id="num2"> =
+            <input type="text" id="num3" readonly>
+        </p>
+    </section>
+</body>
+</html>

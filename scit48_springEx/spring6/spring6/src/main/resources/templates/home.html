@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    이건 홈
+    <!-- AJAX (Asynchromous Javascript and XML)
+        -웹 페이지를 전체 새로고침 않고도 서버와 데이터를주고받을 수 잇는 기술
+            비동기 처리: 다른 작업이 완료될 때까지 기다리지 않고 요청
+        -AJax는 이름에 XML이 들어있지만, 요즘엔 거의 JSON 사용
+        -$.ajax()는 Jquery 라이브러리 함수.
+            내부적으로 XMLHttpRequest 객체를 생성하고 조작하여 동작.
+            XMLHttpRequest: 브라우저가 제공하는비동기 통신 객체
+                            서버와 HTTP  요청/응답을 주고받을 수 있게 해주는 API
+     -->
+    <h1>HOME</h1>
+    <p><a th:href="ajax1">음..</a></p>
+</body>
+</html>
