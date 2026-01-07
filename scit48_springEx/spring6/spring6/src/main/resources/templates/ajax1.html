@@ -10,6 +10,8 @@
             $('#btn2').click(test2);
             $('#btn3').click(test3);
             $('#btn4').click(test4);
+            $('#btn5').click(test5);
+            $('#btn6').click(test6);
         });
     /*
         $ Ajax 문법
@@ -103,6 +105,47 @@
                 }
             })
         }
+        function test5(){
+            let data = {
+                num4 : $('#num4').val(),
+                num5 : $('#num5').val()
+            };
+            $.ajax({
+                url: 'ajaxTest5',
+                type: 'post',
+                data: data,
+                dataType: 'text',
+                success: function(result){
+                    $('#num6').val(result);
+                },
+                error: function(e) {
+                    alert(e.status);
+                    alert(e.responseText);
+                }
+            });
+        }
+        function test6(){
+            let data = {
+                num7: $('#num7').val(),
+                num8: $('#num8').val(),
+                op: $('#op').val()
+            };
+            $.ajax({
+                url: 'ajaxTest6',
+                type: 'post',
+                data: data,
+                success: function(result){
+                    $('#num9').val(result);
+                },
+                error: function(e){
+                    alert(e.status);
+                    alert(e.responseText);
+                },
+                complete: function(){
+                    $('#num9').css('background-color', 'skyblue');
+                }
+            });
+        }
     </script>
 </head>
 <body>
@@ -118,11 +161,35 @@
     <br>
 
     <section>
-        <p><button id="btn4">값 전ㄴ달하여 계산하기1</button></p>
+        <p><button id="btn4">값 전달하여 계산하기1</button></p>
         <p>
             <input type="text" id="num1"> +
             <input type="text" id="num2"> =
             <input type="text" id="num3" readonly>
+        </p>
+    </section>
+    <section>
+        <p><button id="btn5">값 전달하여 계산하기2</button></p>
+        <p>
+            <input type="text" id="num4"> /
+            <input type="text" id="num5"> =
+            <input type="text" id="num6" readonly>
+        </p>
+    </section>
+    <section>
+        <p>값 전다하여 계산하기 3</p>
+        <p>
+            <input type="text" id="num7">
+            <select id="op">
+                <option value="">연산자 선택</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <input type="text" id="num8">
+            <button id="btn6"> = </button>
+            <input type="text" id="num9" readonly>
         </p>
     </section>
 </body>

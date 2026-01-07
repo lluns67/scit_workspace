@@ -1,6 +1,7 @@
 package net.datasa.spring6.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -54,5 +55,61 @@ public class AjaxController {
 		log.debug("ajaxTest4 전달받은 값:  num1= {}, num2={}", a, b);
 		int sum = a + b;
 		return sum;
+	}
+	
+	/**
+	 *
+	 * @param a
+	 * @param b
+	 * @return
+	 * ResponseEntity : 응답객체(상태 코드, 헤더, 바디)를 사용자가 직접 만들어서 제어하는 객체
+	 */
+	@PostMapping("ajaxTest5")
+	public ResponseEntity<?> ajaxTest5(
+			@RequestParam("num4") String a,
+			@RequestParam("num5") String b
+	){
+		log.debug("ajaxTest5에서 전달받은 값: num4={}, num5={}}",a,b);
+		
+		try {
+			int n1 = Integer.parseInt(a);
+			int n2 = Integer.parseInt(b);
+			int n3 = n1 / n2;
+			
+			return ResponseEntity.ok(n3);
+		} catch (NumberFormatException e){
+			e.printStackTrace();
+			return ResponseEntity.badRequest().body("함수가 아닙니다.");
+		} catch (NullPointerException e) {
+			return ResponseEntity.status(500).body("서버 오류");
+		}
+	}
+	@PostMapping("ajaxTest6")
+	public ResponseEntity<?> ajaxTest6(
+			@RequestParam("num7") String a,
+			@RequestParam("num8") String b,
+			@RequestParam("op") String op
+	){
+		log.debug("ajaxTest6 전달받은 값: num7={}, num8={}, op={}", a,b,op);
+		
+		try {
+			int n1 = Integer.parseInt(a);
+			int n2 = Integer.parseInt(b);
+			int result = 0;
+			
+			switch (op){
+				case "+" -> result = n1 + n2;
+				case "-" -> result = n1 - n2;
+				case "/" -> result = n1 / n2;
+				case "*" -> result = n1 * n2;
+				default -> {return  ResponseEntity
+						.badRequest().body("연산자를 확인해주세요");}
+			}
+			return ResponseEntity.ok(result);
+		} catch (NumberFormatException e){
+			return ResponseEntity.badRequest().body("함수가 아닙니다.");
+		} catch (ArithmeticException e){
+			return ResponseEntity.badRequest().body("0으로 나눌 수 없습니다.");
+		}
 	}
 }

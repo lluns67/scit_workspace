@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script>
+        $(function() {
+            const idInput = $('#id');
+            idInput.on('input', ()=>{
+                const val = idInput.val();
+                if(val.length < 3 ){
+                    $('#msg').text("3글자 이상 입력하세요");
+                } else {
+                    $.ajax({
+                        url: `/idCheck/${val}`,
+                        type: 'get',
+
+                        success: function(e){
+                            if(e){
+                                $('#msg').text('해당 회원이 있읍니다.');
+                            } else {
+                                $('#msg').text('회원 가입 ㄱㄱ');
+                            }
+
+                        }
+                    });
+                    }
+            });
+
+
+        $('#sendBtn').on('click', function(){
+
+        const data = { id: $('#id').val(), name: $('#name').val() };
+        $.ajax({
+            url: '/submit',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function(res){
+                alert(res);
+            }
+        });
+    });
+})
+    </script>
+</head>
+<body>
+    <h2>[ ID 중복 확인 ]</h2>
+    ID   <input type="text" id="id" ><p id="msg"></p><br>
+    이름 <input type="text" id="name"><br>
+    <button id="sendBtn">가입</button>
+</body>
+</html>
