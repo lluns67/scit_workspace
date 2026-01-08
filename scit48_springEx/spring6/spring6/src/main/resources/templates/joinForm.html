@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <style>
+        #msg {
+            width: 200px;
+            display: inline-block;
+        }
+        label {
+            width: 50px;
+            display : inline-block;
+        }
+        button {
+            width: 100px;
+        }
+    </style>
     <script>
         $(function() {
+            function showMsg(text, color, disabled){
+                $('msg').text(text).css('color', color);
+                $('#submitButton').prop('disabled', disabled);
+            }
             const idInput = $('#id');
             idInput.on('input', ()=>{
                 const val = idInput.val();
                 if(val.length < 3 ){
-                    $('#msg').text("3글자 이상 입력하세요");
+                    showMsg("3글자 이상 입력하세요", 'red', true);
                 } else {
                     $.ajax({
                         url: `/idCheck/${val}`,
@@ -18,9 +35,9 @@
 
                         success: function(e){
                             if(e){
-                                $('#msg').text('해당 회원이 있읍니다.');
+                                showMsg('해당 회원이 있읍니다.', 'red', true);
                             } else {
-                                $('#msg').text('회원 가입 ㄱㄱ');
+                                showMsg('회원 가입 ㄱㄱ', 'green', false);
                             }
 
                         }
@@ -47,7 +64,7 @@
 </head>
 <body>
     <h2>[ ID 중복 확인 ]</h2>
-    ID   <input type="text" id="id" ><p id="msg"></p><br>
+    ID   <input type="text" id="id" ><span id="msg"></span><br>
     이름 <input type="text" id="name"><br>
     <button id="sendBtn">가입</button>
 </body>

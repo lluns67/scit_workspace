@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>comment.html</title>
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <style>
+        #comment {
+            width: 350px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #FFF2F2;
+        }
+
+        th {
+            width: 80px;
+            background-color: #FEEBFD;
+        }
+
+        th.w300 {
+            width: 300px;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(function(){
+            list();
+
+            $('#inputButton').on('click', inputButtonClick);
+
+        });
+
+       function inputButtonClick(){
+        let name = $('#name').val().trim();
+        let comment = $('#comment').val().trim();
+
+        if (name == '' || comment == ''){
+            alert('이름과 내용을 입력하세요.');
+            return;
+        }
+
+
+        $.ajax({
+            url: "/board/comment/write",
+            type: 'post',
+            data: {name, comment},
+            success: function(){
+                $('#name').val('');
+                $('#comment').val('');
+                list();
+            },
+            error: function(){
+                alert('저장실패');
+            }
+       });
+    }
+
+    function list(){
+        $.ajax({
+            url: '/board/comment/list',
+            type: 'get',
+            dataType: 'json',
+            success: function(list){
+                let str = '';
+                if(!list || list.length === 0) {
+                    str += `
+                        <tr>
+                            <td>작성한 글이 없습니다.</td>
+                        </tr>
+                        `;
+                } else {
+                $(list).each(function(index, ob){
+                    str += `
+                        <tr>
+                        <td>${ob.num}</td>
+                        <td>${ob.name}</td>
+                        <td class="commentId">${ob.comment}</td>
+                        <td>
+                            <button class="deleteButton"
+                                    data-num="${ob.num}">삭제</button>
+                        </td>
+                            <td>
+                            <button class="updateButton"
+                                    data-comment="${ob.comment}">수정</button>
+                            </td>
+                        </tr>
+                        `;
+                });
+                }
+                $("#commentTbody").html(str);
+            },
+            error : function(){
+                alert('목록 조회 실패');
+            }
+        })
+    }
+
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" id="name" placeholder="작성자명을 입력하세요">
+    <input type="text" id="comment" placeholder="댓글 내용을 입력하세요">
+    <button id="inputButton">저장</button>
+</div>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>작성자</th>
+        <th class="w300">내용</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody id="commentTbody">
+        <!-- 댓글 내용 출력 영역 -->
+    </tbody>
+</table>
+</body>
+</html>

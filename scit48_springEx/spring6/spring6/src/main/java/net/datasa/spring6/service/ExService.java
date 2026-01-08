@@ -5,6 +5,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring6.Repository.BoardRepository;
+import net.datasa.spring6.Repository.CommentRepository;
 import net.datasa.spring6.Repository.MemberRepository;
 import net.datasa.spring6.domain.dto.MemberDTO;
 import net.datasa.spring6.domain.entity.BoardEntity;
@@ -19,6 +20,7 @@ public class ExService {
 	
 	private final BoardRepository boardRepository;
 	private final MemberRepository memberRepository;
+	private final CommentRepository commentRepository;
 	
 	public int readLike(Integer num) {
 		BoardEntity entity = boardRepository.findById(num)
@@ -51,4 +53,6 @@ public class ExService {
 				.build();
 		memberRepository.save(entity);
 	}
+	
+	
 }

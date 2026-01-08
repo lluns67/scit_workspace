@@ -53,4 +53,9 @@ public class ExController {
 			return "알 수 없수는 에러가 발생하였습니다.";
 		}
 	}
+	@GetMapping("comment")
+	public String comment(){
+		return "comment";
+	}
+	
 }
