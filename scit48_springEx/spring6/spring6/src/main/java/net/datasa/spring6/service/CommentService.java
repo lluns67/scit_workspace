@@ -1,5 +1,6 @@
 package net.datasa.spring6.service;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import net.datasa.spring6.Repository.CommentRepository;
@@ -38,5 +39,16 @@ public class CommentService {
 			
 		}
 		return dtoList;
+	}
+	
+	public void delete(Integer num) {
+		cr.deleteById(num);
+	}
+	
+	public void update(CommentDTO dto) {
+		CommentEntity entity = cr.findById(dto.getNum())
+				.orElseThrow(()-> new EntityNotFoundException("수정할 댓글이 없습니다."));
+		
+		entity.setComment(dto.getComment());
 	}
 }

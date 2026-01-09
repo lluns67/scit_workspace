@@ -5,10 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.datasa.spring6.domain.dto.CommentDTO;
 import net.datasa.spring6.service.CommentService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,4 +29,21 @@ public class CommentRestController {
 		List<CommentDTO> list = cs.getList();
 		return ResponseEntity.ok(list);
 	}
+	
+	@DeleteMapping("/{num}")
+	public void delete(@PathVariable("num") Integer num){
+		log.debug("삭제중 {}", num);
+		cs.delete(num);
+	}
+	
+	@PatchMapping("/{num}")
+	public void update(
+			@PathVariable("num") Integer num,
+			@RequestBody CommentDTO dto
+	){
+		log.debug("수정중 {}", num);
+		dto.setNum(num);
+		cs.update(dto);
+	}
+	
 }

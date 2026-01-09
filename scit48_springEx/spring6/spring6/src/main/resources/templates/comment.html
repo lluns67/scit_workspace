@@ -31,8 +31,53 @@
             list();
 
             $('#inputButton').on('click', inputButtonClick);
+            $('#commentTbody').on('click', '.deleteButton', deleteFunc);
+            $('#commentTbody').on('click', '.updateButton', updateFunc);
 
         });
+        function updateFunc(){
+            let numData = $(this).data('num');
+            let commentData = $(this).data('comment');
+
+            let updateText = prompt("수정할 내용을 입력하세요.", commentData);
+
+            if (updateText != null && updateText != ''){
+                $.ajax({
+                    url: `/board/comment/${numData}`,
+                    type: 'patch',
+                    data: JSON.stringify({ comment: updateText}),
+                    contentType: 'application/json',
+                    success: function(){
+                        list();
+                    }, error: function(){
+                        alert('수정 실패');
+                    }
+                });
+            }
+        }
+        // 댓글 삭제
+       function deleteFunc(){
+        let result = confirm('삭제하시겠습니까?');
+
+        if (result) {
+            let btn = this;
+            let num = $(btn).data('num');
+
+            $.ajax({
+                url : `/board/comment/${num}`,
+                type : 'delete',
+                success: function(){
+                    //list();
+                    $(btn).closest('tr').remove();
+                },
+                error: function(){
+                    alert('삭제 실패');
+                }
+            });
+        }
+       }
+
+
 
        function inputButtonClick(){
         let name = $('#name').val().trim();
@@ -85,6 +130,7 @@
                         </td>
                             <td>
                             <button class="updateButton"
+                                    data-num="${ob.num}"
                                     data-comment="${ob.comment}">수정</button>
                             </td>
                         </tr>
