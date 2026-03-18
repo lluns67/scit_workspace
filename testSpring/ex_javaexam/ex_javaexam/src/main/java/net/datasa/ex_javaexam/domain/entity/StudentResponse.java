@@ -1,11 +1,19 @@
 package net.datasa.ex_javaexam.domain.entity;
 
 
-
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.Instant;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 @Table(name = "student_responses",
 		indexes = {
 				@Index(name = "ux_student_email_once", columnList = "email, submitted_at")
@@ -28,5 +36,9 @@ public class StudentResponse {
 	private Integer score = 0;
 	private Instant submittedAt = Instant.now();
 	
+
+	
 	// getters/setters
+	
+	
 }

@@ -7,22 +7,35 @@
     <title>Ex. 03 예제</title>
     <script src="./jq_folder/jquery-3.7.1.min.js"></script>
     <script>
-        let no = 0;
-        $(function () {
-            // 처음에 테이블을 만들어 둠
-            $('#result').html(`<table border="1" id="personTable">
-                                <tr>
-                                    <th>No</th>
-                                    <th>이름</th>
-                                    <th>지역</th>
-                                    <th>삭제</th>
-                                </tr>
-                               </table>`);
-        });
+        // let no = 0;
+        // $(function () {
+        //     // 처음에 테이블을 만들어 둠
+        //     $('#result').html(`<table border="1" id="personTable">
+        //                         <tr>
+        //                             <th>No</th>
+        //                             <th>이름</th>
+        //                             <th>지역</th>
+        //                             <th>삭제</th>
+        //                         </tr>
+        //                        </table>`);
+        // });
+        let objlist = [
+            { area: '서울', name: '홍길동' },
+            { area: '부산', name: '고길동' },
+        ];
 
         function addPerson() {
             let name = $('#inputName').val();
             let area = $('#inputArea').val();
+
+            if (name.trim() && area.trim()) {
+                let obj = {
+                    name: name,
+                    area: area
+                };
+                objlist.push(obj);
+            }
+
             let deleteBtn = '<button onclick="$(this).closest(\'tr\').remove()">삭제</button>';
 
             let row = `<tr>

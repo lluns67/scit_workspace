@@ -4,6 +4,7 @@ package net.datasa.ex_javaexam.service;
 
 
 import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
 import net.datasa.ex_javaexam.domain.entity.StudentResponse;
 import net.datasa.ex_javaexam.repository.ExamAnswerRepository;
 import net.datasa.ex_javaexam.repository.StudentResponseRepository;
@@ -14,7 +15,10 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Map;
 
+
 @Service
+@Slf4j
+@Transactional
 public class ExamService {
 	private final ExamAnswerRepository answerRepo;
 	private final StudentResponseRepository responseRepo;

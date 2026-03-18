@@ -1,6 +1,7 @@
 package net.datasa.spring5.repository;
 
 import net.datasa.spring5.domain.entity.ReplyEntity;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +16,5 @@ public interface ReplyRepository extends JpaRepository<ReplyEntity, Integer> {
 	
 	
 	
-	List<ReplyEntity> findByMember_MemberId(String replyId);
+	List<ReplyEntity> findByMember_MemberId(String replyId, Sort sort);
 }

@@ -1,54 +1,58 @@
-<!-- results.html (Thymeleaf 가정) -->
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>시험 결과 조회</title>
     <style>
-        body { font-family: sans-serif; max-width: 860px; margin: 24px auto; }
-        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        .actions { display: flex; gap: 8px; margin-top: 12px; }
-        .error { color: #b00020; }
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 20px; }
+        .sort-menu { margin-bottom: 15px; }
+        .sort-menu a { text-decoration: none; color: #444; font-size: 0.9em; }
+        .sort-menu a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; border: 1px solid #333; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background-color: #fff; }
+        .btn-delete { color: blue; text-decoration: underline; }
     </style>
 </head>
 <body>
-<h1>시험 결과 조회</h1>
+<h2>[ Java 시험 응시 결과 ]</h2>
 
-<div class="actions">
-    <a th:href="@{/results(sort='date')}">날짜 오름차순</a>
-    <a th:href="@{/results(sort='name')}">이름 오름차순</a>
-    <a th:href="@{/results(sort='score')}">성적 내림차순</a>
+<div class="sort-menu">
+    <a th:href="@{/results(sort='date')}">응시일순</a> |
+    <a th:href="@{/results(sort='name')}">이름순</a> |
+    <a th:href="@{/results(sort='score')}">성적순</a>
 </div>
-
-<p th:if="${error}" class="error" th:text="${error}"></p>
 
 <table>
     <thead>
     <tr>
-        <th>응시일</th>
         <th>이름</th>
         <th>이메일</th>
+        <th>1번</th>
+        <th>2번</th>
+        <th>3번</th>
+        <th>4번</th>
+        <th>5번</th>
         <th>점수</th>
-        <th>답안</th>
+        <th>응시일</th>
+        <th>결과</th>
         <th>삭제</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="r : ${responses}">
-        <td th:text="${#dates.format(r.submittedAt, 'yyyy-MM-dd HH:mm')}">2025-12-26</td>
-        <td th:text="${r.name}">홍길동</td>
-        <td th:text="${r.email}">hong@example.com</td>
-        <td th:text="${r.score}">100</td>
+    <tr th:each="res : ${responses}">
+        <td th:text="${res.name}"></td>
+        <td th:text="${res.email}"></td>
+        <td th:text="${res.answer1}"></td>
+        <td th:text="${res.answer2}"></td>
+        <td th:text="${res.answer3}"></td>
+        <td th:text="${res.answer4}"></td>
+        <td th:text="${res.answer5}"></td>
+        <td th:text="${res.score}"></td>
+        <td th:text="${#dates.format(res.submittedAt, 'yy.MM.dd HH:mm:ss')}"></td>
+        <td th:text="${res.score >= 80 ? 'Pass' : 'Fail'}"></td>
         <td>
-            <span th:text="'[' + r.answer1 + ',' + r.answer2 + ',' + r.answer3 + ',' + r.answer4 + ',' + r.answer5 + ']'">[A,C,B,D,B]</span>
-        </td>
-        <td>
-            <form th:action="@{/results/delete}" method="post">
-                <input type="hidden" name="id" th:value="${r.id}" />
-                <input type="password" name="password" placeholder="비밀번호" required />
-                <button type="submit">삭제</button>
-            </form>
+            <a th:href="@{/results/delete(id=${res.id})}" class="btn-delete">X</a>
         </td>
     </tr>
     </tbody>

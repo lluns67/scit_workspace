@@ -350,13 +350,16 @@ public class BoardController {
 		return "redirect:/board/read?boardNum=" + replyDTO.getBoardNum();
 	}
 	@GetMapping("replyList")
-	public  String replyList(@RequestParam("replyId") String replyId, Model model){
-		log.debug("리플 목록{}",replyId);
-		List<ReplyDTO> reply = bs.getReplyList(replyId);
-		model.addAttribute("reply", reply);
-		model.addAttribute("memberId", replyId);
-		
+	public  String replyList(@RequestParam("memberId") String memberId, Model model){
+		try {
+			List<ReplyDTO> reply = bs.replyList(memberId);
+			model.addAttribute("replyList", reply);
+			model.addAttribute("id", memberId);
+		} catch (Exception e){
+			log.debug("[예외 발생 {}]", e.getMessage());
+			return "redirect:/board/list";
+		}
 //
-		return "/boardView/reply";
+		return "/boardView/replyList";
 	}
 }

@@ -1,105 +1,119 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <title>시험 응시</title>
+    <meta charset="UTF-8">
+    <title>Java 시험</title>
     <style>
-        body { font-family: sans-serif; max-width: 720px; margin: 24px auto; }
-        .field { margin-bottom: 12px; }
-        label { display: block; font-weight: 600; margin-bottom: 6px; }
-        input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 8px; }
-        .question { margin: 12px 0; }
-        .error { color: #b00020; font-size: 0.9rem; }
-        .actions { margin-top: 16px; }
+        body { font-family: 'Malgun Gothic', sans-serif; max-width: 800px; margin: 20px auto; }
+        fieldset { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; }
+        legend { font-weight: bold; padding: 0 10px; }
+        .info-row { margin-bottom: 10px; display: flex; align-items: center; }
+        .info-row label { width: 80px; font-weight: bold; }
+        .info-row input { width: 250px; padding: 5px; border: 1px solid #ccc; }
+        .question { margin-bottom: 25px; }
+        .q-title { font-weight: bold; display: block; margin-bottom: 10px; }
+        .options { list-style: none; padding-left: 10px; }
+        .options li { margin-bottom: 5px; }
+        .short-answer { width: 250px; padding: 5px; border: 1px solid #ccc; }
+        .submit-btn { padding: 8px 40px; background-color: #efefef; border: 1px solid #999; cursor: pointer; }
     </style>
 </head>
 <body>
-<h1>시험 응시하기</h1>
+<h1>[ Java 시험 ]</h1>
 
-<form id="exam-form" method="post" action="/exam/submit">
-    <div class="field">
-        <label for="name">이름</label>
-        <input id="name" name="name" type="text" required />
-    </div>
+<form id="examForm" th:action="@{/exam/submit}" method="post">
+    <fieldset>
+        <legend>응시자 정보</legend>
+        <div class="info-row">
+            <label>이름 :</label>
+            <input type="text" name="name" th:value="${prefill?.name}" required>
+        </div>
+        <div class="info-row">
+            <label>이메일 :</label>
+            <input type="email" name="email" th:value="${prefill?.email}" required>
+        </div>
+        <div class="info-row">
+            <label>비밀번호 :</label>
+            <input type="password" name="password" required>
+        </div>
+    </fieldset>
 
-    <div class="field">
-        <label for="email">이메일</label>
-        <input id="email" name="email" type="email" required />
-    </div>
+    <fieldset>
+        <legend>시험 문제</legend>
 
-    <div class="field">
-        <label for="password">비밀번호</label>
-        <input id="password" name="password" type="password" required />
-    </div>
+        <div class="question">
+            <span class="q-title">1번. Java에서 문자열(String) 내용 비교로 올바른 것은?</span>
+            <ul class="options">
+                <li><label><input type="radio" name="answer1" value="1" th:checked="${prefill?.answer1 == '1'}"> ① ==</label></li>
+                <li><label><input type="radio" name="answer1" value="2" th:checked="${prefill?.answer1 == '2'}"> ② equals()</label></li>
+                <li><label><input type="radio" name="answer1" value="3" th:checked="${prefill?.answer1 == '3'}"> ③ compareTo()</label></li>
+                <li><label><input type="radio" name="answer1" value="4" th:checked="${prefill?.answer1 == '4'}"> ④ !=</label></li>
+            </ul>
+        </div>
+        <hr>
 
-    <hr />
+        <div class="question">
+            <span class="q-title">2번. 오버로딩에 대한 설명으로 옳은 것은?</span>
+            <ul class="options">
+                <li><label><input type="radio" name="answer2" value="1" th:checked="${prefill?.answer2 == '1'}"> ① 반환 타입만 다르면 오버로딩이 된다.</label></li>
+                <li><label><input type="radio" name="answer2" value="2" th:checked="${prefill?.answer2 == '2'}"> ② 접근 제어자가 같아야만 오버로딩이 된다.</label></li>
+                <li><label><input type="radio" name="answer2" value="3" th:checked="${prefill?.answer2 == '3'}"> ③ 메서드 이름이 같고 매개변수 목록이 다르면 오버로딩이다.</label></li>
+                <li><label><input type="radio" name="answer2" value="4" th:checked="${prefill?.answer2 == '4'}"> ④ static 메서드만 오버로딩할 수 있다.</label></li>
+            </ul>
+        </div>
+        <hr>
 
-    <!-- DB가 아닌, HTML 파일 내에 시험 문제 포함 -->
-    <div class="question">
-        <p><strong>1번:</strong> Java에서 문자열(String) 내용 비교로 올바른 것은?</p>
-        <label><input type="radio" name="answer1" value="A" required /> A</label>
-        <label><input type="radio" name="answer1" value="B" /> B</label>
-        <label><input type="radio" name="answer1" value="C" /> C</label>
-        <label><input type="radio" name="answer1" value="D" /> D</label>
-    </div>
+        <div class="question">
+            <span class="q-title">3번. 배열 길이를 얻는 올바른 코드는?</span>
+            <ul class="options">
+                <li><label><input type="radio" name="answer3" value="1" th:checked="${prefill?.answer3 == '1'}"> ① arr.length</label></li>
+                <li><label><input type="radio" name="answer3" value="2" th:checked="${prefill?.answer3 == '2'}"> ② arr.size()</label></li>
+                <li><label><input type="radio" name="answer3" value="3" th:checked="${prefill?.answer3 == '3'}"> ③ arr.length()</label></li>
+                <li><label><input type="radio" name="answer3" value="4" th:checked="${prefill?.answer3 == '4'}"> ④ arr.getLength()</label></li>
+            </ul>
+        </div>
+        <hr>
 
-    <div class="question">
-        <p><strong>2번:</strong> 다음 중 정답은 무엇인가요?</p>
-        <label><input type="radio" name="answer2" value="A" required /> A</label>
-        <label><input type="radio" name="answer2" value="B" /> B</label>
-        <label><input type="radio" name="answer2" value="C" /> C</label>
-        <label><input type="radio" name="answer2" value="D" /> D</label>
-    </div>
+        <div class="question">
+            <span class="q-title">4번. Java에서 클래스를 상속받을 때 사용하는 키워드는?</span>
+            <input type="text" name="answer4" class="short-answer" th:value="${prefill?.answer4}">
+        </div>
+        <hr>
 
-    <div class="question">
-        <p><strong>3번:</strong> 다음 중 정답은 무엇인가요?</p>
-        <label><input type="radio" name="answer3" value="A" required /> A</label>
-        <label><input type="radio" name="answer3" value="B" /> B</label>
-        <label><input type="radio" name="answer3" value="C" /> C</label>
-        <label><input type="radio" name="answer3" value="D" /> D</label>
-    </div>
+        <div class="question">
+            <span class="q-title">5번. 예외가 발생할 가능성이 있는 코드를 감사서 예외를 처리할 때 사용하는 키워드는?</span>
+            <input type="text" name="answer5" class="short-answer" th:value="${prefill?.answer5}">
+        </div>
+    </fieldset>
 
-    <div class="question">
-        <p><strong>4번:</strong> 다음 중 정답은 무엇인가요?</p>
-        <label><input type="radio" name="answer4" value="A" required /> A</label>
-        <label><input type="radio" name="answer4" value="B" /> B</label>
-        <label><input type="radio" name="answer4" value="C" /> C</label>
-        <label><input type="radio" name="answer4" value="D" /> D</label>
-    </div>
-
-    <div class="question">
-        <p><strong>5번:</strong> 다음 중 정답은 무엇인가요?</p>
-        <label><input type="radio" name="answer5" value="A" required /> A</label>
-        <label><input type="radio" name="answer5" value="B" /> B</label>
-        <label><input type="radio" name="answer5" value="C" /> C</label>
-        <label><input type="radio" name="answer5" value="D" /> D</label>
-    </div>
-
-    <div class="error" id="error" aria-live="polite"></div>
-
-    <div class="actions">
-        <button type="submit">제출</button>
-    </div>
+    <button type="submit" class="submit-btn">제출</button>
 </form>
 
-<script>
-    // 필수 항목 검증: 이름/이메일/비밀번호/모든 문항
-    document.getElementById('exam-form').addEventListener('submit', function (e) {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value.trim();
-      const answers = ['answer1', 'answer2', 'answer3', 'answer4', 'answer5']
-        .map(n => document.querySelector(`input[name="${n}"]:checked`));
+<script th:inline="javascript">
+    // 중복 응시 에러 메시지 처리
 
-      const errorBox = document.getElementById('error');
+    let error = [[${error}]];
+    if(error) window.alert(error);
 
-      if (!name || !email || !password || answers.some(a => !a)) {
-        e.preventDefault();
-        alert('모든 필수 항목(이름/이메일/비밀번호/5문항)을 입력해야 합니다.');
-        errorBox.textContent = '입력 누락 항목을 확인해 주세요.';
-        return;
-      }
-    });
+
+    // 필수 항목 JavaScript 검증 [cite: 58, 59]
+    document.getElementById('examForm').onsubmit = function() {
+        let name = document.getElementsByName('name')[0].value.trim();
+        let email = document.getElementsByName('email')[0].value.trim();
+        let pw = document.getElementsByName('password')[0].value.trim();
+
+        let a1 = document.querySelector('input[name="answer1"]:checked');
+        let a2 = document.querySelector('input[name="answer2"]:checked');
+        let a3 = document.querySelector('input[name="answer3"]:checked');
+        let a4 = document.getElementsByName('answer4')[0].value.trim();
+        let a5 = document.getElementsByName('answer5')[0].value.trim();
+
+        if(!name || !email || !pw || !a1 || !a2 || !a3 || !a4 || !a5) {
+            alert("이름, 이메일, 비밀번호 및 모든 문제의 답안을 입력해주세요.");
+            return false;
+        }
+        return true;
+    };
 </script>
 </body>
 </html>

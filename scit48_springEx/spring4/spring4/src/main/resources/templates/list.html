@@ -325,6 +325,14 @@
 
               <form th:action="@{update}" method="get">
                 <input type="hidden" name="num" th:value="${gb.num}" />
+                  <input
+                          type="password"
+                          name="password"
+                          class="input-password"
+                          placeholder="수정 비밀번호 입력"
+                          required
+                          autocomplete="off"
+                  />
                 <button type="submit" class="btn-update">수정</button>
               </form>
             </div>

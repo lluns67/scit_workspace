@@ -1,4 +1,4 @@
-package net.datasa.spring4.controller;
+package net.datasa.ex_javaexam.controller;
 
 
 import lombok.extern.slf4j.Slf4j;

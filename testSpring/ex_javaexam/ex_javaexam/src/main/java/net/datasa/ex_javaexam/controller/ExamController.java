@@ -35,7 +35,8 @@ public class ExamController {
 			model.addAttribute("message", "제출 완료: 점수 " + saved.getScore());
 			return "redirect:/results";
 		} catch (IllegalStateException dup) {
-			model.addAttribute("error", "중복 응시입니다. 기존 입력값을 유지했습니다.");
+			String error = String.format("이미 응시한 이메일입니다. %s",req.getEmail());
+			model.addAttribute("error", error);
 			model.addAttribute("prefill", req);
 			return "exam";
 		}
@@ -56,6 +57,15 @@ public class ExamController {
 		return "results"; // src/main/resources/templates/results.html
 	}
 	
+	// 삭제 확인 페이지로 이동
+	@GetMapping("/results/delete")
+	public String deletePage(@RequestParam Long id, Model model) {
+		// ID로 해당 응시 정보를 찾아 모델에 담음
+		StudentResponse response = responseRepo.findById(id).orElse(null);
+		model.addAttribute("response", response);
+		return "delete"; // delete.html 호출
+	}
+	
 	// 응시 기록 삭제(비밀번호 확인)
 	@PostMapping("/results/delete")
 	public String delete(@RequestParam Long id, @RequestParam String password, Model model) {
@@ -64,7 +74,7 @@ public class ExamController {
 			return "redirect:/results";
 		} catch (Exception e) {
 			model.addAttribute("error", e.getMessage());
-			return "results";
+			return "redirect:/results";
 		}
 	}
 }

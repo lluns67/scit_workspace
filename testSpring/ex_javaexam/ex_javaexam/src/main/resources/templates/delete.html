@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>응시정보 삭제</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 50px; line-height: 2; }
+        h2 { font-size: 1.8em; margin-bottom: 30px; }
+        .info-box { margin-bottom: 20px; }
+        .label { font-weight: bold; width: 100px; display: inline-block; }
+        .pw-input { padding: 5px; width: 250px; border: 1px solid #ccc; margin-left: 5px; }
+        .del-btn { padding: 5px 30px; background-color: #efefef; border: 1px solid #999; cursor: pointer; margin-top: 10px; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+<h2>[ 응시정보 삭제 ]</h2>
+
+<div class="info-box" th:if="${response != null}">
+    <div><span class="label">이름:</span> <span th:text="${response.name}">홍길동</span></div>
+    <div><span class="label">이메일:</span> <span th:text="${response.email}">hong@test.com</span></div>
+    <div><span class="label">응시날짜:</span> <span th:text="${#dates.format(response.submittedAt, 'yy.MM.dd HH:mm:ss')}">25.12.21 11:00:00</span></div>
+</div>
+
+<form th:action="@{/results/delete}" method="post">
+    <input type="hidden" name="id" th:value="${response.id}">
+    <div>
+        <span class="label">비밀번호 입력:</span>
+        <input type="password" name="password" class="pw-input" required>
+    </div>
+    <button type="submit" class="del-btn">삭제</button>
+</form>
+
+<div th:if="${error}" class="error" th:text="${error}"></div>
+</body>
+</html>

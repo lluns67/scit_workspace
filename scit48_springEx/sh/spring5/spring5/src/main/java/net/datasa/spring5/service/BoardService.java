@@ -285,13 +285,13 @@ public class BoardService {
 		rr.save(replyEntity);
 	}
 	
-	public List<ReplyDTO> getReplyList(String replyId) {
-		List<ReplyEntity> replyEntityList = rr.findByMember_MemberId(replyId);
+	public List<ReplyDTO> replyList(String memberId) {
+		Sort sort = Sort.by(Sort.Direction.DESC, "createDate");
+		List<ReplyEntity> replyEntityList = rr.findByMember_MemberId(memberId, sort);
+		
 		List<ReplyDTO> replyDTOS = new ArrayList<>();
 		for (ReplyEntity entity : replyEntityList) {
 			ReplyDTO dto = ReplyDTO.convertToReplyDTO(entity);
-			
-			
 			replyDTOS.add(dto);
 		}
 		

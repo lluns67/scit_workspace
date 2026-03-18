@@ -1,15 +1,23 @@
 package net.datasa.ex_javaexam.domain.entity;
 
 
-
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import java.time.Instant;
 
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
+@Getter
+
 @Table(name = "exam_answers")
 public class ExamAnswer {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 	
 	@Column(name = "question_no", nullable = false, unique = true)
 	private Integer questionNo;
@@ -21,4 +29,6 @@ public class ExamAnswer {
 	private Instant createdAt = Instant.now();
 	
 	// getters/setters
+	
+	
 }
